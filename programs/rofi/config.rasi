@@ -17,6 +17,7 @@ configuration {
 window {
     width: 25%;
     height: 20%;
+    border-radius: 5px;
 }
 
 element selected {
