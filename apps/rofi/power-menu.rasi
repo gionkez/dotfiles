@@ -1,0 +1,127 @@
+configuration {
+    font:				"Monospace 10";
+    display-drun:			"-_-";
+    drun-display-format:		"{name}";
+    scroll-method:			0;
+}
+
+@theme "/dev/null"
+
+window {
+    background-color: #303030;
+    border:           0;
+    padding:          30;
+}
+listview {
+    lines:                          10;
+    columns:                        3;
+}
+mainbox {
+    border:  0;
+    padding: 0;
+}
+message {
+    border:       2px 0px 0px ;
+    border-color: #ffcc00;
+    padding:      1px ;
+}
+textbox {
+    text-color: #000000;
+}
+listview {
+    fixed-height: 0;
+    border:       8px 0px 0px ;
+    border-color: #ffcc00;
+    spacing:      8px ;
+    scrollbar:    false;
+    padding:      2px 0px 0px ;
+}
+element {
+    border:  0;
+    padding: 1px ;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element.normal.normal {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.normal.urgent {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.normal.active {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.selected.normal {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.selected.urgent {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.selected.active {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.alternate.normal {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.alternate.urgent {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+element.alternate.active {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: #7000000;
+    handle-width: 8px ;
+    padding:      0;
+}
+mode-switcher {
+    border:       2px 0px 0px ;
+    border-color: #7000000;
+}
+button {
+    spacing:    0;
+    text-color: #7000000;
+}
+button.selected {
+    background-color: #7000000;
+    text-color:       #7000000;
+}
+inputbar {
+    spacing:    0;
+    text-color: #7000000;
+    padding:    1px ;
+}
+case-indicator {
+    spacing:    0;
+    text-color: #7000000;
+}
+entry {
+    spacing:    0;
+    text-color: #7000000;
+}
+prompt {
+    spacing:    0;
+    text-color: #7000000;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: #7000000;
+}
