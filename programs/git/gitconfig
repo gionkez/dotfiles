@@ -1,5 +1,5 @@
 [user]
-   name = "gnkz"
-   email = "dellarosciagiorgio@gmail.com"
+   name = gnkz
+   email = dellarosciagiorgio@gmail.com
 [init]
    defaultBranch = master
