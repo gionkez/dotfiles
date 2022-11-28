@@ -11,9 +11,8 @@
 + xfce
 + vscode
 + [file manager] (nautilus, nemo, etc.)
-+ gitkraken, lazygit
 + [text editor] vi, vim, neovim (for fast commandline-based text editing)
-+ [terminal emulator]
++ [terminal emulator] (alacritty, kitty, terminator, st (simple-terminal))
 + remarkable
 + flameshot
 + polybar
