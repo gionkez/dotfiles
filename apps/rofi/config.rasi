@@ -1,7 +1,7 @@
 configuration {
     font: "Monospace 10";
-    display-drun: "-_- ";
-    display-window: "+.+ ";
+    display-drun: "> ";
+    display-window: "> ";
 }
 
 @theme "/dev/null"
@@ -15,23 +15,14 @@ configuration {
 }
 
 window {
-    width: 25%;
-    height: 20%;
+    width: 20%;
     border-radius: 5px;
-    /*
-    location: northwest;
-    x-offset: 2;
-    y-offset: 28;
-    */
 }
 
-/*
 listview {
     lines: 3;
-    columns: 1;
     scrollbar: false;
 }
-*/
 
 element selected {
     background-color: #505050;
