@@ -1,7 +1,7 @@
 configuration {
-    font: "Monospace 10";
+    font: "JetBrains Mono 10";
     display-drun: "> ";
-    display-window: "> ";
+    display-window: "? ";
 }
 
 @theme "/dev/null"
