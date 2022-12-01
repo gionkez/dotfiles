@@ -1,6 +1,6 @@
 configuration {
     font:				"Monospace 10";
-    display-drun:			"-_-";
+    display-drun:			"> ";
     drun-display-format:		"{name}";
     scroll-method:			0;
 }
