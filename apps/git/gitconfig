@@ -3,3 +3,6 @@
    email = dellarosciagiorgio@gmail.com
 [init]
    defaultBranch = master
+[core]
+	excludesfile = ~/.gitignore
+	editor = code
