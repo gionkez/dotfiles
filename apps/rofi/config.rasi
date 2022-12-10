@@ -1,13 +1,18 @@
 configuration {
-    font: "JetBrains Mono 10";
-    display-drun: "> ";
+    font: "JetBrains Mono 11";
+    display-drun: ">_ ";
     display-window: "? ";
+    show-icons: false;
+    cycle: false;
+    disable-history: true;
 }
 
 @theme "/dev/null"
 
 * {
     background-color: #303030;
+    text-color: #000000;
+    highlight: underline bold #000000;
     border: 0;
     margin: 2;
     padding: 0;
@@ -17,15 +22,25 @@ configuration {
 window {
     width: 20%;
     border-radius: 5px;
+    border: 2px;
+    border-color: #000000;
 }
 
 listview {
-    lines: 3;
     scrollbar: false;
+    lines: 5;
+    columns: 1;
+    border: 0px;
+}
+
+element {
+    padding: 1px;
 }
 
 element selected {
-    background-color: #505050;
+    background-color: #5555aa;
+    border: 1px;
+    border-radius: 5px;
 }
 
 element-text {

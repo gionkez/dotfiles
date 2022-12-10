@@ -5,3 +5,13 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 1. i really can't do more complicated things.
 
 i also added some wallpapers: some are mine, many others are not.
+
+---
+
+### _**neofetch**_
+
+![neofetch](screenshots/neofetch.png)
+
+### _**rofi**_
+
+![rofi](screenshots/rofi.png)
