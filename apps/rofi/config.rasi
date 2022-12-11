@@ -2,9 +2,15 @@ configuration {
     font: "JetBrains Mono 11";
     display-drun: ">_ ";
     display-window: "? ";
+    display-filebrowser: "-> ";
+    icon-theme: "ePapirus";
     show-icons: false;
     cycle: false;
+    sort: false;
+    case-sensitive: false;
+    window-format: "{c}\t\t{w}";
     disable-history: true;
+    modi: [window, run, drun, filebrowser];
 }
 
 @theme "/dev/null"
@@ -21,8 +27,14 @@ configuration {
 
 window {
     width: 20%;
-    border-radius: 5px;
     border: 2px;
+    border-radius: 5px;
+    border-color: #000000;
+}
+
+message {
+    border: 2px;
+    border-radius: 5px;
     border-color: #000000;
 }
 
