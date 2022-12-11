@@ -19,8 +19,4 @@ i also added some wallpapers: some are mine, many others are not.
 ![rofiwindow](screenshots/rofiwindow.png)
 ![rofipowermenu](screenshots/rofipowermenu.png)
 ![rofifilebrowser](screenshots/rofifilebrowser.png)
-
-### _**polybar**_
-
-![polybar](screenshots/polybar.png)
 -->
