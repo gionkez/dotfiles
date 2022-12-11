@@ -6,6 +6,7 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 
 i also added some wallpapers: some are mine, many others are not.
 
+<!--
 ---
 
 ### _**neofetch**_
@@ -14,4 +15,12 @@ i also added some wallpapers: some are mine, many others are not.
 
 ### _**rofi**_
 
-![rofi](screenshots/rofi.png)
+![rofidrun](screenshots/rofidrun.png)
+![rofiwindow](screenshots/rofiwindow.png)
+![rofipowermenu](screenshots/rofipowermenu.png)
+![rofifilebrowser](screenshots/rofifilebrowser.png)
+
+### _**polybar**_
+
+![polybar](screenshots/polybar.png)
+-->
