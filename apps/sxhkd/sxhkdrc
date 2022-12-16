@@ -1,28 +1,9 @@
 # apps
-super + ctrl + {v, m, s, d, n}
-	{code, microsoft-edge-stable, spotify, discord, nordpass}
-
-# audio
-XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +5%
-
-XF86AudioLowerVolume
-    pactl set-sink-volume 0 -5%
-
-XF86AudioMute
-    pactl set-sink-mute 0 toggle
-
-XF86AudioPlay
-    playerctl play-pause
-
-XF86AudioNext
-    playerctl next
-
-XF86AudioPrev
-    playerctl previous
+super + alt + {t, v, m, s, d, n, s}
+	{kitty, code, microsoft-edge-stable, spotify, discord, nordpass, flameshot gui}
 
 # rofi
-super + spacebar
+super + @space
     rofi -show drun
 
 super + shift + e
@@ -37,6 +18,6 @@ alt + f4
 super + w
 	rofi -show window
 
-# lock screen
+# system
 super + l
     xdg-screensaver lock
