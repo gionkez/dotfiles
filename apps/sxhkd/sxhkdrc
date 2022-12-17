@@ -1,5 +1,5 @@
 # apps
-super + alt + {t, v, m, s, d, n, s}
+super + control + {t, v, m, s, d, n, s}
 	{kitty, code, microsoft-edge-stable, spotify, discord, nordpass, flameshot gui}
 
 # rofi
