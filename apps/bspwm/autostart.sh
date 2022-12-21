@@ -8,4 +8,4 @@ function run {
 
 $HOME/.config/polybar/launch.sh &
 
-run sxhkd -c ~7.config/sxhkd/sxhkdrc &
+run sxhkd -c ~/.config/sxhkd/sxhkdrc &
