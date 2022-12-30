@@ -1,6 +1,6 @@
 # apps
-super + control + {t, c, b, s, d, s}
-	{kitty, code, microsoft-edge-stable, spotify, discord, flameshot gui}
+super + control + {t, q, c, b, s, d, s}
+	{kitty, qalc, code, microsoft-edge-stable, spotify, discord, flameshot gui}
 
 # rofi
 super + @space
