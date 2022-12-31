@@ -9,7 +9,6 @@ super + shift + e
 
 super + canc
     sh powermenu.sh
-
 alt + f4
     sh powermenu.sh
 
