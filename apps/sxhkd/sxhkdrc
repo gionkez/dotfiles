@@ -1,8 +1,6 @@
-# apps
 super + control + {t, q, c, b, s, d, s}
 	{kitty, qalc, code, microsoft-edge-stable, spotify, discord, flameshot gui}
 
-# rofi
 super + @space
     rofi -show drun
 
@@ -18,6 +16,5 @@ alt + f4
 super + w
 	rofi -show window
 
-# system
 super + l
     xdg-screensaver lock
