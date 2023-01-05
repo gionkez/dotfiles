@@ -1,19 +1,29 @@
-super + control + {t, q, c, b, s, d, s}
+super + {e, i}
+	{nautilus, gnome-control-center}
+
+super + alt + {t, q, c, e, s, d, f}
 	{kitty, qalc, code, microsoft-edge-stable, spotify, discord, flameshot gui}
 
 super + @space
-    rofi -show drun
+	rofi -show drun
 
 super + shift + e
-    rofi -show filebrowser
+	rofi -show filebrowser
 
 super + canc
-    sh powermenu.sh
+	sh /home/gnkz/.config/rofi/powermenu.sh
+
 alt + f4
-    sh powermenu.sh
+	sh /home/gnkz/.config/rofi/powermenu.sh
 
 super + w
 	rofi -show window
 
 super + l
-    xdg-screensaver lock
+	xdg-screensaver lock
+
+# audio (stop, play, next, previous, up, down)
+# hide all windows (super + d)
+# bspwm (tiling, workspaces, etc.)
+# close window (super + q)
+# fullscreen (f11)
