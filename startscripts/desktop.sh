@@ -13,7 +13,7 @@ xdg-open "https://calendar.google.com"
 sleep 0.5s
 xdg-open "https://drive.google.com"
 sleep 0.5s
-xdg-open "https://news.google.com"
+xdg-open "https://news.google.com/foryou"
 sleep 0.5s
 xdg-open "https://www.amazon.it"
 sleep 0.5s
