@@ -8,7 +8,7 @@ configuration {
     cycle: false;
     sort: false;
     case-sensitive: false;
-    window-format: "{c}\t\t{w}";
+    window-format: "{c}";
     disable-history: true;
     modi: [window, run, drun, filebrowser];
 }
