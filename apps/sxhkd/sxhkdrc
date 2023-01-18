@@ -4,16 +4,17 @@ super + {e, i}
 super + alt + {t, q, c, e, s, d, f}
 	{kitty, qalc, code, microsoft-edge-stable, spotify, discord, flameshot gui}
 
-super + @space
+super + space
 	rofi -show drun
 
 super + shift + e
 	rofi -show filebrowser
 
-super + canc
-	sh /home/gnkz/.config/rofi/powermenu.sh
+#key name for del?
+#super + del
+#	sh /home/gnkz/.config/rofi/powermenu.sh
 
-alt + f4
+alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
 
 super + w
@@ -22,8 +23,19 @@ super + w
 super + l
 	xdg-screensaver lock
 
-# audio (stop, play, next, previous, up, down)
-# hide all windows (super + d)
-# bspwm (tiling, workspaces, etc.)
-# close window (super + q)
-# fullscreen (f11)
+#XF86AudioRaiseVolumes
+#  pactl set-sink-volume @DEFAULT_SINK@ +5%
+#XF86AudioLowerVolume
+#  pactl set-sink-volume @DEFAULT_SINK@ -5%
+#XF86AudioMute
+#  pactl set-sink-mute @DEFAULT_SINK@ toggle
+#XF86AudioPlay
+#    playerctl play-pause
+#XF86AudioNext
+#    playerctl next 
+#XF86AudioPrev
+#    playerctl previous
+#XF86AudioStop
+#    playerctl stop
+
+##### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), super + esc (close window), f11 (fullscreen), alt+tab (switch applications)))
