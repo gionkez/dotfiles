@@ -4,7 +4,7 @@ xset led 3
 xset r rate 250 30
 sudo apt update -y
 sudo apt full-upgrade -y
-flatpak update -y
+sudo flatpak update -y
 sudo apt autoremove -y
 xdg-open "https://www.youtube.com"
 sleep 0.5s
