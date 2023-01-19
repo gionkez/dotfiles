@@ -1,8 +1,8 @@
 super + {e, i}
 	{nautilus, gnome-control-center}
 
-super + alt + {t, q, c, e, s, d, f}
-	{kitty, qalc, code, microsoft-edge-stable, spotify, discord, flameshot gui}
+super + alt + {t, q, c, e, k, s, d}
+	{kitty, qalc, code, flatpak run com.microsoft.Edge, flatpak run org.telegram.desktop, flatpak run org.spotify.Client, flatpak run com.discordapp.Discord}
 
 super + space
 	rofi -show drun
@@ -11,8 +11,8 @@ super + shift + e
 	rofi -show filebrowser
 
 #key name for del?
-#super + del
-#	sh /home/gnkz/.config/rofi/powermenu.sh
+#super + DEL/DELETE/del/delete/Del/Delete
+	sh /home/gnkz/.config/rofi/powermenu.sh
 
 alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
@@ -38,4 +38,9 @@ super + l
 #XF86AudioStop
 #    playerctl stop
 
-##### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), super + esc (close window), f11 (fullscreen), alt+tab (switch applications)))
+##### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), f11 (fullscreen)))
+#super + Escape... (close window)
+#button{1-4}...
+#alt + Tab... (switch applications)
+#super + _??
+# Print... (flameshot gui)
