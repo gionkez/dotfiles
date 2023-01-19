@@ -7,5 +7,5 @@ sudo apt update -y
 sudo apt full-upgrade -y
 sudo apt autoremove -y
 code
-sleep 0.5s
-telegram-desktop
+sleep 0.75s
+flatpak run org.telegram.desktop
