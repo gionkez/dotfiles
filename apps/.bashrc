@@ -1,6 +1,6 @@
 alias neofetch='neofetch --source ~/.config/neofetch/logo.txt'
 alias cls='clear'
-alias upd='sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y'
+alias upd='sudo apt update -y && sudo flatpak update -y && sudo apt full-upgrade -y && sudo apt autoremove -y'
 alias on='xset led 3 && xset r rate 250 30'
 
 case $- in
