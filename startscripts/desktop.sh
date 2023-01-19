@@ -29,4 +29,4 @@ xdg-open "https://github.com/dellarosciagiorgio?tab=repositories"
 sleep 0.5s
 code
 sleep 0.5s
-telegram-desktop
+flatpak run org.telegram.desktop
