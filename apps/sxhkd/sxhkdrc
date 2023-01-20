@@ -1,8 +1,8 @@
-super + {e, i}
-	{nautilus, gnome-control-center}
+super + {e, i, t}
+	{nautilus, gnome-control-center, kitty}
 
-super + alt + {t, q, c, e, k, s, d}
-	{kitty, qalc, code, flatpak run com.microsoft.Edge, flatpak run org.telegram.desktop, flatpak run org.spotify.Client, flatpak run com.discordapp.Discord}
+super + alt + {q, c, e, t, s, d}
+	{qalc, code, flatpak run com.microsoft.Edge, flatpak run org.telegram.desktop, flatpak run org.spotify.Client, flatpak run com.discordapp.Discord}
 
 super + space
 	rofi -show drun
@@ -10,9 +10,8 @@ super + space
 super + shift + e
 	rofi -show filebrowser
 
-#key name for del?
 #super + DEL/DELETE/del/delete/Del/Delete
-	sh /home/gnkz/.config/rofi/powermenu.sh
+#	sh /home/gnkz/.config/rofi/powermenu.sh
 
 alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
