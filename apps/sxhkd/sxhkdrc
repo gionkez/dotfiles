@@ -1,26 +1,17 @@
-super + {e, i, t}
+super + ctrl + {e, i, t}
 	{nautilus, gnome-control-center, kitty}
 
 super + alt + {q, c, e, t, s, d}
 	{qalc, code, flatpak run com.microsoft.Edge, flatpak run org.telegram.desktop, flatpak run com.spotify.Client, flatpak run com.discordapp.Discord}
 
-super + space
-	rofi -show drun
-
-super + shift + e
-	rofi -show filebrowser
-
-#super + DEL/DELETE/del/delete/Del/Delete
-#	sh /home/gnkz/.config/rofi/powermenu.sh
+super + shift + {e, l, space, w}
+	{rofi -show filebrowser, xdg-screensaver lock, rofi -show drun, rofi -show window}
 
 alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
 
-super + w
-	rofi -show window
-
-super + l
-	xdg-screensaver lock
+#super + DEL/DELETE/del/delete/Del/Delete
+#	sh /home/gnkz/.config/rofi/powermenu.sh
 
 #XF86AudioRaiseVolumes
 #  pactl set-sink-volume @DEFAULT_SINK@ +5%
