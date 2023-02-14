@@ -1,7 +1,14 @@
-alias neofetch='neofetch --source ~/.config/neofetch/logo.txt'
 alias cls='clear'
-alias upd='sudo apt update -y && sudo flatpak update -y && sudo apt full-upgrade -y && sudo apt autoremove -y'
+alias c='clear'
+alias fu='flatpak update -y'
+alias upd='sudo apt update -y && sudo apt full-upgrade -y && fu && sudo apt autoremove -y'
+alias startdesktop='on && upd && fu && flatpak run com.microsoft.Edge && sleep 0.75s && code && sleep 0.75s && flatpak run org.telegram.desktop'
+alias startlaptop='on && laptop && upd && code && sleep 0.75s && flatpak run org.telegram.desktop'
+alias startsll='on && laptop && upd'
 alias on='xset led 3 && xset r rate 250 30'
+alias laptop='amixer set Master mute && nmcli eadio wifi on'
+alias in='sudo apt install'
+alias un='sudo apt purge'
 
 case $- in
     *i*) ;;
