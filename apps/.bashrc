@@ -1,6 +1,4 @@
 alias cls='clear'
-alias c='clear'
-alias fu='sudo flatpak update -y'
 alias upd='sudo apt update -y; sudo apt full-upgrade -y; fu; sudo apt autoremove -y'
 alias on='xset led 3; xset r rate 250 30'
 alias laptop='amixer set Master mute; nmcli eadio wifi on'
