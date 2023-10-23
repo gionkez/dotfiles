@@ -1,8 +1,8 @@
 alias cls='clear'
 alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo flatpak update -y; sudo apt autoremove -y'
 alias on='xset led 3; xset r rate 250 30'
-alias laptop='amixer set Master mute; nmcli eadio wifi on'
 alias wifi='nmcli eadio wifi on'
+alias laptop='on; amixer set Master mute; wifi'
 alias in='sudo apt install'
 alias un='sudo apt purge'
 
