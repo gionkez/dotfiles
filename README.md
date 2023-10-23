@@ -6,7 +6,7 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 
 here's a list of software i'm customizing, it's a work in progress so not all boxes are checked:
 + [ ] bspwm
-+ [x] <u>flameshot</u>
++ [x] flameshot
 + [x] kitty
 + [x] neofetch
 + [ ] polybar
