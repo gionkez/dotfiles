@@ -1,0 +1,1 @@
++ editare direttamente .config senza aggiornare continuamente
