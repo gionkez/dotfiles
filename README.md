@@ -5,12 +5,12 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 1. i really can't do more complicated things.
 
 here's a list of software i'm customizing, it's a work in progress so not all boxes are checked:
-+ [ ] bspwm
++ [ ] bspwm/dwm
 + [x] flameshot
-+ [x] kitty
++ [ ] kitty
 + [x] neofetch
 + [ ] polybar
-+ [x] rofi
++ [ ] rofi
 + [ ] sxhkd
 
-i also added some wallpapers: some are mine, many others are not.
+i also added some wallpapers that i made.
