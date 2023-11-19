@@ -1,13 +1,11 @@
 # 16:9
-![david](images/desktop/david.png)
-![maddalena](images/desktop/maddalena.png)
-![poposarrow](images/desktop/poposarrow.png)
-![poposlines](images/desktop/poposlines.png)
-![void](images/desktop/void.png)
+![david](desktop/david.png)
+![maddalena](desktop/maddalena.png)
+![void](desktop/void.png)
 
 # 3:2
-![motherland](images/laptop/motherland.png)
-![david](images/laptop/david.png)
-![maddalena](images/laptop/maddalena.png)
-![maddalena](images/laptop/leaves.png)
-![void](images/laptop/void.png)
+![motherland](laptop/motherland.png)
+![david](laptop/david.png)
+![maddalena](laptop/maddalena.png)
+![maddalena](laptop/leaves.png)
+![void](laptop/void.png)

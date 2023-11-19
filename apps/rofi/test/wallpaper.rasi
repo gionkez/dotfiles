@@ -2,7 +2,7 @@ configuration {
 	modi: "dmenu";
     show-icons: true;
     display-dmenu: "Powermenu :";
-	window-format: "{w}·{c}·{t}";
+	window-format: "{w} · {c} · {t}";
 }
 
 @import "colors.rasi"
@@ -13,7 +13,7 @@ configuration {
     foreground-colour: var(foreground);
     alternate-background: var(selected);
 	alternate-foreground: var(background);
-    font: "JetBrains Mono Nerd Font 10";
+    font: "JetBrains Mono Nerd Font 15";
 }
 
 window {
@@ -24,11 +24,9 @@ window {
     height: 768px;
     x-offset: 0px;
     y-offset: 0px;
-
     enabled: true;
     margin: 0px;
-    padding: 50px;
-    location: center;
+    padding: 0px;
     border: 0px solid;
     border-radius: 0px;
     border-color: @border-colour;
@@ -40,6 +38,7 @@ mainbox {
     enabled: true;
     spacing: 10px;
     margin: 0px;
+    padding: 35%;
     border: 0px solid;
     border-radius: 0px 0px 0px 0px;
     border-color: @border-colour;
@@ -50,7 +49,6 @@ mainbox {
 inputbar {
     enabled: true;
     spacing: 10px;
-    location: center;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -87,14 +85,15 @@ entry {
 listview {
     enabled: true;
     columns: 1;
-    lines: 128;
-    cycle: false;
-    dynamic: false;
+    lines: 12;
+    cycle: true;
+    dynamic: true;
     scrollbar: false;
     layout: vertical;
     reverse: false;
-    height: 800px;
-    spacing: 5px;
+    fixed-height: true;
+    fixed-columns: true;
+    spacing: 10px;
     margin: 0px;
     padding: 0px;
     border: 0px solid;
@@ -114,7 +113,7 @@ scrollbar {
 
 element {
     enabled: true;
-    spacing: 5px;
+    spacing: 10px;
     margin: 0px;
     padding: 5px;
     border: 0px solid;
@@ -133,7 +132,7 @@ element selected.normal {
 element-icon {
     background-color: transparent;
     text-color: inherit;
-    size: 10px;
+    size: 24px;
     cursor: inherit;
 }
 
