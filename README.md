@@ -42,6 +42,7 @@ here's a list of software i'm customizing, it's a work in progress so not all bo
         + [ ] brightness
         + [ ] volume
         + [ ] music
+        + [ ] wallpapers
 + [ ] [sxhkd](https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/)
     + [autostart](https://wiki.archlinux.org/title/Sxhkd)
 
