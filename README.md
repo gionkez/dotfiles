@@ -5,7 +5,7 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 1. i really can't do more complicated things.
 
 here's a list of software i'm customizing, it's a work in progress so not all boxes are checked:
-+ [ ] bspwm/dwm
++ [ ] bspwm
     + border
         + gaps
         + active color
