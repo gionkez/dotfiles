@@ -1,36 +1,52 @@
-super + ctrl + {e, i, t}
-	{nautilus, gnome-control-center, kitty}
+# quit or restart bspwm
+alt + shift + {q, r}
+	bspc {quit, wm -r}
 
-super + alt + {q, c, e, t, s, d}
-	{qalc, code, flatpak run com.microsoft.Edge, flatpak run org.telegram.desktop, flatpak run com.spotify.Client, flatpak run com.discordapp.Discord}
+# make sxhkd reload its configuration files
+alt + Escape + s
+	pkill -USR1 -x sxhkd
+ 
+# change the window state
+ctrl + alt + {t, p, l, f}
+	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
 
-super + shift + {e, l, space, w}
-	{rofi -show filebrowser, xdg-screensaver lock, rofi -show drun, rofi -show window}
+# make a floating window bigger
+ctrl + alt + a + {Left, Down, Up, Right}
+    STEP=20; SELECTION={1, 2, 3, 4}; \
+    bspc node -z $(echo "left -$STEP 0, bottom 0 $STEP, top 0 -$STEP, right $STEP 0" | cut -d',' -f$SELECTION) || \
+    bspc node -z $(echo "right -$STEP 0, top 0 $STEP, bottom 0 -$STEP, left $STEP 0" | cut -d',' -f$SELECTION)
+
+# make a floating window smaller
+ctrl + alt + s + {Left, Down, Up, Right}
+	bspc node -z {right -20 0, top 0 20, bottom 0 -20, left 20 0}
+
+# move floating window
+ctrl + alt + {Left, Down, Up, Right}
+	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+
+# close or kill a window
+super + Escape
+	bspc node -c
+    
+# launch basic applications
+super + {e, i, t, q}
+	{nautilus, gnome-control-center, kitty, qalc}
+
+# launch personal applications
+super + alt + {c, f, t, s, d}
+	{code, firefox, flatpak run org.telegram.desktop, spotify, flatpak run com.discordapp.Discord}
+
+# launch rofi
+super + {@space, w, del}
+	{rofi -show drun, rofi -show window, sh /home/gnkz/.config/rofi/powermenu.sh}
 
 alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
 
-#super + DEL/DELETE/del/delete/Del/Delete
-#	sh /home/gnkz/.config/rofi/powermenu.sh
-
-#XF86AudioRaiseVolumes
-#  pactl set-sink-volume @DEFAULT_SINK@ +5%
-#XF86AudioLowerVolume
-#  pactl set-sink-volume @DEFAULT_SINK@ -5%
-#XF86AudioMute
-#  pactl set-sink-mute @DEFAULT_SINK@ toggle
-#XF86AudioPlay
-#    playerctl play-pause
-#XF86AudioNext
-#    playerctl next 
-#XF86AudioPrev
-#    playerctl previous
-#XF86AudioStop
-#    playerctl stop
-
-##### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), f11 (fullscreen)))
-#super + Escape... (close window)
-#button{1-4}...
-#alt + Tab... (switch applications)
-#super + _??
-# Print... (flameshot gui)
+############################### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), f11 (fullscreen)))
+##########################
+###########################button{1-4}...
+###########################alt + Tab... (switch applications)
+##########################
+###########################super + _??
+########################### Print... (flameshot gui)
