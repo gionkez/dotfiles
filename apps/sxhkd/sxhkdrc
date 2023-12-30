@@ -3,16 +3,20 @@ alt + shift + {q, r}
 	bspc {quit, wm -r}
 
 # make sxhkd reload its configuration files
-alt + Escape + s
+alt + shift + s
 	pkill -USR1 -x sxhkd
 
+# show desktop
+super + d
+    if [ -n "$(bspc query -N -n .hidden)" ]; then flag=off else flag=on; fi && for i in $(bspc query -N); bspc node $i -g hidden=$flag
+
 # alternate between monocle and tiled
-alt + z
+super + z
 	bspc desktop -l next
 
-# move sleection?
-super + {_, shift + }{h, j, k, l}
-        bspc node -{f, s} {west, south, north, east}
+# focus the node in the given direction
+super + shift + {Left, Down, Up, Right}
+    bspc node -{f, s} {west, south, north, east}
 
 # change the window state
 ctrl + alt + {t, p, l, f}
@@ -37,8 +41,8 @@ super + Escape
 	bspc node -c
     
 # launch basic applications
-super + {e, i, t, q}
-	{nautilus, gnome-control-center, kitty, qalc}
+super + {e, t, q}
+	{nautilus, kitty, qalc}
 
 # launch personal applications
 super + alt + {c, f, t, s, d}
@@ -51,22 +55,14 @@ super + {@space, w, del}
 alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
 
-# expand a window by moving one of its side outward  
-#super + alt + {h,j,k,l}
-#        bspc node -z {left -20 0,bottom 0 20,top 0 -2>
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-#super + alt + shift + {h,j,k,l}
-#        bspc node -z {right -20 0,top 0 20,bottom 0 ->
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
 super + {Left,Down,Up,Right}
-        bspc node -v {-20 0,0 20,0 -20,20 0}
-
-############################### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), f11 (fullscreen)))
-##########################
-###########################button{1-4}...
-###########################alt + Tab... (switch applications)
-##########################
-###########################super + _??
-########################### Print... (flameshot gui)
+	bspc node -v {-20 0,0 20,0 -20,20 0}

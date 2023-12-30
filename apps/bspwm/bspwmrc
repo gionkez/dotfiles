@@ -35,7 +35,7 @@ bspc rule -a spotify state=fullscreen
 # follow=on
 # manage=off
 
-# #polybar hidden when fullscreen for vlc, youtube, mpv ...
+# #polybar hidden when fullscreen
 # #find out the name of your monitor with xrandr
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-0)
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DisplayPort-1)
