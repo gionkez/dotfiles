@@ -5,7 +5,15 @@ alt + shift + {q, r}
 # make sxhkd reload its configuration files
 alt + Escape + s
 	pkill -USR1 -x sxhkd
- 
+
+# alternate between monocle and tiled
+alt + z
+	bspc desktop -l next
+
+# move sleection?
+super + {_, shift + }{h, j, k, l}
+        bspc node -{f, s} {west, south, north, east}
+
 # change the window state
 ctrl + alt + {t, p, l, f}
 	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
@@ -42,6 +50,18 @@ super + {@space, w, del}
 
 alt + F4
 	sh /home/gnkz/.config/rofi/powermenu.sh
+
+# expand a window by moving one of its side outward  
+super + alt + {h,j,k,l}
+        bspc node -z {left -20 0,bottom 0 20,top 0 -2>
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+        bspc node -z {right -20 0,top 0 20,bottom 0 ->
+
+# move a floating window
+super + {Left,Down,Up,Right}
+        bspc node -v {-20 0,0 20,0 -20,20 0}
 
 ############################### to implement: bspwm (tiling, workspaces management and maybe (super+d (hide windows), return (accept), esc (exit), f11 (fullscreen)))
 ##########################
