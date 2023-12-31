@@ -2,7 +2,7 @@
 
 dir="$HOME/Pictures/Wallpapers/"
 cd $dir
-wallpaper=$(ls $dir | rofi -dmenu -p "wp:")
+wallpaper=$(ls $dir | rofi -dmenu -p "wp")
 if [[ $wallpaper == "q" || $wallpaper == "" ]]; then
     killall feh
     exit
