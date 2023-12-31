@@ -5,6 +5,6 @@ chosen=$(printf "shutdown\nrestart\nlock" | rofi -dmenu -i -p "!" -theme-str '@i
 case "$chosen" in
 	"shutdown") poweroff;;
 	"restart") reboot;;
-	"lock") xdg-screensaver lock;;
+	"lock") slock;;
 	*) exit 1;;
 esac

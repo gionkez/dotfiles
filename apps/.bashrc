@@ -1,8 +1,6 @@
 alias cls='clear'
 alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo flatpak update -y; sudo apt autoremove -y'
-alias on='xset led 3; xset r rate 250 30'
-alias wifi='nmcli radio wifi on'
-alias laptop='on; amixer set Master mute; wifi'
+alias laptop='nmcli radio wifi on; amixer set Master mute;'
 alias in='sudo apt install'
 alias un='sudo apt purge'
 
@@ -66,7 +64,7 @@ trunc () {
     fi
 }
 
-format_font()
+format_font ()
 {
 	local output=$1
 	case $# in
@@ -81,7 +79,7 @@ format_font()
 	esac
 }
 
-bash_prompt() {
+bash_prompt () {
 	local PROMT_USER=$"$TEXT_FORMAT_1\u-"
 	local PROMT_HOST=$"$TEXT_FORMAT_2\h"
 	local PROMT_PWD=$"$TEXT_FORMAT_3\${NEW_PWD} "
