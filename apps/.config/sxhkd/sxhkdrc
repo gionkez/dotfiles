@@ -7,11 +7,11 @@ super + z
 	bspc desktop -l next
 
 # focus the node in the given direction
-super + alt + {Left, Down, Up, Right}
+super + shift + {Left, Down, Up, Right}
     bspc node --focus {west, south, north, east}
 
 # change the window state
-super + alt + {t, p, f, m}
+super + shift + {t, p, f, m}
 	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
 
 # move a floating window
@@ -31,16 +31,16 @@ super + Escape
 	bspc node -c
 
 # rotate
-super + shift + {Right, Left}
+super + alt + {Right, Left}
     bspc node @/ -C {forward, backward}
-super + shift + r
+super + alt + r
 	bspc node @/ --rotate {90, -90}
 
-# launch basic applications
-super + {e, t, q}
-	{nautilus, kitty, qalc}
+# launch applications
+super + {e, k, q}
+    {nautilus, kitty, qalc}
 
-# launch personal applications
+#launch software
 super + alt + {c, f, t, s, d}
 	{code, firefox, flatpak run org.telegram.desktop, spotify, flatpak run com.discordapp.Discord}
 
