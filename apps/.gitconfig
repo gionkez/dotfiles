@@ -1,9 +1,6 @@
 [user]
-   name = gnkz
-   email = dellarosciagiorgio@gmail.com
-   username = dellarosciagiorgio
-[init]
-   defaultBranch = master
-[core]
-   excludesfile = ~/.gitignore
-   editor = code
+	name = dellarosciagiorgio
+	email = dellarosciagiorgio@gmail.com
+[usar]
+	name = gnkz
+	email = dellarosciagiorgio@gmail.com

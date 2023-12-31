@@ -2,7 +2,7 @@
 
 $HOME/.config/polybar/launch.sh
 pgrep -x sxhkd > /dev/null || sxhkd &
-nitrogen --restore &
+feh -z --no-fehbg --bg-fill /home/$USER/Pictures/Wallpapers/
 
 xset led 3
 xset r rate 200 50
@@ -33,4 +33,3 @@ bspc rule -a nautilus state=floating center=true
 bspc rule -a nomacs state=fullscreen
 bspc rule -a mpv state=fullscreen
 bspc rule -a shotcut state=fullscreen
-bspc rule -a gpick state=floating
