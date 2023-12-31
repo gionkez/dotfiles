@@ -30,21 +30,25 @@ super + ctrl + shift + {Left, Down, Up, Right}
 super + Escape
 	bspc node -c
 
+# view other desktop or move window between them
+super + {ctrl, alt} + {1, 2, 3, 4}
+    bspc {desktop -f, node -d} {I, II, III, IV} --follow
+
 # rotate
 super + alt + {Right, Left}
     bspc node @/ -C {forward, backward}
 super + alt + r
 	bspc node @/ --rotate {90, -90}
 
-# launch applications
+# basic software
 super + {e, t, q}
     {nautilus, kitty, qalc}
 
-#launch software
+# personal software
 super + alt + {c, f, t, s, d}
 	{code, firefox, flatpak run org.telegram.desktop, spotify, flatpak run com.discordapp.Discord}
 
-# launch rofi
+# rofi
 super + {space, w}
 	{rofi -show drun, rofi -show window}
 alt + {F4, F12}
