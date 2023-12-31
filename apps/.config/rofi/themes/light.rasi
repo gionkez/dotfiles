@@ -1,5 +1,5 @@
 * {
-    background-color: #ffffff;
+    background-color: #fcfcfc;
     text-color: #000000;
     highlight: underline bold #000000;
     margin: 2;
@@ -27,7 +27,7 @@ element {
 }
 
 element selected {
-    background-color: #ffaaff;
+    background-color: #7c7bb1;
     border: 1px;
 }
 

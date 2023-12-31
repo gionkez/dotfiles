@@ -13,3 +13,4 @@
     + playerctl
     + rofi
     + feh
+    + nitrogen

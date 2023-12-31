@@ -27,7 +27,7 @@ element {
 }
 
 element selected {
-    background-color: #5555aa;
+    background-color: #7c7bb1;
     border: 1px;
 }
 
