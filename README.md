@@ -26,5 +26,6 @@ here's a list of software i'm customizing, it's a work in progress so not all bo
     + custom scripts
         + [x] power menu
         + [x] wallpapers
+        + [ ] wifi
 
 i also added some wallpapers that i made.
