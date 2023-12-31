@@ -5,45 +5,26 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 1. i really can't do more complicated things.
 
 here's a list of software i'm customizing, it's a work in progress so not all boxes are checked:
-+ [ ] bspwm
-    + border
-        + gaps
-        + active color
-    + shadows?
-        + right and bottom
++ [x] bspwm
++ [x] sxhkd
 + [x] flameshot
-+ [ ] kitty
++ [x] kitty
 + [x] neofetch
-+ [ ] [polybar](https://www.youtube.com/watch?v=tOBDUBEMAKM)
-    + [ ] workspaces
-    + [ ] date
-    + [ ] time
++ [x] polybar
+    + [x] workspaces
+    + [x] date
+    + [x] time
     + connection
         + [ ] wired
         + [ ] wireless
     + [ ] battery
-    + [ ] audio
-    + [ ] music
-+ [ ] rofi
+    + [x] audio
++ [x] rofi
     + [x] run
-        + shortcut = `super + spacebar`
     + [x] window
-        + shortcut = `super + w`
     + [x] filebrowser
-        + shortcut = `super + shift + e`
-    + scripts
+    + custom scripts
         + [x] power menu
-            + shortcut = `super + canc`
-            + options
-                + shutdown: `poweroff`
-                + restart: `reboot`
-                + lock: `xdg-screensaver lock`
-        + [ ] wifi
-        + [ ] brightness
-        + [ ] volume
-        + [ ] music
-        + [ ] wallpapers
-+ [ ] [sxhkd](https://my-take-on.tech/2020/07/03/some-tricks-for-sxhkd-and-bspwm/)
-    + [autostart](https://wiki.archlinux.org/title/Sxhkd)
+        + [x] wallpapers
 
 i also added some wallpapers that i made.
