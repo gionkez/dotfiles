@@ -1,12 +1,13 @@
 #! /bin/bash
 
 $HOME/.config/polybar/launch.sh
+sleep 0.5
 pgrep -x sxhkd > /dev/null || sxhkd &
-feh -z --no-fehbg --bg-fill /home/$USER/Pictures/Wallpapers/
 
 xset led 3
 xset r rate 200 50
 xsetroot -cursor_name left_ptr
+nitrogen --restore &
 
 bspc monitor -d I II III
 
