@@ -24,12 +24,13 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc config automatic_scheme spiral
 
-bspc rule -a firefox state=fullscreen
-bspc rule -a org.telegram.desktop state=fullscreen
-bspc rule -a com.discordapp.Discord state=fullscreen
-bspc rule -a io.github.Soundux state=fullscreen
-bspc rule -a code state=fullscreen
+bspc rule -a firefox state=tiled
+bspc rule -a org.telegram.desktop state=tiled
+bspc rule -a com.discordapp.Discord state=tiled
+bspc rule -a io.github.Soundux state=tiled
+bspc rule -a code state=tiled
 bspc rule -a nautilus state=floating center=true
-bspc rule -a nomacs state=fullscreen
-bspc rule -a mpv state=fullscreen
-bspc rule -a shotcut state=fullscreen
+bspc rule -a nomacs state=tiled
+bspc rule -a mpv state=tiled
+bspc rule -a shotcut state=tiled
+bspc rule -a kitty state=floating
