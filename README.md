@@ -4,10 +4,24 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 1. i like a minimal look;
 1. i really can't do more complicated things.
 
+## requirements
+
+install these to run the dotfiles:
++ bspwm
++ feh
++ kitty
++ neofetch
++ nitrogen
++ playerctl
++ polybar
++ rofi
++ slock
++ sxhkd
+
+## programs
+
 here's a list of software i'm customizing, it's a work in progress so not all boxes are checked:
 + [x] bspwm
-+ [x] sxhkd
-+ [x] flameshot
 + [x] kitty
 + [x] neofetch
 + [x] polybar
@@ -26,6 +40,7 @@ here's a list of software i'm customizing, it's a work in progress so not all bo
     + custom scripts
         + [x] power menu
         + [x] wallpapers
-        + [ ] wifi
+        + [x] wifi
++ [x] sxhkd
 
 i also added some wallpapers that i made.
