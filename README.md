@@ -1,4 +1,4 @@
-# **linux dotfiles** (_wip_)
+# simple linux dotfiles (_wip_)
 
 these are my dotfiles that i use on linux. they are based on a basic style, this is due to two factors:
 1. i like a minimal look;
@@ -6,7 +6,7 @@ these are my dotfiles that i use on linux. they are based on a basic style, this
 
 ## requirements
 
-install these to run the dotfiles:
+install these to run these dotfiles:
 + bspwm
 + feh
 + kitty
