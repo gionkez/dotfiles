@@ -48,11 +48,15 @@ super + {e, t, q}
 super + alt + {c, f, t, s, d}
 	{code, firefox, flatpak run org.telegram.desktop, spotify, flatpak run com.discordapp.Discord}
 
+# screenshots
+alt + F11
+    flameshot gui
+
 # rofi
 super + {space, w}
 	{rofi -show drun, rofi -show window}
-alt + {F4, F12}
-	{sh /home/gnkz/.config/rofi/powermenu.sh, sh /home/gnkz/.config/rofi/wallpaper.sh}
+alt + {F4, F5, F12}
+	{sh /home/gnkz/.config/rofi/powermenu.sh, sh /home/gnkz/.config/rofi/wifi.sh, sh /home/gnkz/.config/rofi/wallpaper.sh}
 
 # brightness
 XF86MonBrightnessDown
