@@ -32,7 +32,9 @@ here's a list of software i'm customizing, it's a work in progress so not all bo
         + [ ] wired
         + [ ] wireless
     + [ ] battery
-    + [x] audio
+    + audio
+        + [x] volume
+        + [ ] mic
 + [x] rofi
     + [x] run
     + [x] window
