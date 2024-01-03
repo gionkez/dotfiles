@@ -1,48 +1,60 @@
 # simple linux dotfiles (_wip_)
 
-these are my dotfiles that i use on linux. they are based on a basic style, this is due to two factors:
-1. i like a minimal look;
-1. i really can't do more complicated things.
+these are my dotfiles that i use on linux. they are based on a minimal style.
+
+## todos
+
++ add a [color palette](https://github.com/dellarosciagiorgio/dotfiles/blob/main/apps/colorpalette), at least two themes
++ replace nautilus with nemo
++ change gtk theme
++ vscode keybindings.json and settings.json
++ use local vscode persoal themes (.vsix) instead of leaning on vscode marketplace
++ add imgs to this readme when finished
 
 ## requirements
 
-install these to run these dotfiles:
-+ bspwm
-+ feh
-+ kitty
-+ neofetch
-+ nitrogen
-+ playerctl
-+ polybar
-+ rofi
-+ slock
-+ sxhkd
+install these to make everything work:
++ [bspwm](https://github.com/baskerville/bspwm)
++ [feh](https://feh.finalrewind.org/)
++ [kitty](https://sw.kovidgoyal.net/kitty/)
++ [neofetch](https://github.com/dylanaraps/neofetch)
++ [nitrogen](https://wiki.archlinux.org/title/Nitrogen)
++ [playerctl](https://github.com/altdesktop/playerctl)
++ [polybar](https://github.com/polybar/polybar)
++ [rofi](https://github.com/davatorium/rofi)
++ [slock](https://wiki.archlinux.org/title/Slock)
++ [sxhkd](https://github.com/baskerville/sxhkd)
++ [~~nemo~~](https://github.com/linuxmint/nemo)
 
 ## programs
 
-here's a list of software i'm customizing, it's a work in progress so not all boxes are checked:
-+ [x] bspwm
-+ [x] kitty
-+ [x] neofetch
-+ [x] polybar
-    + [x] workspaces
-    + [x] date
-    + [x] time
+here's a list of software i customized:
++ bspwm
++ kitty
++ neofetch
++ polybar
+    + workspaces
+    + date
+    + time
     + connection
-        + [ ] wired
-        + [ ] wireless
-    + [ ] battery
-    + audio
-        + [x] volume
-        + [ ] mic
-+ [x] rofi
-    + [x] run
-    + [x] window
-    + [x] filebrowser
+        + wired
+        + wireless
+    + battery
+    + volume
++ rofi
+    + run
+    + window
+    + filebrowser
     + custom scripts
-        + [x] power menu
-        + [x] wallpapers
-        + [x] wifi
-+ [x] sxhkd
+        + power menu
+        + wallpapers
+        + wifi
++ sxhkd
 
-i also added some wallpapers that i made.
+> NB: information of network and battery can be obtained with these two commands:
+> 1. ip link
+> 2. ls -1 /sys/class/power_supply/
+
+---
+
+i also added some [wallpapers](https://github.com/dellarosciagiorgio/dotfiles/blob/main/wallpapers/README.md) that i made.
