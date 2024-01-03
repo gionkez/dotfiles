@@ -2,6 +2,7 @@
 ![skeleton](desktop/skeleton.png)
 ![david](desktop/david.png)
 ![maddalena](desktop/maddalena.png)
+![p38](desktop/p38.png)
 ![void](desktop/void.png)
 
 # 3:2
