@@ -10,8 +10,8 @@ nitrogen --restore &
 
 bspc monitor -d I II III IV
 
-bspc config normal_border_color "#000000"
-bspc config focused_border_color "#ffffff"
+bspc config normal_border_color "#fef"
+bspc config focused_border_color "#a8a"
 bspc config remove_unplugged_monitors true
 bspc config remove_disabled_monitors true
 bspc config border_radius 0
@@ -33,4 +33,4 @@ bspc rule -a code state=tiled
 bspc rule -a nautilus state=floating center=true
 bspc rule -a nomacs state=tiled
 bspc rule -a mpv state=tiled
-feh --bg-fill  &
+feh --bg-fill &
