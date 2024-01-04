@@ -27,11 +27,11 @@ install these to make everything work:
 ## programs
 
 here's a list of software i customized:
-+ bspwm, a tiling window manager based on binary trees
++ bspwm
     + ![bspwm](./imgs/bspwm.png)
-+ kitty, a terminal emulator
++ kitty
     + ![kitty](./imgs/kitty.png)
-+ polybar, a status bar
++ polybar
 + rofi
     + run, window, filebrowser
         + ![rofi-run](./imgs/rofi-run.png)
