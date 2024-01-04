@@ -30,7 +30,7 @@ bspc rule -a org.telegram.desktop state=tiled
 bspc rule -a com.discordapp.Discord state=tiled
 bspc rule -a io.github.Soundux state=tiled
 bspc rule -a code state=tiled
-bspc rule -a nautilus state=floating center=true
+bspc rule -a nemo state=floating center=true
 bspc rule -a nomacs state=tiled
 bspc rule -a mpv state=tiled
 feh --bg-fill &
