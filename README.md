@@ -1,4 +1,4 @@
-# simple linux dotfiles (_wip_)
+# simple linux dotfiles (~_wip_)
 
 these are my dotfiles that i use on linux. they are based on a minimal style.
 
@@ -27,26 +27,21 @@ install these to make everything work:
 ## programs
 
 here's a list of software i customized:
-+ bspwm
-+ kitty
-+ neofetch
-+ polybar
-    + workspaces
-    + date
-    + time
-    + connection
-        + wired
-        + wireless
-    + battery
-    + volume
++ bspwm, a tiling window manager based on binary trees
+    + ![bspwm](./imgs/bspwm.png)
++ kitty, a terminal emulator
+    + ![kitty](./imgs/kitty.png)
++ polybar, a status bar
 + rofi
-    + run
-    + window
-    + filebrowser
+    + run, window, filebrowser
+        + ![rofi-run](./imgs/rofi-run.png)
     + custom scripts
         + power menu
-        + wallpapers
+            + ![rofi-powermenu](rofi-powermenu.png)
         + wifi
+            + ![rofi-powermenu](rofi-wifi.png)
+        + wallpapers
+            + ![rofi-powermenu](rofi-wallpapers.png)
 + sxhkd
 
 > NB: information of network and battery can be obtained with these two commands:
