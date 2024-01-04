@@ -27,20 +27,20 @@ install these to make everything work:
 
 here's a list of software i customized:
 + bspwm
-    + ![bspwm](./imgs/bspwm.png)
+    <div align="center">![bspwm](./imgs/bspwm.png)</div>
 + kitty
-    + ![kitty](./imgs/kitty.png)
+    <div align="center">![kitty](./imgs/kitty.png)</div>
 + polybar
 + rofi
     + run, window, filebrowser
-        + ![rofi-run](./imgs/rofi-run.png)
+        <div align="center">![rofi-run](./imgs/rofi-run.png)</div>
     + custom scripts
         + power menu
-            ![rofi-powermenu](./imgs/rofi-powermenu.png)
+            <div align="center">![rofi-powermenu](./imgs/rofi-powermenu.png)</div>
         + wifi
-            + ![rofi-wifi](./imgs/rofi-wifi.png)
+                <div align="center">![rofi-wifi](./imgs/rofi-wifi.png)</div>
         + wallpapers
-            + ![rofi-wallpapers](./imgs/rofi-wallpapers.png)
+                <div align="center">![rofi-wallpapers](./imgs/rofi-wallpapers.png)</div>
 + sxhkd
 
 > NB: information of network and battery can be obtained with these two commands:
