@@ -6,7 +6,6 @@ these are my dotfiles that i use on linux. they are based on a minimal style.
 
 + vscode keybindings.json and settings.json
 + use local vscode persoal themes (.vsix) instead of leaning on vscode marketplace
-+ add imgs to this readme when finished
 
 ## requirements
 
