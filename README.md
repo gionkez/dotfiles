@@ -27,16 +27,16 @@ install these to make everything work:
 
 here's a list of software i customized:
 + bspwm
-    <div align="center">![bspwm](./imgs/bspwm.png)</div>
+        <div align="center">![bspwm](./imgs/bspwm.png)</div>
 + kitty
-    <div align="center">![kitty](./imgs/kitty.png)</div>
+        <div align="center">![kitty](./imgs/kitty.png)</div>
 + polybar
 + rofi
     + run, window, filebrowser
-        <div align="center">![rofi-run](./imgs/rofi-run.png)</div>
+            <div align="center">![rofi-run](./imgs/rofi-run.png)</div>
     + custom scripts
         + power menu
-            <div align="center">![rofi-powermenu](./imgs/rofi-powermenu.png)</div>
+                <div align="center">![rofi-powermenu](./imgs/rofi-powermenu.png)</div>
         + wifi
                 <div align="center">![rofi-wifi](./imgs/rofi-wifi.png)</div>
         + wallpapers
