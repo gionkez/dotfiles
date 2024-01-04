@@ -22,7 +22,7 @@ install these to make everything work:
 + [slock](https://wiki.archlinux.org/title/Slock)
 + [sxhkd](https://github.com/baskerville/sxhkd)
 + [nemo](https://github.com/linuxmint/nemo)
-+ [jet brains mono nerd font](https://www.nerdfonts.com/font-downloads)
++ [jetbrains mono nerd font](https://www.nerdfonts.com/font-downloads)
 
 ## programs
 
