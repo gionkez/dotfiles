@@ -35,7 +35,8 @@ here's a list of software i customized:
     + run, window, filebrowser
         + ![rofi-run](./imgs/rofi-run.png)
     + custom scripts
-        + power menu ![rofi-powermenu](./imgs/rofi-powermenu.png)
+        + power menu
+            ![rofi-powermenu](./imgs/rofi-powermenu.png)
         + wifi
             + ![rofi-wifi](./imgs/rofi-wifi.png)
         + wallpapers
