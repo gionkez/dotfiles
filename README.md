@@ -37,11 +37,11 @@ here's a list of software i customized:
         + ![rofi-run](./imgs/rofi-run.png)
     + custom scripts
         + power menu
-            + ![rofi-powermenu](rofi-powermenu.png)
+            + ![rofi-powermenu](./imgs/rofi-powermenu.png)
         + wifi
-            + ![rofi-powermenu](rofi-wifi.png)
+            + ![rofi-wifi](./imgs/rofi-wifi.png)
         + wallpapers
-            + ![rofi-powermenu](rofi-wallpapers.png)
+            + ![rofi-wallpapers](./imgs/rofi-wallpapers.png)
 + sxhkd
 
 > NB: information of network and battery can be obtained with these two commands:
