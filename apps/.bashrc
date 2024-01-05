@@ -1,8 +1,7 @@
 alias cls='clear'
-alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo flatpak update -y; sudo apt autoremove -y'
-alias laptop='nmcli radio wifi on; amixer set Master mute;'
 alias in='sudo apt install'
 alias un='sudo apt purge'
+alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo flatpak update -y; sudo apt autoremove -y'
 
 case $- in
     *i*) ;;

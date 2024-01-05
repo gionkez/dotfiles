@@ -11,9 +11,9 @@ height = 2%
 radius = 0
 border-size = 0
 border-top = 3px
-padding-right = 2%
-padding-left = 0%
-module-margin = 1%
+padding-right = 10px
+padding-left = 10px
+module-margin = 7px
 bottom = false
 underline-size = 0
 wm-restack = bspwm
@@ -40,8 +40,8 @@ label = %date%
 
 [module/battery]
 type = internal/battery
-battery = BAT0
-adapter = AC
+adapter = ?
+battery = ?
 full-at = 95
 format-charging = <ramp-capacity> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
@@ -82,7 +82,7 @@ label-connected = 󰈀
 
 [module/wireless-network]
 type = internal/network
-interface = wlxc025e9255c57
+interface = ?
 interface-type = wireless
 interval = 3.0
 format-connected = <ramp-signal>
