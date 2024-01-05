@@ -27,7 +27,7 @@ pin-workspaces = true
 inline-mode = true
 enable-click = true
 enable-scroll = true
-reverse-scroll = true
+reverse-scroll = false
 label-separator = " |"
 label-focused-foreground = #a8a
 
