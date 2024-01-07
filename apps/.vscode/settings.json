@@ -210,7 +210,7 @@
     "window.menuBarVisibility": "hidden",
     "window.nativeFullScreen": true,
     "window.openFilesInNewWindow": "off",
-    "window.openFoldersInNewWindow": "on",
+    "window.openFoldersInNewWindow": "off",
     "window.restoreWindows": "all",
     "window.titleBarStyle": "native",
     "workbench.activityBar.iconClickBehavior": "toggle",
