@@ -1,4 +1,59 @@
 [
+    // view and manage
+    {
+        "key": "f1",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.refactor",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.files.openFile"
+    },
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "workbench.action.files.openFolder"
+    },
+    {
+        "key":"cmd+escape",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+t",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+k ctrl+k",
+        "command": "workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll",
+        "when": "textInputFocus"
+    },
     // movement
     {
         "key": "up",
@@ -31,11 +86,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+f",
-        "command": "-settings.action.search",
-        "when": "inSettingsEditor"
-    },
-    {
         "key": "ctrl+alt+q",
         "command": "workbench.action.previousEditor"
     },
@@ -53,6 +103,52 @@
         "command": "cursorEndSelect",
         "when": "textInputFocus"
     },
+    {
+        "key": "ctrl+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus && !editorReadOnly"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "cursorWordPartLeft",
+        "when": "textInputFocus && !editorReadOnly"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "cursorWordPartLeftSelect",
+        "when": "textInputFocus && !editorReadOnly"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus && !editorReadOnly"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {   
+        "key": "ctrl+delete",
+        "command": "deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    // search
+    {
+        "key": "ctrl+f",
+        "command": "settings.action.search",
+        "when": "inSettingsEditor"
+    },
+    {
+        "key": "alt+right",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "findWidgetVisible"
+    },
+    {
+        "key": "alt+left",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "findWidgetVisible"
+    },
     // edit
     {
         "key": "shift+alt+up",
@@ -69,22 +165,63 @@
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
-
-    //LaTeX
+    // md
+    {
+        "key": "ctrl+k ctrl+v",
+        "command": "markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    // LaTeX
+    {
+        "key": "ctrl+enter",
+        "command": "-latex-workshop.build",
+        "when": "editorTextFocus && !isMac"
+    },
+    {
+        "key": "ctrl+k ctrl+v",
+        "command": "-latex-workshop.view",
+        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "-latex-workshop.clean",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+    },
+    // LaTeX L
+    {
+        "key": "ctrl+l alt+m",
+        "command": "-latex-workshop.toggleMathPreviewPanel",
+        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
+    },
+    {
+        "key": "ctrl+l ctrl+e",
+        "command": "-latex-workshop.shortcut.emph",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+    },
+    {
+        "key": "ctrl+l ctrl+b",
+        "command": "-latex-workshop.shortcut.textbf",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
+    },
+    // LaTeX M
+    {
+        "key": "ctrl+m ctrl+b",
+        "command": "-latex-workshop.shortcut.mathbb",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+    },
+    {
+        "key": "ctrl+m ctrl+f",
+        "command": "-latex-workshop.shortcut.mathbf",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+    },
+    {
+        "key": "ctrl+m ctrl+b",
+        "command": "latex-workshop.shortcut.mathbb",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
+    },
 ]
 /* 
 
-    {
-        "key": "shift+alt+h",
-        "command": "-references-view.showCallHierarchy",
-        "when": "editorHasCallHierarchyProvider"
-    },
-
-    {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
     {
         "key": "ctrl+r",
         "command": "-workbench.action.reloadWindow",
@@ -114,16 +251,6 @@
         "key": "ctrl+l",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "expandLineSelection",
-        "when": "textInputFocus && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+l",
-        "command": "-expandLineSelection",
-        "when": "textInputFocus && editorLangId =~ /latex|rsweave|jlweave/"
     },
     {
         "key": "shift+alt+right",
@@ -305,21 +432,6 @@
         "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+k ctrl+r",
-        "command": "-git.revertSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+k ctrl+alt+s",
-        "command": "-git.stageSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
-        "key": "ctrl+k ctrl+n",
-        "command": "-git.unstageSelectedRanges",
-        "when": "isInDiffEditor"
-    },
-    {
         "key": "ctrl+alt+-",
         "command": "-workbench.action.navigateBack"
     },
@@ -419,14 +531,6 @@
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
     },
     {
-        "key": "ctrl+shift+o",
-        "command": "-workbench.action.gotoSymbol"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "-workbench.action.showAllSymbols"
-    },
-    {
         "key": "escape",
         "command": "-workbench.action.hideInterfaceOverview",
         "when": "interfaceOverviewVisible"
@@ -441,252 +545,12 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+l alt+b",
-        "command": "-latex-workshop.build",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "-latex-workshop.build",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+c",
-        "command": "-latex-workshop.clean",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+alt+[BracketRight]",
-        "command": "-latex-workshop.demote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+alt+9",
-        "command": "-latex-workshop.demote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+alt+[BracketLeft]",
-        "command": "-latex-workshop.promote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+alt+8",
-        "command": "-latex-workshop.promote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+w",
-        "command": "-latex-workshop.surround",
-        "when": "editorHasSelection && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+j",
-        "command": "-latex-workshop.synctex",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && editorLangId == 'latex'"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "-latex-workshop.synctex",
-        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
-    },
-    {
-        "key": "ctrl+l alt+v",
-        "command": "-latex-workshop.view",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+m",
-        "command": "-latex-workshop.toggleMathPreviewPanel",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+k ctrl+v",
-        "command": "markdown.showPreviewToSide",
-        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+shift+n",
         "command": "workbench.action.newWindow"
     },
     {
         "key": "ctrl+shift+n",
         "command": "-workbench.action.newWindow"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-notebook.centerActiveCell",
-        "when": "notebookEditorFocused"
-    },
-    {
-        "key": "y",
-        "command": "-notebook.cell.changeToCode",
-        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markup'"
-    },
-    {
-        "key": "m",
-        "command": "-notebook.cell.changeToMarkdown",
-        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
-    },
-    {
-        "key": "alt+delete",
-        "command": "-notebook.cell.clearOutputs",
-        "when": "notebookCellEditable && notebookCellHasOutputs && notebookEditable && notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+c",
-        "command": "-notebook.cell.collapseCellInput",
-        "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
-    },
-    {
-        "key": "ctrl+k t",
-        "command": "-notebook.cell.collapseCellOutput",
-        "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "-notebook.cell.copyDown",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-notebook.cell.copyUp",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "delete",
-        "command": "-notebook.cell.delete",
-        "when": "notebookEditable && notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "enter",
-        "command": "-notebook.cell.edit",
-        "when": "notebookCellListFocused && notebookEditable && !inputFocus"
-    },
-    {
-        "key": "meta+enter",
-        "command": "-notebook.cell.execute",
-        "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
-    },
-    {
-        "key": "shift+enter",
-        "command": "-notebook.cell.executeAndSelectBelow",
-        "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
-    },
-    {
-        "key": "alt+enter",
-        "command": "-notebook.cell.executeAndInsertBelow",
-        "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
-    },
-    {
-        "key": "ctrl+k t",
-        "command": "-notebook.cell.expandCellOutput",
-        "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
-    },
-    {
-        "key": "ctrl+down",
-        "command": "-notebook.cell.focusInOutput",
-        "when": "notebookCellHasOutputs && notebookEditorFocused"
-    },
-    {
-        "key": "down",
-        "command": "-notebook.focusNextEditor",
-        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-notebook.format",
-        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
-    },
-    {
-        "key": "alt+meta+j",
-        "command": "-notebook.cell.joinBelow",
-        "when": "notebookEditorFocused"
-    },
-    {
-        "key": "ctrl+down",
-        "command": "-notebook.focusNextEditor",
-        "when": "notebookEditorFocused && notebookOutputFocused"
-    },
-    {
-        "key": "ctrl+up",
-        "command": "-notebook.cell.focusOutOutput",
-        "when": "notebookEditorFocused"
-    },
-    {
-        "key": "up",
-        "command": "-notebook.focusPreviousEditor",
-        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
-    },
-    {
-        "key": "left",
-        "command": "-notebook.fold",
-        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-notebook.cell.insertCodeCellBelow",
-        "when": "notebookCellListFocused && !inputFocus"
-    },
-    {
-        "key": "ctrl+shift+enter",
-        "command": "-notebook.cell.insertCodeCellAbove",
-        "when": "notebookCellListFocused && !inputFocus"
-    },
-    {
-        "key": "ctrl+home",
-        "command": "-notebook.focusTop",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "shift+alt+meta+j",
-        "command": "-notebook.cell.joinAbove",
-        "when": "notebookEditorFocused"
-    },
-    {
-        "key": "ctrl+end",
-        "command": "-notebook.focusBottom",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+c",
-        "command": "-notebook.cell.expandCellInput",
-        "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
-    },
-    {
-        "key": "alt+down",
-        "command": "-notebook.cell.moveDown",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "alt+up",
-        "command": "-notebook.cell.moveUp",
-        "when": "notebookEditorFocused && !inputFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+shift+\\",
-        "command": "-notebook.cell.split",
-        "when": "notebookCellEditable && notebookEditable && notebookEditorFocused"
-    },
-    {
-        "key": "escape",
-        "command": "-notebook.cell.quitEdit",
-        "when": "inputFocus && notebookEditorFocused && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible"
-    },
-    {
-        "key": "right",
-        "command": "-notebook.unfold",
-        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
-    },
-    {
-        "key": "meta+enter",
-        "command": "-notebook.cell.quitEdit",
-        "when": "inputFocus && notebookEditorFocused && notebookCellType == 'markup'"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "-notebook.cell.pasteAbove",
-        "when": "notebookEditorFocused && !inputFocus"
     },
     {
         "key": "escape",
@@ -703,11 +567,7 @@
         "command": "-editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
-    {
-        "key": "ctrl+alt+c",
-        "command": "-latex-workshop.clean",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
+
     {
         "key": "ctrl+shift+c",
         "command": "-workbench.action.terminal.openNativeConsole",
@@ -749,11 +609,6 @@
     {
         "key": "ctrl+shift+z",
         "command": "-redo"
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "-editor.action.refactor",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     },
     {
         "key": "shift+alt+f12",
@@ -1426,81 +1281,8 @@
         "when": "editorTextFocus && selectionAnchorSet"
     },
     {
-        "key": "alt+[Period]",
-        "command": "-auto-close-tag.closeTag"
-    },
-    {
         "key": "ctrl+shift+w",
         "command": "-workbench.action.closeWindow"
-    },
-    {
-        "key": "ctrl+l alt+b",
-        "command": "-latex-workshop.build",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "-latex-workshop.build",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+c",
-        "command": "-latex-workshop.clean",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+j",
-        "command": "-latex-workshop.synctex",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !virtualWorkspace && editorLangId == 'latex'"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "-latex-workshop.synctex",
-        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId == 'latex'"
-    },
-    {
-        "key": "ctrl+alt+m",
-        "command": "-latex-workshop.toggleMathPreviewPanel",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+v",
-        "command": "-latex-workshop.view",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+k ctrl+v",
-        "command": "latex-workshop.view",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+v",
-        "command": "-latex-workshop.view",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "pagedown",
-        "command": "-notebook.cell.cursorPageDown",
-        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
-    },
-    {
-        "key": "shift+pagedown",
-        "command": "-notebook.cell.cursorPageDownSelect",
-        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
-    },
-    {
-        "key": "pageup",
-        "command": "-notebook.cell.cursorPageUp",
-        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
-    },
-    {
-        "key": "shift+pageup",
-        "command": "-notebook.cell.cursorPageUpSelect",
-        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
-    },
-    {
-        "key": "ctrl+k ctrl+t",
-        "command": "-workbench.action.selectTheme"
     },
     {
         "key": "left",
@@ -1677,11 +1459,6 @@
     },
     {
         "key": "f12",
-        "command": "-editor.gotoNextSymbolFromResult",
-        "when": "hasSymbols"
-    },
-    {
-        "key": "f12",
         "command": "-goToNextReference",
         "when": "inReferenceSearchEditor || referenceSearchVisible"
     },
@@ -1699,61 +1476,6 @@
         "key": "shift+f4",
         "command": "-goToPreviousReference",
         "when": "inReferenceSearchEditor || referenceSearchVisible"
-    },
-    {
-        "key": "ctrl+l ctrl+e",
-        "command": "-latex-workshop.shortcut.emph",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+enter",
-        "command": "-latex-workshop.shortcut.item",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+m ctrl+shift+b",
-        "command": "-latex-workshop.shortcut.mathbb",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+m ctrl+f",
-        "command": "latex-workshop.shortcut.mathbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+m ctrl+b",
-        "command": "-latex-workshop.shortcut.mathbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+b",
-        "command": "latex-workshop.shortcut.textbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+b",
-        "command": "-latex-workshop.shortcut.textbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+-",
-        "command": "-latex-workshop.shortcut.textsubscript",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+6",
-        "command": "-latex-workshop.shortcut.textsuperscript",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "escape",
-        "command": "-notebook.hideFind",
-        "when": "notebookEditorFocused && notebookFindWidgetFocused"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "-notebook.find",
-        "when": "notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.notebook'"
     },
     {
         "key": "shift+tab",
@@ -1786,11 +1508,6 @@
         "when": "folderMatchFocus && replaceActive && searchViewletVisible"
     },
     {
-        "key": "f2",
-        "command": "-remote.tunnel.label",
-        "when": "tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
-    },
-    {
         "key": "ctrl+c",
         "command": "-remote.tunnel.copyAddressInline",
         "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
@@ -1819,26 +1536,6 @@
         "when": "inSearchEditor || searchViewletFocus"
     },
     {
-        "key": "ctrl+shift+2",
-        "command": "-workbench.action.terminal.sendSequence",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+delete",
-        "command": "-workbench.action.terminal.sendSequence",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+6",
-        "command": "-workbench.action.terminal.sendSequence",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+7",
-        "command": "-workbench.action.terminal.sendSequence",
-        "when": "terminalFocus"
-    },
-    {
         "key": "ctrl+shift+5",
         "command": "-workbench.action.terminal.splitInstance",
         "when": "terminalProcessSupported && terminalTabsFocus"
@@ -1863,10 +1560,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+k ctrl+t",
-        "command": "workbench.action.terminal.new"
-    },
-    {
         "key": "ctrl+i",
         "command": "-toggleSuggestionDetails",
         "when": "suggestWidgetVisible && textInputFocus"
@@ -1880,138 +1573,9 @@
         "command": "-workbench.action.openSettings"
     },
     {
-        "key": "ctrl+alt+oem_4",
-        "command": "-latex-workshop.promote-sectioning",
-        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l oem_4",
-        "command": "-latex-workshop.promote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+oem_6",
-        "command": "-latex-workshop.demote-sectioning",
-        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l oem_6",
-        "command": "-latex-workshop.demote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "latex-workshop.build",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "-latex-workshop.build",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+b",
-        "command": "-latex-workshop.build",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+c",
-        "command": "-latex-workshop.clean",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+v",
-        "command": "-latex-workshop.view",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+v",
-        "command": "-latex-workshop.view",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+m",
-        "command": "-latex-workshop.toggleMathPreviewPanel",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l alt+m",
-        "command": "-latex-workshop.toggleMathPreviewPanel",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+w",
-        "command": "-latex-workshop.surround",
-        "when": "editorHasSelection && editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+oem_4",
-        "command": "-latex-workshop.promote-sectioning",
-        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l oem_4",
-        "command": "-latex-workshop.promote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+alt+oem_6",
-        "command": "-latex-workshop.demote-sectioning",
-        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l oem_6",
-        "command": "-latex-workshop.demote-sectioning",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+m ctrl+b",
-        "command": "-latex-workshop.shortcut.mathbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+m ctrl+shift+b",
-        "command": "-latex-workshop.shortcut.mathbb",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+enter",
-        "command": "-latex-workshop.shortcut.item",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+oem_minus",
-        "command": "-latex-workshop.shortcut.textsubscript",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+l ctrl+6",
-        "command": "-latex-workshop.shortcut.textsuperscript",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|latex-expl3|rsweave|jlweave/"
-    },
-    {
-        "key": "ctrl+k ctrl+k",
-        "command": "workbench.action.selectTheme"
-    },
-    {
-        "key": "ctrl+l alt+b",
-        "command": "-latex-workshop.build",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    },
-    {
-        "key": "ctrl+alt+b",
-        "command": "-latex-workshop.build",
-        "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    },
-    {
         "key": "ctrl+k ctrl+k",
         "command": "-editor.action.defineKeybinding",
         "when": "resource == 'vscode-userdata:/home/gnkz/.config/Code/User/keybindings.json'"
-    },
-    {
-        "key": "shift+alt+d",
-        "command": "-editor.detectLanguage",
-        "when": "editorTextFocus && !notebookEditable"
     },
     {
         "key": "ctrl+k ctrl+alt+c",
@@ -2029,21 +1593,6 @@
         "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
     },
     {
-        "key": "ctrl+k ctrl+r",
-        "command": "-git.revertSelectedRanges",
-        "when": "isInDiffEditor && !operationInProgress"
-    },
-    {
-        "key": "ctrl+k ctrl+alt+s",
-        "command": "-git.stageSelectedRanges",
-        "when": "isInDiffEditor && !operationInProgress"
-    },
-    {
-        "key": "ctrl+k ctrl+n",
-        "command": "-git.unstageSelectedRanges",
-        "when": "isInDiffEditor && !operationInProgress"
-    },
-    {
         "key": "alt+f9",
         "command": "-editor.action.nextCommentThreadAction",
         "when": "editorFocus"
@@ -2053,33 +1602,5 @@
         "command": "-editor.action.previousCommentThreadAction",
         "when": "editorFocus"
     },
-    {
-        "key": "ctrl+l alt+c",
-        "command": "-latex-workshop.clean",
-        "when": "config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    },
-    {
-        "key": "ctrl+m ctrl+b",
-        "command": "-latex-workshop.shortcut.mathbb",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    },
-    {
-        "key": "ctrl+m ctrl+f",
-        "command": "-latex-workshop.shortcut.mathbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    },
-    {
-        "key": "ctrl+l ctrl+enter",
-        "command": "-latex-workshop.shortcut.item",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    },
-    {
-        "key": "ctrl+m ctrl+b",
-        "command": "latex-workshop.shortcut.mathbb"
-    },
-    {
-        "key": "ctrl+l ctrl+e",
-        "command": "-latex-workshop.shortcut.emph",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
-    }
+    
 ]*/
