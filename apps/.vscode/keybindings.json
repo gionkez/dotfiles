@@ -1,12 +1,28 @@
 [
+    // movement
+    {
+        "key": "up",
+        "command": "cursorUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "right",
+        "command": "cursorRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "left",
+        "command": "cursorLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "down",
+        "command": "cursorDown",
+        "when": "textInputFocus"
+    },
     {
         "key": "ctrl+alt+up",
         "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+up",
-        "command": "-editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
     {
@@ -15,43 +31,32 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+down",
-        "command": "-editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
+        "key": "ctrl+f",
+        "command": "-settings.action.search",
+        "when": "inSettingsEditor"
     },
     {
-        "key": "shift+alt+i",
-        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
-        "when": "editorTextFocus"
+        "key": "ctrl+alt+q",
+        "command": "workbench.action.previousEditor"
     },
     {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.nextEditor"
     },
     {
-        "key": "ctrl+f2",
-        "command": "-editor.action.changeAll",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "cmd+alt+ctrl+left",
+        "command": "cursorHomeSelect",
+        "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+up",
-        "command": "-editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
+        "key": "cmd+alt+ctrl+right",
+        "command": "cursorEndSelect",
+        "when": "textInputFocus"
     },
-    {
-        "key": "shift+alt+down",
-        "command": "-editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
+    // edit
     {
         "key": "shift+alt+up",
         "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -60,108 +65,21 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
     },
-    {
-        "key": "ctrl+t",
-        "command": "welcome.showNewFileEntries"
-    },
-    {
-        "key": "ctrl+alt+meta+n",
-        "command": "-welcome.showNewFileEntries"
-    },
-    {
-        "key": "f5",
-        "command": "-workbench.action.debug.continue",
-        "when": "debugState == 'stopped'"
-    },
-    {
-        "key": "shift+f5",
-        "command": "-workbench.action.debug.disconnect",
-        "when": "focusedSessionIsAttach && inDebugMode"
-    },
-    {
-        "key": "shift+f9",
-        "command": "-editor.debug.action.toggleInlineBreakpoint",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "f6",
-        "command": "-workbench.action.debug.pause",
-        "when": "debugState == 'running'"
-    },
-    {
-        "key": "ctrl+shift+f5",
-        "command": "-workbench.action.debug.restart",
-        "when": "inDebugMode"
-    },
-    {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.debug.action.showDebugHover",
-        "when": "editorTextFocus && inDebugMode"
-    },
-    {
-        "key": "f5",
-        "command": "-workbench.action.debug.start",
-        "when": "debuggersAvailable && debugState == 'inactive'"
-    },
-    {
-        "key": "f10",
-        "command": "-extension.node-debug.startWithStopOnEntry",
-        "when": "!inDebugMode && debugConfigurationType == 'node' || !inDebugMode && debugConfigurationType == 'pwa-extensionHost' || !inDebugMode && debugConfigurationType == 'pwa-node'"
-    },
-    {
-        "key": "f11",
-        "command": "-extension.node-debug.startWithStopOnEntry",
-        "when": "!inDebugMode && debugConfigurationType == 'node' || !inDebugMode && debugConfigurationType == 'pwa-extensionHost' || !inDebugMode && debugConfigurationType == 'pwa-node'"
-    },
-    {
-        "key": "ctrl+f5",
-        "command": "-workbench.action.debug.run",
-        "when": "debuggersAvailable && debugState != 'initializing'"
-    },
-    {
-        "key": "shift+f11",
-        "command": "-workbench.action.debug.stepOut",
-        "when": "debugState == 'stopped'"
-    },
-    {
-        "key": "f11",
-        "command": "-workbench.action.debug.stepInto",
-        "when": "debugState != 'inactive'"
-    },
-    {
-        "key": "f10",
-        "command": "-workbench.action.debug.stepOver",
-        "when": "debugState == 'stopped'"
-    },
-    {
-        "key": "shift+f5",
-        "command": "-workbench.action.debug.stop",
-        "when": "inDebugMode && !focusedSessionIsAttach"
-    },
-    {
-        "key": "f9",
-        "command": "-editor.debug.action.toggleBreakpoint",
-        "when": "debuggersAvailable && editorTextFocus"
-    },
-    {
-        "key": "alt+o",
-        "command": "-C_Cpp.SwitchHeaderSource",
-        "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
-    },
+
+    //LaTeX
+]
+/* 
+
     {
         "key": "shift+alt+h",
         "command": "-references-view.showCallHierarchy",
         "when": "editorHasCallHierarchyProvider"
     },
-    {
-        "key": "ctrl+d",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
+
     {
         "key": "ctrl+shift+k",
         "command": "-editor.action.deleteLines",
@@ -236,11 +154,6 @@
         "key": "ctrl+shift+f3",
         "command": "-editor.action.previousSelectionMatchFindAction",
         "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+[IntlBackslash]",
-        "command": "-breadcrumbs.focusAndSelect",
-        "when": "breadcrumbsPossible"
     },
     {
         "key": "ctrl+u",
@@ -588,9 +501,9 @@
         "when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
     },
     {
-        "key": "ctrl+k ctrl+d",
-        "command": "-editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus"
+        "key": "ctrl+k ctrl+v",
+        "command": "markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
     },
     {
         "key": "ctrl+shift+n",
@@ -599,6 +512,181 @@
     {
         "key": "ctrl+shift+n",
         "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "y",
+        "command": "-notebook.cell.changeToCode",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markup'"
+    },
+    {
+        "key": "m",
+        "command": "-notebook.cell.changeToMarkdown",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
+    },
+    {
+        "key": "alt+delete",
+        "command": "-notebook.cell.clearOutputs",
+        "when": "notebookCellEditable && notebookCellHasOutputs && notebookEditable && notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-notebook.cell.collapseCellInput",
+        "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
+    },
+    {
+        "key": "ctrl+k t",
+        "command": "-notebook.cell.collapseCellOutput",
+        "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-notebook.cell.copyDown",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-notebook.cell.copyUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "delete",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditable && notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-notebook.cell.edit",
+        "when": "notebookCellListFocused && notebookEditable && !inputFocus"
+    },
+    {
+        "key": "meta+enter",
+        "command": "-notebook.cell.execute",
+        "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-notebook.cell.executeAndInsertBelow",
+        "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "ctrl+k t",
+        "command": "-notebook.cell.expandCellOutput",
+        "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-notebook.cell.focusInOutput",
+        "when": "notebookCellHasOutputs && notebookEditorFocused"
+    },
+    {
+        "key": "down",
+        "command": "-notebook.focusNextEditor",
+        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-notebook.format",
+        "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "alt+meta+j",
+        "command": "-notebook.cell.joinBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "-notebook.focusNextEditor",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "-notebook.cell.focusOutOutput",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "up",
+        "command": "-notebook.focusPreviousEditor",
+        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
+    },
+    {
+        "key": "left",
+        "command": "-notebook.fold",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-notebook.cell.insertCodeCellBelow",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-notebook.cell.insertCodeCellAbove",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "-notebook.focusTop",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+alt+meta+j",
+        "command": "-notebook.cell.joinAbove",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+end",
+        "command": "-notebook.focusBottom",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-notebook.cell.expandCellInput",
+        "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+    },
+    {
+        "key": "alt+down",
+        "command": "-notebook.cell.moveDown",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "-notebook.cell.moveUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+\\",
+        "command": "-notebook.cell.split",
+        "when": "notebookCellEditable && notebookEditable && notebookEditorFocused"
+    },
+    {
+        "key": "escape",
+        "command": "-notebook.cell.quitEdit",
+        "when": "inputFocus && notebookEditorFocused && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible"
+    },
+    {
+        "key": "right",
+        "command": "-notebook.unfold",
+        "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "meta+enter",
+        "command": "-notebook.cell.quitEdit",
+        "when": "inputFocus && notebookEditorFocused && notebookCellType == 'markup'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-notebook.cell.pasteAbove",
+        "when": "notebookEditorFocused && !inputFocus"
     },
     {
         "key": "escape",
@@ -644,11 +732,7 @@
         "command": "-editor.action.peekImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
     },
-    {
-        "key": "ctrl+f",
-        "command": "-settings.action.search",
-        "when": "inSettingsEditor"
-    },
+
     {
         "key": "ctrl+k ctrl+s",
         "command": "workbench.action.openGlobalKeybindings"
@@ -1006,28 +1090,6 @@
         "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
     },
     {
-        "key": "ctrl+shift+[Comma] ctrl+a",
-        "command": "-testing.debugAll"
-    },
-    {
-        "key": "ctrl+shift+[Comma] ctrl+e",
-        "command": "-testing.debugFailTests"
-    },
-    {
-        "key": "ctrl+shift+[Comma] ctrl+l",
-        "command": "-testing.debugLastRun"
-    },
-    {
-        "key": "ctrl+shift+[Comma] ctrl+c",
-        "command": "-testing.debugAtCursor",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+[Comma] ctrl+f",
-        "command": "-testing.debugCurrentFile",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+f8",
         "command": "-testing.goToNextMessage",
         "when": "editorFocus && testing.isPeekVisible"
@@ -1303,11 +1365,6 @@
         "when": "!config.latex-workshop.bind.altKeymap.enabled"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "-workbench.view.debug",
-        "when": "viewContainer.workbench.view.debug.enabled"
-    },
-    {
         "key": "ctrl+shift+f",
         "command": "-workbench.view.search",
         "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
@@ -1325,11 +1382,6 @@
     {
         "key": "ctrl+k ctrl+\\",
         "command": "-workbench.action.splitEditorOrthogonal"
-    },
-    {
-        "key": "ctrl+shift+y",
-        "command": "-workbench.debug.action.toggleRepl",
-        "when": "workbench.panel.repl.view.active"
     },
     {
         "key": "ctrl+k ctrl+h",
@@ -1427,6 +1479,26 @@
         "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
     },
     {
+        "key": "pagedown",
+        "command": "-notebook.cell.cursorPageDown",
+        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
+    },
+    {
+        "key": "shift+pagedown",
+        "command": "-notebook.cell.cursorPageDownSelect",
+        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
+    },
+    {
+        "key": "pageup",
+        "command": "-notebook.cell.cursorPageUp",
+        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
+    },
+    {
+        "key": "shift+pageup",
+        "command": "-notebook.cell.cursorPageUpSelect",
+        "when": "editorTextFocus && inputFocus && notebookEditorFocused"
+    },
+    {
         "key": "ctrl+k ctrl+t",
         "command": "-workbench.action.selectTheme"
     },
@@ -1483,76 +1555,6 @@
         "key": "ctrl+shift+l",
         "command": "-addCursorsAtSearchResults",
         "when": "fileMatchOrMatchFocus && searchViewletVisible"
-    },
-    {
-        "key": "ctrl+shift+[Period]",
-        "command": "-breadcrumbs.focus",
-        "when": "breadcrumbsPossible"
-    },
-    {
-        "key": "ctrl+left",
-        "command": "-breadcrumbs.focusPrevious",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "left",
-        "command": "-breadcrumbs.focusPrevious",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "-breadcrumbs.focusNextWithPicker",
-        "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
-    },
-    {
-        "key": "right",
-        "command": "-breadcrumbs.focusNext",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "-breadcrumbs.focusNext",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "ctrl+left",
-        "command": "-breadcrumbs.focusPreviousWithPicker",
-        "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-breadcrumbs.revealFocused",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "space",
-        "command": "-breadcrumbs.revealFocused",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-breadcrumbs.revealFocusedFromTreeAside",
-        "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
-    },
-    {
-        "key": "escape",
-        "command": "-breadcrumbs.selectEditor",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "down",
-        "command": "-breadcrumbs.selectFocused",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "enter",
-        "command": "-breadcrumbs.selectFocused",
-        "when": "breadcrumbsActive && breadcrumbsVisible"
-    },
-    {
-        "key": "ctrl+shift+[IntlBackslash]",
-        "command": "-breadcrumbs.toggleToOn",
-        "when": "!config.breadcrumbs.enabled"
     },
     {
         "key": "enter",
@@ -1627,51 +1629,6 @@
     {
         "key": "ctrl+shift+end",
         "command": "cursorBottomSelect"
-    },
-    {
-        "key": "alt+enter",
-        "command": "-debug.openBreakpointToSide",
-        "when": "breakpointsFocused"
-    },
-    {
-        "key": "ctrl+f5",
-        "command": "-debug.openView",
-        "when": "!debuggersAvailable"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-debug.openBreakpointToSide",
-        "when": "breakpointsFocused"
-    },
-    {
-        "key": "f5",
-        "command": "-debug.openView",
-        "when": "!debuggersAvailable"
-    },
-    {
-        "key": "delete",
-        "command": "-debug.removeBreakpoint",
-        "when": "breakpointsFocused && !breakpointInputFocused"
-    },
-    {
-        "key": "f2",
-        "command": "-debug.renameWatchExpression",
-        "when": "watchExpressionsFocused"
-    },
-    {
-        "key": "delete",
-        "command": "-debug.removeWatchExpression",
-        "when": "watchExpressionsFocused && !expressionSelected"
-    },
-    {
-        "key": "f2",
-        "command": "-debug.setVariable",
-        "when": "variablesFocused"
-    },
-    {
-        "key": "space",
-        "command": "-debug.toggleBreakpoint",
-        "when": "breakpointsFocused && !inputFocus"
     },
     {
         "key": "shift+backspace",
@@ -1789,6 +1746,16 @@
         "when": "editorTextFocus && !editorReadonly && editorLangId =~ /latex|rsweave|jlweave/"
     },
     {
+        "key": "escape",
+        "command": "-notebook.hideFind",
+        "when": "notebookEditorFocused && notebookFindWidgetFocused"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-notebook.find",
+        "when": "notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
         "key": "shift+tab",
         "command": "-outdent",
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
@@ -1836,70 +1803,6 @@
     {
         "key": "ctrl+k r",
         "command": "-workbench.action.files.revealActiveFileInWindows"
-    },
-    {
-        "key": "ctrl+8",
-        "command": "-workbench.action.focusEighthEditorGroup"
-    },
-    {
-        "key": "ctrl+5",
-        "command": "-workbench.action.focusFifthEditorGroup"
-    },
-    {
-        "key": "ctrl+4",
-        "command": "-workbench.action.focusFourthEditorGroup"
-    },
-    {
-        "key": "ctrl+7",
-        "command": "-workbench.action.focusSeventhEditorGroup"
-    },
-    {
-        "key": "ctrl+2",
-        "command": "-workbench.action.focusSecondEditorGroup"
-    },
-    {
-        "key": "ctrl+6",
-        "command": "-workbench.action.focusSixthEditorGroup"
-    },
-    {
-        "key": "ctrl+3",
-        "command": "-workbench.action.focusThirdEditorGroup"
-    },
-    {
-        "key": "alt+1",
-        "command": "-workbench.action.openEditorAtIndex1"
-    },
-    {
-        "key": "alt+3",
-        "command": "-workbench.action.openEditorAtIndex3"
-    },
-    {
-        "key": "alt+5",
-        "command": "-workbench.action.openEditorAtIndex5"
-    },
-    {
-        "key": "alt+4",
-        "command": "-workbench.action.openEditorAtIndex4"
-    },
-    {
-        "key": "alt+2",
-        "command": "-workbench.action.openEditorAtIndex2"
-    },
-    {
-        "key": "alt+8",
-        "command": "-workbench.action.openEditorAtIndex8"
-    },
-    {
-        "key": "alt+9",
-        "command": "-workbench.action.openEditorAtIndex9"
-    },
-    {
-        "key": "alt+6",
-        "command": "-workbench.action.openEditorAtIndex6"
-    },
-    {
-        "key": "alt+7",
-        "command": "-workbench.action.openEditorAtIndex7"
     },
     {
         "key": "ctrl+alt+-",
@@ -2101,29 +2004,14 @@
         "when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
     },
     {
-        "key": "ctrl+pagedown",
-        "command": "-workbench.action.debug.nextConsole",
-        "when": "inDebugRepl"
-    },
-    {
-        "key": "ctrl+pageup",
-        "command": "-workbench.action.debug.prevConsole",
-        "when": "inDebugRepl"
-    },
-    {
-        "key": "f11",
-        "command": "-extension.node-debug.startWithStopOnEntry",
-        "when": "!inDebugMode && activeViewlet == 'workbench.view.debug' && debugConfigurationType == 'node' || !inDebugMode && activeViewlet == 'workbench.view.debug' && debugConfigurationType == 'pwa-extensionHost' || !inDebugMode && activeViewlet == 'workbench.view.debug' && debugConfigurationType == 'pwa-node'"
-    },
-    {
-        "key": "ctrl+f11",
-        "command": "-workbench.action.debug.stepIntoTarget",
-        "when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'"
-    },
-    {
         "key": "ctrl+k ctrl+k",
         "command": "-editor.action.defineKeybinding",
         "when": "resource == 'vscode-userdata:/home/gnkz/.config/Code/User/keybindings.json'"
+    },
+    {
+        "key": "shift+alt+d",
+        "command": "-editor.detectLanguage",
+        "when": "editorTextFocus && !notebookEditable"
     },
     {
         "key": "ctrl+k ctrl+alt+c",
@@ -2139,16 +2027,6 @@
         "key": "ctrl+o",
         "command": "-workbench.action.files.openFolderViaWorkspace",
         "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
-    },
-    {
-        "key": "ctrl+shift+[Period]",
-        "command": "-breadcrumbs.focus",
-        "when": "breadcrumbsPossible && breadcrumbsVisible"
-    },
-    {
-        "key": "ctrl+shift+[IntlBackslash]",
-        "command": "-breadcrumbs.focusAndSelect",
-        "when": "breadcrumbsPossible && breadcrumbsVisible"
     },
     {
         "key": "ctrl+k ctrl+r",
@@ -2204,4 +2082,4 @@
         "command": "-latex-workshop.shortcut.emph",
         "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
     }
-]
+]*/
