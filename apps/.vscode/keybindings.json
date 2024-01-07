@@ -726,19 +726,6 @@
         "when": "editorTextFocus && selectionAnchorSet"
     },
     {
-        "key": "ctrl+k ctrl+b",
-        "command": "-editor.action.setSelectionAnchor",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+f1",
-        "command": "-editor.action.showAccessibilityHelp"
-    },
-    {
-        "key": "shift+alt+f1",
-        "command": "-editor.action.showAccessibilityHelp"
-    },
-    {
         "key": "ctrl+shift+p",
         "command": "-workbench.action.showCommands"
     },
@@ -805,11 +792,6 @@
         "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
     },
     {
-        "key": "ctrl+down",
-        "command": "-workbench.action.terminal.navigationModeFocusNext",
-        "when": "accessibilityModeEnabled && terminalA11yTreeFocus && terminalProcessSupported || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
-    },
-    {
         "key": "ctrl+pagedown",
         "command": "-workbench.action.terminal.focusNext",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
@@ -823,11 +805,6 @@
         "key": "alt+right",
         "command": "-workbench.action.terminal.focusNextPane",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+up",
-        "command": "-workbench.action.terminal.navigationModeFocusPrevious",
-        "when": "accessibilityModeEnabled && terminalA11yTreeFocus && terminalProcessSupported || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
     },
     {
         "key": "ctrl+pageup",
@@ -1320,11 +1297,6 @@
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "escape",
-        "command": "-workbench.action.terminal.navigationModeExit",
-        "when": "accessibilityModeEnabled && terminalA11yTreeFocus && terminalProcessSupported"
-    },
-    {
         "key": "ctrl+shift+[Comma] r",
         "command": "-testing.refreshTests",
         "when": "testing.canRefresh"
@@ -1362,11 +1334,6 @@
         "key": "shift+escape",
         "command": "-cancelSelection",
         "when": "editorHasSelection && textInputFocus"
-    },
-    {
-        "key": "shift+escape",
-        "command": "-closeAccessibilityHelp",
-        "when": "accessibilityHelpWidgetVisible && editorFocus"
     },
     {
         "key": "shift+escape",
@@ -1601,6 +1568,5 @@
         "key": "shift+alt+f9",
         "command": "-editor.action.previousCommentThreadAction",
         "when": "editorFocus"
-    },
-    
+    }
 ]*/
