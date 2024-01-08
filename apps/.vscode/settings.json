@@ -176,6 +176,7 @@
     "hediet.vscode-drawio.resizeImages": false,
     "html.autoClosingTags": true,
     "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.view.pdf.zoom": "page-width",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "markdown.preview.fontFamily": "Cascadia Code",
@@ -264,5 +265,6 @@
     "workbench.statusBar.visible": true,
     "workbench.tree.expandMode": "singleClick",
     "workbench.tree.indent": 20,
-    "workbench.tree.renderIndentGuides": "onHover"
+    "workbench.tree.renderIndentGuides": "onHover",
+    "vsintellicode.modify.editor.suggestSelection": "disabled"
 }
