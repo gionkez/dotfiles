@@ -61,41 +61,41 @@
     {
         "key": "shift+alt+up",
         "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus"
     },
     {
         "key": "shift+alt+down",
         "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+d",
         "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
+        "when": "textInputFocus"
     },
     {
-        "key": "ctrl+k ctrl+v",
+        "key": "ctrl+m ctrl+v",
         "command": "markdown.showPreviewToSide",
-        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+enter",
         "command": "latex-workshop.build",
-        "when": "editorTextFocus && !isMac"
+        "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+k ctrl+v",
+        "key": "ctrl+l ctrl+v",
         "command": "latex-workshop.view",
         "when": "editorTextFocus"
     },
     {
         "key": "ctrl+m ctrl+b",
         "command": "latex-workshop.shortcut.mathbb",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+m ctrl+f",
         "command": "latex-workshop.shortcut.mathbf",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^latex$|^latex-expl3$|^rsweave$|^jlweave$|^pweave$/"
+        "when": "editorTextFocus"
     }
 ]
