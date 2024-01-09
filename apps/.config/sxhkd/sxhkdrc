@@ -42,7 +42,7 @@ super + alt + r
 
 # basic software
 super + {e, t, q}
-    {nemo, kitty, kitty qalc}
+    {nautilus, kitty, kitty qalc}
 
 # personal software
 super + alt + {c, f, t, s, d}
