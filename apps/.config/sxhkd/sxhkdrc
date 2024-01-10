@@ -11,11 +11,11 @@ super + {Left, Down, Up, Right}
     bspc node --focus {west, south, north, east}
 
 # change the window state
-super + shift + {t, p, f, m}
+ctrl + shift + {t, p, f, m}
 	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
 
 # move a floating window
-super + shift + {Left, Down, Up, Right}
+super + alt + {Left, Down, Up, Right}
 	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
 
 # expand a window
