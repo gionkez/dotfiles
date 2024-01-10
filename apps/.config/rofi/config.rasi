@@ -1,5 +1,5 @@
 configuration {
-    font: "JetBrains Mono 11";
+    font: "JetBrains Mono Nerd Font Mono 11";
     display-drun: ">_ ";
     display-window: "? ";
     display-filebrowser: "-> ";
