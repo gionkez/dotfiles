@@ -2,15 +2,13 @@ configuration {
     font: "JetBrains Mono Nerd Font Mono 11";
     display-drun: ">_ ";
     display-window: "? ";
-    display-filebrowser: "-> ";
-    icon-theme: "ePapirus";
     show-icons: false;
     cycle: false;
     sort: false;
     case-sensitive: false;
     window-format: "{c}";
     disable-history: true;
-    modi: [window, run, drun, filebrowser];
+    modi: [window, run, drun];
 }
 
 @theme "themes/dark.rasi"
