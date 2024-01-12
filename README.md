@@ -19,7 +19,6 @@ install these to make everything work:
 + [rofi](https://github.com/davatorium/rofi)
 + [slock](https://wiki.archlinux.org/title/Slock)
 + [sxhkd](https://github.com/baskerville/sxhkd)
-+ [jetbrains mono nerd font](https://www.nerdfonts.com/font-downloads)
 
 ## programs
 
