@@ -4,7 +4,7 @@ these are my dotfiles that i use on linux. they are based on a minimal style.
 
 ## todos
 
-+ use local vscode persoal themes (.vsix) instead of leaning on vscode marketplace
++ use local vscode personal themes (.vsix) instead of leaning on vscode marketplace
 
 ## requirements
 
