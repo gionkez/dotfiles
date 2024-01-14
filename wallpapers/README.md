@@ -1,4 +1,4 @@
-![balaklava](./imgs/balaklava.png)
+![balaclava](./imgs/balaclava.png)
 ![car](./imgs/car.jpg)
 ![cervino](./imgs/cervino.jpg)
 ![david](./imgs/david.png)
