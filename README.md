@@ -15,6 +15,7 @@ install these to make everything work:
 + [neofetch](https://github.com/dylanaraps/neofetch)
 + [nitrogen](https://wiki.archlinux.org/title/Nitrogen)
 + [playerctl](https://github.com/altdesktop/playerctl)
++ [brightnessctl](https://github.com/Hummer12007/brightnessctl)
 + [polybar](https://github.com/polybar/polybar)
 + [rofi](https://github.com/davatorium/rofi)
 + [slock](https://wiki.archlinux.org/title/Slock)
