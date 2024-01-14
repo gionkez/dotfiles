@@ -23,27 +23,13 @@ install these to make everything work:
 ## programs
 
 here's a list of software i customized:
-+ bspwm
++ bspwm, polybar
         <div align="center">![bspwm](./imgs/bspwm.png)</div>
 + kitty
         <div align="center">![kitty](./imgs/kitty.png)</div>
-+ polybar
-+ rofi
-    + run, window, filebrowser
-            <div align="center">![rofi-run](./imgs/rofi-run.png)</div>
-    + custom scripts
-        + power menu
-                <div align="center">![rofi-powermenu](./imgs/rofi-powermenu.png)</div>
-        + wifi
-                <div align="center">![rofi-wifi](./imgs/rofi-wifi.png)</div>
-        + wallpapers
-                <div align="center">![rofi-wallpapers](./imgs/rofi-wallpapers.png)</div>
-+ sxhkd
++ rofi: run, window, powermenu, wifi, wallpapers
+            <div align="center">![rofi](./imgs/rofi.png)</div>
 
 > NB: information of network and battery can be obtained with these two commands:
 > 1. ip link
 > 2. ls -1 /sys/class/power_supply/
-
----
-
-i also added some [wallpapers](https://github.com/dellarosciagiorgio/dotfiles/blob/main/wallpapers/README.md) that i made.
