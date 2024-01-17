@@ -8,7 +8,6 @@ xset r rate 200 50
 # nmcli radio wifi on
 # amixer set Master mute
 xsetroot -cursor_name left_ptr
-nitrogen --restore &
 
 bspc monitor -d I II III IV
 
