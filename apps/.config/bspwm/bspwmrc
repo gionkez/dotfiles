@@ -5,8 +5,7 @@ sleep 0.5
 pgrep -x sxhkd > /dev/null || sxhkd &
 xset led 3
 xset r rate 200 50
-# nmcli radio wifi on
-# amixer set Master mute
+nmcli radio wifi on
 xsetroot -cursor_name left_ptr
 
 bspc monitor -d I II III IV
@@ -16,19 +15,14 @@ bspc config focused_border_color "#ffeeff"
 bspc config remove_unplugged_monitors true
 bspc config remove_disabled_monitors true
 bspc config border_radius 0
-bspc config border_width 2
-bspc config window_gap 5
+bspc config border_width 3
+bspc config window_gap 3
 bspc config padding 0
-bspc config split_ratio 0.5
+bspc config split_ratio 0.6
 bspc config focus_follows_pointer false
 bspc config borderless_monocle false
 bspc config single_monocle false
 bspc config gapless_monocle false
 bspc config automatic_scheme spiral
 
-bspc rule -a firefox state=tiled
-bspc rule -a code state=tiled
-bspc rule -a nemo state=floating center=true
-bspc rule -a nomacs state=tiled
-bspc rule -a mpv state=tiled
-feh --bg-fill void.png &
+feh --bg-fill dinner.jpg &
