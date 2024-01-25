@@ -25,4 +25,4 @@ bspc config single_monocle false
 bspc config gapless_monocle false
 bspc config automatic_scheme spiral
 
-feh --bg-fill dinner.jpg &
+feh --bg-fill david.jpg &
