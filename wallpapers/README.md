@@ -9,4 +9,5 @@
 ![matterhorn](./imgs/matterhorn.png)
 ![motherland](./imgs/motherland.png)
 ![skeleton](./imgs/skeleton.png)
+![stanczyk](./imgs/stanczyk.png)
 ![void](./imgs/void.png)
