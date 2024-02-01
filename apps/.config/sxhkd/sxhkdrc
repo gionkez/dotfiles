@@ -36,7 +36,7 @@ super + {ctrl, alt} + {1, 2, 3, 4}
 
 # rotate
 super + shift + {Right, Left}
-    bspc node @/ -C {forward, backward}
+    bspc node @/ -C {backward, forward}
 super + shift + r
 	bspc node @/ --rotate {90, -90}
 
