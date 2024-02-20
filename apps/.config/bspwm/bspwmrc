@@ -23,6 +23,6 @@ bspc config focus_follows_pointer false
 bspc config borderless_monocle false
 bspc config single_monocle false
 bspc config gapless_monocle false
-bspc config automatic_scheme spiral
+bspc config automatic_scheme alternate
 
 feh --bg-fill david.jpg &
