@@ -25,4 +25,4 @@ bspc config single_monocle false
 bspc config gapless_monocle false
 bspc config automatic_scheme alternate
 
-feh --bg-fill david.jpg &
+feh --bg-fill void.png &
