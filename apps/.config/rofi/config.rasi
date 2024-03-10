@@ -1,5 +1,5 @@
 configuration {
-    font: "JetBrains Mono Nerd Font Mono 11";
+    font: "Caskaydia Cove Nerd Font 11";
     display-drun: ">_ ";
     display-window: "? ";
     show-icons: false;
