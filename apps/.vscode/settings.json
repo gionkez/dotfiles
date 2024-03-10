@@ -69,7 +69,7 @@
     "editor.hover.sticky": true,
     "editor.indentSize": "tabSize",
     "editor.inlayHints.enabled": "on",
-    "editor.inlayHints.fontFamily": "Cascadia Cove",
+    "editor.inlayHints.fontFamily": "Cascadia Code",
     "editor.inlayHints.fontSize": 0,
     "editor.inlayHints.padding": false,
     "editor.inlineCompletionsAccessibilityVerbose": false,

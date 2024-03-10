@@ -1,5 +1,5 @@
 [fonts]
-font-0 = Cascadia Code:style=Regular:size=10
+font-0 = Caskaydia Cove Nerd Font:style=Regular:size=10
 
 [bar/simplebar]
 background = #000
@@ -34,8 +34,8 @@ label-focused-foreground = #a8a
 [module/date]
 type = internal/date
 interval = 30
-date = "%H:%M"
-date-alt = "%a  %H:%M  %d/%m/%Y"
+date = "%I:%M %p"
+date-alt = "%A %I:%M %p %d/%m/%Y"
 label = %date%
 
 [module/battery]
