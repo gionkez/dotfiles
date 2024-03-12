@@ -11,9 +11,9 @@ height = 2%
 radius = 0
 border-size = 0
 border-top = 3px
-padding-right = 10px
-padding-left = 10px
-module-margin = 7px
+padding-right = 1px
+padding-left = 1px
+module-margin = 1px
 bottom = false
 underline-size = 0
 wm-restack = bspwm
@@ -74,7 +74,7 @@ ramp-volume-2 = 󰕾
 
 [module/wired-network]
 type = internal/network
-interface = eth1/eno1
+interface = ?
 interface-type = wired
 interval = 3.0
 format-connected = <label-connected>

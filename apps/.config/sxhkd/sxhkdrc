@@ -11,7 +11,7 @@ super + {Left, Down, Up, Right}
     bspc node --focus {west, south, north, east}
 
 # change the window state
-ctrl + shift + {t, p, f, m}
+ctrl + alt + shift + {t, p, f, m}
 	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
 
 # move a floating window
@@ -46,7 +46,7 @@ super + {e, t, q}
 
 # personal software
 super + alt + {c, f, t, s, d}
-	{code, firefox, flatpak run org.telegram.desktop, spotify, flatpak run com.discordapp.Discord}
+	{code, firefox, telegram-desktop, spotify, discord}
 
 # screenshots
 alt + F11
