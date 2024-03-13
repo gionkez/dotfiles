@@ -45,8 +45,8 @@ super + {e, t, q}
     {nautilus, kitty, kitty qalc}
 
 # personal software
-super + alt + {c, f, t, s, d}
-	{code, firefox, telegram-desktop, spotify, discord}
+super + alt + {c, f, s, d}
+	{code, firefox, spotify, discord}
 
 # screenshots
 alt + F11
