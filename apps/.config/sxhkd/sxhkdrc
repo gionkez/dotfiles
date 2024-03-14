@@ -60,11 +60,13 @@ alt + {F4, F5, F12}
 
 # brightness
 XF86MonBrightnessDown
-	brightnessctl -e -d intel_backlight set '5%-'
+	sudo brightnessctl -e -d intel_backlight set '5%-'
 XF86MonBrightnessUp
-	brightnessctl -e -d intel_backlight set '+5%'
+	sudo brightnessctl -e -d intel_backlight set '+5%'
 
 # audio
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
 XF86AudioRaiseVolume
     pactl set-sink-volume 0 +5%
 XF86AudioLowerVolume
