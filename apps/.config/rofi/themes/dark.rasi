@@ -1,5 +1,5 @@
 * {
-    background-color: #303030;
+    background-color: #333333;
     text-color: #000000;
     highlight: underline bold #000000;
     margin: 2;

@@ -41,8 +41,8 @@ super + shift + r
 	bspc node @/ --rotate {90, -90}
 
 # basic software
-super + {e, t, q}
-    {nautilus, kitty, kitty qalc}
+super + {i, e, t, q}
+    {gnome-control-center, nautilus, kitty, kitty qalc}
 
 # personal software
 super + alt + {c, f, s, d}
@@ -60,9 +60,9 @@ alt + {F4, F5, F12}
 
 # brightness
 XF86MonBrightnessDown
-	sudo brightnessctl -e -d intel_backlight set '5%-'
+	sudo brightnessctl -e -d intel_backlight set 5%-
 XF86MonBrightnessUp
-	sudo brightnessctl -e -d intel_backlight set '+5%'
+	sudo brightnessctl -e -d intel_backlight set +5%
 
 # audio
 XF86AudioMute
