@@ -2,6 +2,15 @@ alias cls='clear'
 alias in='sudo apt install'
 alias un='sudo apt purge'
 alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo flatpak update -y; sudo apt autoremove -y'
+alias gi='git init'
+alias gs='git status --short'
+alias ga='git add --all'
+alias gb='git branch -M main'
+alias gc='git commit -m "c"'
+alias gpush='git push origin'
+alias gpull='git pull origin'
+alias bnp='sudo brightnessctl -e -d intel_backlight set +5%'
+alias bnm='sudo brightnessctl -e -d intel_backlight set 5%-'
 
 case $- in
     *i*) ;;
