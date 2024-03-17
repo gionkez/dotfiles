@@ -31,5 +31,5 @@ here's a list of software i customized:
             <div align="center">![rofi](./imgs/rofi.png)</div>
 
 > NB: information of network and battery can be obtained with these two commands:
-> 1. ip link
+> 1. ip a
 > 2. ls -1 /sys/class/power_supply/
