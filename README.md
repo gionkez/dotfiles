@@ -9,16 +9,16 @@ these are my dotfiles that i use on linux. they are based on a minimal style.
 ## requirements
 
 install these to make everything work:
-+ [bspwm](https://github.com/baskerville/bspwm)
-+ [feh](https://feh.finalrewind.org/)
-+ [kitty](https://sw.kovidgoyal.net/kitty/)
-+ [neofetch](https://github.com/dylanaraps/neofetch)
-+ [playerctl](https://github.com/altdesktop/playerctl)
-+ [brightnessctl](https://github.com/Hummer12007/brightnessctl)
-+ [polybar](https://github.com/polybar/polybar)
-+ [rofi](https://github.com/davatorium/rofi)
-+ [slock](https://wiki.archlinux.org/title/Slock)
-+ [sxhkd](https://github.com/baskerville/sxhkd)
++ bspwm
++ sxhkd
++ feh
++ kitty
++ rofi
++ polybar
++ neofetch
++ slock
++ playerctl
++ brightnessctl
 
 ## programs
 
