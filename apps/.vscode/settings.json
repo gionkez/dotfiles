@@ -1,4 +1,51 @@
 {
+	"better-comments.tags": [
+		{
+    		"tag": "!",
+      		"color": "#BB1111",
+      		"strikethrough": false,
+      		"underline": true,
+      		"backgroundColor": "transparent",
+      		"bold": true,
+      		"italic": false
+    	},
+		{
+    		"tag": "?",
+    		"color": "#4444EE",
+    		"strikethrough": false,
+    		"underline": false,
+    		"backgroundColor": "transparent",
+    		"bold": false,
+    		"italic": true
+    	},
+    	{
+    		"tag": "todo",
+    		"color": "#44BB44",
+    		"strikethrough": false,
+    		"underline": false,
+    		"backgroundColor": "transparent",
+    		"bold": true,
+    		"italic": false
+    	},
+    	{
+    		"tag": "wip",
+    		"color": "#CCCC33",
+    		"strikethrough": false,
+    		"underline": false,
+    		"backgroundColor": "transparent",
+    		"bold": true,
+    		"italic": true
+    	},
+		{
+    		"tag": "fix",
+    		"color": "#DD3377",
+    		"strikethrough": false,
+    		"underline": false,
+    		"backgroundColor": "transparent",
+    		"bold": false,
+    		"italic": true
+    	}
+  	],
     "breadcrumbs.enabled": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
@@ -20,7 +67,7 @@
     "editor.columnSelection": false,
     "editor.comments.ignoreEmptyLines": true,
     "editor.comments.insertSpace": true,
-    "editor.copyWithSyntaxHighlighting": true,
+    "editor.copyWithSyntaxFHighlighting": true,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "explicit",
     "editor.cursorStyle": "underline",
@@ -69,7 +116,7 @@
     "editor.hover.sticky": true,
     "editor.indentSize": "tabSize",
     "editor.inlayHints.enabled": "on",
-    "editor.inlayHints.fontFamily": "Cascadia Code",
+    "editor.inlayHints.fontFamily": "Cascadia Cove",
     "editor.inlayHints.fontSize": 0,
     "editor.inlayHints.padding": false,
     "editor.inlineCompletionsAccessibilityVerbose": false,
@@ -81,7 +128,6 @@
     "editor.language.colorizedBracketPairs": null,
     "editor.largeFileOptimizations": true,
     "editor.letterSpacing": 0,
-    "editor.lightbulb.enabled": true,
     "editor.lineHeight": 0,
     "editor.lineNumbers": "on",
     "editor.linkedEditing": true,
@@ -173,7 +219,7 @@
     "files.simpleDialog.enable": false,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "hediet.vscode-drawio.resizeImages": false,
+    "hediet.vscode-drawio.resizeImages": null,
     "html.autoClosingTags": true,
     "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.view.pdf.zoom": "page-width",
@@ -186,7 +232,6 @@
     "markdown.validate.enabled": false,
     "security.workspace.trust.emptyWindow": true,
     "security.workspace.trust.enabled": true,
-    "security.workspace.trust.untrusteRdFiles": "open",
     "settingsSync.ignoredSettings": [],
     "settingsSync.keybindingsPerPlatform": true,
     "telemetry.telemetryLevel": "off",
@@ -194,7 +239,6 @@
     "terminal.integrated.confirmOnExit": "never",
     "terminal.integrated.confirmOnKill": "never",
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorSmoothCaretAnimation": "explicit",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontFamily": "Cascadia Code",
     "terminal.integrated.fontSize": 12,
@@ -206,8 +250,7 @@
     "window.confirmBeforeClose": "never",
     "window.density.editorTabHeight": "compact",
     "window.doubleClickIconToClose": false,
-    "window.menuBarVisibility": "hidden",
-    "window.nativeFullScreen": true,
+    "window.menuBarVisibility": "toggle",
     "window.openFilesInNewWindow": "off",
     "window.openFoldersInNewWindow": "off",
     "window.restoreWindows": "all",
@@ -245,7 +288,6 @@
     "workbench.layoutControl.type": "both",
     "workbench.list.defaultFindMode": "highlight",
     "workbench.list.fastScrollSensitivity": 5,
-    "workbench.list.mouseWheelScrollSensitivity": 1,
     "workbench.list.openMode": "singleClick",
     "workbench.list.smoothScrolling": true,
     "workbench.panel.defaultLocation": "bottom",
@@ -260,9 +302,10 @@
     "workbench.settings.settingsSearchTocBehavior": "filter",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.statusBar.visible": true,
     "workbench.tree.expandMode": "singleClick",
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "onHover",
-    "vsintellicode.modify.editor.suggestSelection": "disabled"
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    }
 }
