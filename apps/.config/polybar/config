@@ -18,8 +18,7 @@ bottom = false
 underline-size = 0
 wm-restack = bspwm
 modules-left = bspwm
-modules-center = date
-modules-right = pulseaudio battery wireless-network wired-network
+modules-right = date pulseaudio battery wireless-network wired-network
 
 [module/bspwm]
 type = internal/bspwm
@@ -28,7 +27,7 @@ inline-mode = true
 enable-click = true
 enable-scroll = true
 reverse-scroll = false
-label-separator = " |"
+label-separator = " "
 label-focused-foreground = #aa88aa
 
 [module/date]
