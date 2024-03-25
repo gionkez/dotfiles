@@ -18,7 +18,8 @@ bottom = false
 underline-size = 0
 wm-restack = bspwm
 modules-left = bspwm
-modules-right = date pulseaudio battery wireless-network wired-network
+modules-center = date
+modules-right = pulseaudio battery wireless-network wired-network
 
 [module/bspwm]
 type = internal/bspwm
