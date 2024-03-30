@@ -9,7 +9,8 @@ nmcli radio wifi on
 xsetroot -cursor_name left_ptr
 numlockx
 
-bspc monitor -d I II III IV
+bspc monitor ${env:MONITOR:} -d I II III IV
+bspc monitor ${env:MONITOR:} -d V VI VII VIII
 
 bspc config normal_border_color "#aa88aa"
 bspc config focused_border_color "#ffeeff"

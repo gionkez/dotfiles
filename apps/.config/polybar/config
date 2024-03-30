@@ -1,12 +1,34 @@
 [fonts]
 font-0 = Caskaydia Cove Nerd Font:style=Regular:size=10
 
-[bar/simplebar]
+[bar/monitor1]
+monitor = ${env:MONITOR:}
 background = #000000
 foreground = #ffeeff
 inherit = fonts
 fixed-center = true
 width = 100%
+height = 2%
+radius = 0
+border-size = 0
+border-top = 3px
+padding-right = 1px
+padding-left = 1px
+module-margin = 1px
+bottom = false
+underline-size = 0
+wm-restack = bspwm
+modules-left = bspwm
+modules-center = date
+modules-right = pulseaudio battery wireless-network wired-network
+
+[bar/monitor2]
+monitor = ${env:MONITOR:}
+background = #000000
+foreground = #ffeeff
+inherit = fonts
+fixed-center = true
+width = 110%
 height = 2%
 radius = 0
 border-size = 0
