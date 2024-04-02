@@ -3,10 +3,5 @@
 pkill polybar
 polybar-msg cmd quit
 
-if type "xrandr"; then
-    for m in $(xrandr --query | grep " connected" | cut -d" " -f1);>
-        MONITOR=$m polybar --reload monitor1 &
-    done
-else
-    polybar --reload monitor2 &
-fi
+echo tee -a /tmp/polybar1.log /tmp/polybar2.log
+polybar bar1 2>&1 | tee -a /tmp/polybar1.log & disown
