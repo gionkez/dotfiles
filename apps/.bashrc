@@ -11,7 +11,7 @@ alias gpush='git push origin'
 alias gpull='git pull origin'
 alias bnp='sudo brightnessctl -e -d intel_backlight set +5%'
 alias bnm='sudo brightnessctl -e -d intel_backlight set 5%-'
-alias meteo='weather() { curl wttr.in/"$1"?format=%c%t ;}; weather'
+alias meteo='weather() { curl wttr.in/"$1"?format="%l:+%t+%c\n" ;}; weather'
 
 case $- in
     *i*) ;;
