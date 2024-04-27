@@ -34,5 +34,6 @@ here's a list of software i customized:
 > information of network and battery can be obtained with these two commands:
 > 1. ip a
 > 2. ls -1 /sys/class/power_supply/
+
 > gnome settings breaks after installing bspwm, to restore:
 > + dconf reset -f /org/gnome/control-center/
