@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="$HOME/Pictures/Wallpapers/"
+dir="$HOME/Documents/dotfiles/wallpapers/imgs"
 cd $dir
 wallpaper=$(ls $dir | rofi -dmenu -p "wp")
 if [[ $wallpaper == "q" || $wallpaper == "" ]]; then
