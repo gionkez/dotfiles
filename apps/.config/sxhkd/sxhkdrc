@@ -45,8 +45,8 @@ super + {i, e, t, q}
     {gnome-control-center, nautilus, kitty, kitty qalc}
 
 # personal software
-super + alt + {c, f, s, d}
-	{code, firefox, spotify, discord}
+super + alt + {c, f, s, t, d}
+	{code, firefox, spotify, telegram-destkop, discord}
 
 # screenshots
 alt + F11
