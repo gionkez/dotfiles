@@ -1,7 +1,7 @@
 alias cls='clear'
 alias in='sudo apt install'
 alias un='sudo apt purge'
-alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo flatpak update -y; sudo apt autoremove -y'
+alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo apt autoremove -y'
 alias gi='git init'
 alias gs='git status --short'
 alias ga='git add --all'
