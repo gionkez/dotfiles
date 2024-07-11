@@ -1,38 +1,23 @@
 # simple linux dotfiles (~_wip_)
 
-these are my dotfiles that i use on linux. they are based on a minimal style.
+dotfiles based on a minimal styleguide.
 
-## todos
+> [!IMPORTANT]
+> The following softwares are required:
+> + bspwm
+> + feh
+> + sxhkd
+> + kitty
+> + neofetch
+> + polybar
+> + rofi
+> + slock
 
-+ use local vscode personal themes (.vsix) instead of leaning on vscode marketplace
+> [!TIP]
+> + obaint information about your network: `ip a`
+> + obaint information about your battery: `ls -1 /sys/class/power_supply/`
+> + gnome settings usually breaks after installing bspwm, to restore: `dconf reset -f /org/gnome/control-center/`
 
-## requirements
+## LICENSE
 
-install these to make everything work:
-+ bspwm
-+ sxhkd
-+ feh
-+ kitty
-+ rofi
-+ polybar
-+ neofetch
-+ slock
-+ playerctl
-+ brightnessctl
-
-## programs
-
-here's a list of software i customized:
-+ bspwm, polybar
-        <div align="center">![bspwm](./imgs/bspwm.png)</div>
-+ kitty
-        <div align="center">![kitty](./imgs/kitty.png)</div>
-+ rofi: run, window, powermenu, wifi, wallpapers
-            <div align="center">![rofi](./imgs/rofi.png)</div>
-
-> information of network and battery can be obtained with these two commands:
-> 1. ip a
-> 2. ls -1 /sys/class/power_supply/
-
-> gnome settings usually breaks after installing bspwm, to restore:
-> + dconf reset -f /org/gnome/control-center/
+my dotfiles are under [MIT LICENSE](./LICENSE).
