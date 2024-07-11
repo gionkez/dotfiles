@@ -1,6 +1,6 @@
 # simple linux dotfiles (~_wip_)
 
-dotfiles based on a minimal styleguide.
+dotfiles based on a minimal style guide.
 
 > [!IMPORTANT]
 > The following softwares are required:
