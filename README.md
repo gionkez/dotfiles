@@ -14,8 +14,7 @@ dotfiles based on a minimal styleguide.
 > + slock
 
 > [!TIP]
-> + obaint information about your network: `ip a`
-> + obaint information about your battery: `ls -1 /sys/class/power_supply/`
+> + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
 > + gnome settings usually breaks after installing bspwm, to restore: `dconf reset -f /org/gnome/control-center/`
 
 ## LICENSE
