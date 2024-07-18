@@ -3,7 +3,7 @@
 dotfiles based on a minimal style guide.
 
 > [!IMPORTANT]
-> The following softwares are required:
+> the following softwares are required:
 > + bspwm
 > + feh
 > + sxhkd
@@ -19,4 +19,4 @@ dotfiles based on a minimal style guide.
 
 ## LICENSE
 
-my dotfiles are under [MIT LICENSE](./LICENSE).
+my dotfiles are under [mit license](./LICENSE).
