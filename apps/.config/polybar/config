@@ -34,8 +34,8 @@ label-focused-foreground = #aa88aa
 [module/date]
 type = internal/date
 interval = 30
-date = "%I:%M %p"
-date-alt = "%A %I:%M %p %d/%m/%Y"
+date = "%A %I:%M %p %d/%m/%Y"
+date-alt = "%I:%M %p"
 label = %date%
 
 [module/battery]
