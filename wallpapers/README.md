@@ -1,5 +1,4 @@
 ![aracne](./imgs/aracne.png)
-![balaclava](./imgs/balaclava.png)
 ![bang](./imgs/bang.png)
 ![canyon](./imgs/canyon.png)
 ![car](./imgs/car.png)
