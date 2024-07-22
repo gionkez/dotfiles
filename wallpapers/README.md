@@ -2,7 +2,6 @@
 ![bang](./imgs/bang.png)
 ![canyon](./imgs/canyon.png)
 ![car](./imgs/car.png)
-![cazzoGuardi](./imgs/cazzoGuardi.png)
 ![cervino](./imgs/cervino.png)
 ![creepyForest](./imgs/creepyForest.png)
 ![david](./imgs/david.png)
