@@ -97,5 +97,15 @@
         "key": "ctrl+m ctrl+f",
         "command": "latex-workshop.shortcut.mathbf",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
     }
 ]

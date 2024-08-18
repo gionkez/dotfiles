@@ -67,7 +67,7 @@
     "editor.columnSelection": false,
     "editor.comments.ignoreEmptyLines": true,
     "editor.comments.insertSpace": true,
-    "editor.copyWithSyntaxFHighlighting": true,
+    "editor.copyWithSyntaxFHighlighting": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "explicit",
     "editor.cursorStyle": "underline",
@@ -116,7 +116,7 @@
     "editor.hover.sticky": true,
     "editor.indentSize": "tabSize",
     "editor.inlayHints.enabled": "on",
-    "editor.inlayHints.fontFamily": "Cascadia Cove",
+    "editor.inlayHints.fontFamily": "Cascadia Code",
     "editor.inlayHints.fontSize": 0,
     "editor.inlayHints.padding": false,
     "editor.inlineCompletionsAccessibilityVerbose": false,
@@ -222,6 +222,13 @@
     "hediet.vscode-drawio.resizeImages": null,
     "html.autoClosingTags": true,
     "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.view.pdf.color.light.backgroundColor": "#fcfcfc",
+    "latex-workshop.view.pdf.color.light.pageBorderColor": "#000000",
+    "latex-workshop.view.pdf.color.dark.backgroundColor": "#252525",
+    "latex-workshop.view.pdf.color.dark.pageBorderColor": "#222222",
+    "latex-workshop.view.pdf.color.dark.pageColorsBackground": "#222222",
+    "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#cccccc",
+    "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.view.pdf.zoom": "page-width",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
@@ -256,7 +263,6 @@
     "window.restoreWindows": "all",
     "window.titleBarStyle": "native",
     "workbench.activityBar.iconClickBehavior": "toggle",
-    "workbench.activityBar.location": "side",
     "workbench.colorTheme": "luxark",
     "workbench.editor.autoLockGroups": {
         "default": false,
@@ -292,8 +298,6 @@
     "workbench.list.smoothScrolling": true,
     "workbench.panel.defaultLocation": "bottom",
     "workbench.panel.opensMaximized": "preserve",
-    // "workbench.preferredLightColorTheme": "",
-    // "workbench.preferredDarkColorTheme": "",
     "workbench.productIconTheme": "feather-vscode",
     "workbench.reduceMotion": "on",
     "workbench.settings.editor": "json",
@@ -307,5 +311,6 @@
     "workbench.tree.renderIndentGuides": "onHover",
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook"
-    }
+    },
+    "workbench.externalBrowser": "firefox"
 }
