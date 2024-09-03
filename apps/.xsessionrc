@@ -2,3 +2,5 @@
 
 source ~/.fehbg
 exec bspwm
+
+# chmod +x .xsessionrc
