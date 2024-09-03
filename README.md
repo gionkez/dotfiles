@@ -1,4 +1,4 @@
-# simple linux dotfiles (_wip_)
+# simple linux dotfiles
 
 dotfiles based on a minimal style guide
 
