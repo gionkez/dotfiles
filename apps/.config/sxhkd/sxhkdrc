@@ -46,7 +46,7 @@ super + {i, e, t, q}
 
 # personal software
 super + alt + {c, f, s, t, d}
-	{code, firefox, spotify, telegram-destkop, discord}
+	{code, firefox, spotify, telegram-desktop, discord}
 
 # screenshots
 alt + F11

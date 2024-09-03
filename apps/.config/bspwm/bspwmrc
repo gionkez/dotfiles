@@ -23,3 +23,5 @@ bspc config focus_follows_pointer false
 bspc config automatic_scheme alternate
 
 feh --bg-fill void.png &
+
+# chmod +x .bspwmrc
