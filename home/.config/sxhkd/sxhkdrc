@@ -56,7 +56,7 @@ alt + F11
 super + {space, w}
 	{rofi -show drun, rofi -show window}
 alt + {F4, F5, F12}
-	{sh /home/gnkz/.config/rofi/powermenu.sh, sh /home/gnkz/.config/rofi/wifi.sh, sh /home/gnkz/.config/rofi/wallpaper.sh}
+	{sh /home/gnkz/.config/rofi/powermenu.sh, sh /home/gnkz/.config/rofi/bt.sh, sh /home/gnkz/.config/rofi/wallpaper.sh}
 
 # brightness
 XF86MonBrightnessDown
