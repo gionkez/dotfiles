@@ -8,12 +8,12 @@
         "command": "workbench.action.closeWindow"
     },
     {
-       "key": "ctrl+k ctrl+u",
+       "key": "ctrl+l ctrl+u",
        "command": "editor.action.transformToUppercase",
        "when": "editorTextFocus"
     },
     {
-       "key": "ctrl+k ctrl+l",
+       "key": "ctrl+l ctrl+l",
        "command": "editor.action.transformToLowercase",
        "when": "editorTextFocus"
     },
