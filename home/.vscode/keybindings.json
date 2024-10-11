@@ -8,6 +8,16 @@
         "command": "workbench.action.closeWindow"
     },
     {
+       "key": "ctrl+k ctrl+u",
+       "command": "editor.action.transformToUppercase",
+       "when": "editorTextFocus"
+    },
+    {
+       "key": "ctrl+k ctrl+l",
+       "command": "editor.action.transformToLowercase",
+       "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+shift+l",
         "command": "expandLineSelection",
         "when": "textInputFocus"
