@@ -1,4 +1,5 @@
 alias cls='clear'
+alias cdls='cd $1 && ls -a'
 alias in='sudo apt install -y'
 alias un='sudo apt purge -y'
 alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo apt autoremove -y'
