@@ -7,5 +7,5 @@ inputbar {
 }
 
 listview {
-    lines: 2;
+    lines: 4;
 }

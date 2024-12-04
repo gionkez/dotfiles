@@ -3,9 +3,13 @@
 chosen=$(printf "bluetooth connect\nbluetooth disconnect" | rofi -dmenu -i -theme-str '@import "bt.rasi"')
 
 case "$chosen" in
-	"bluetooth connect") (bluetoothctl agent KeyboardOnly; bluetoothctl default-agent; bluetoothctl power on; bluetoothctl connect $device)
+	"bluetooth connect mini") (bluetoothctl agent KeyboardOnly; bluetoothctl default-agent; bluetoothctl power on; bluetoothctl connect $device)
 	;;
-	"bluetooth disconnect") (bluetoothctl disconnect $device; bluetoothctl power off)
+	"bluetooth disconnect mini") (bluetoothctl disconnect $device; bluetoothctl power off)
+	;;
+	"bluetooth connect p20i") (bluetoothctl agent KeyboardOnly; bluetoothctl default-agent; bluetoothctl power on; bluetoothctl connect $device)
+	;;
+	"bluetooth disconnect p20i") (bluetoothctl disconnect $device; bluetoothctl power off)
 	;;
 	*) exit 1;;
 esac
