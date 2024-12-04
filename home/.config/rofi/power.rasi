@@ -3,7 +3,7 @@ window {
 }
 
 inputbar {
-    children: [];
+    enabled: false;
 }
 
 listview {
