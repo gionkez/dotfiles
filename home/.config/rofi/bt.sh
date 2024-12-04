@@ -1,6 +1,6 @@
 #! /bin/bash
 
-chosen=$(printf "bluetooth connect\nbluetooth disconnect" | rofi -dmenu -i -theme-str '@import "bt.rasi"')
+chosen=$(printf "bluetooth connect mini\nbluetooth disconnect mini\nbluetooth connect p20i\nbluetooth disconnect p20i" | rofi -dmenu -i -theme-str '@import "bt.rasi"')
 
 case "$chosen" in
 	"bluetooth connect mini") (bluetoothctl agent KeyboardOnly; bluetoothctl default-agent; bluetoothctl power on; bluetoothctl connect $device)
