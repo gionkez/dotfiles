@@ -1,0 +1,24 @@
+map m toggle_page_mode
+map r reload
+set adjust-open best-fit
+set default-bg '#333333'
+set font 'Cascadia Code 10'
+set highlight-color '#666600'
+set highlight-selected-color '#ffcc00'
+set highlight-transparency 0.5
+set incremental-search true
+set page-padding 10
+set page-per-row 2
+set recolor true
+set recolor-keephue true
+set render-loading false
+set scroll-page-aware true
+set scroll-step 100
+set selection-clipboard clipboard
+set show-recent 5
+set smooth-scroll true
+set statusbar-bg '#ffcc00'
+set statusbar-fg '#333333'
+set statusbar-home-tilde true
+set synctex true
+set zoom-center true
