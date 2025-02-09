@@ -1,6 +1,8 @@
 map <C-f> focus_inputbar '/'
 map m toggle_page_mode
 map r reload
+map <A-left> previous_result
+map <A-right> next_result
 set adjust-open 'best-fit'
 set default-bg '#333333'
 set font 'Cascadia Code 10'
@@ -23,5 +25,4 @@ set statusbar-basename false
 set statusbar-fg '#333333'
 set statusbar-home-tilde true
 set synctex true
-set window-title-home-tilde true
 set zoom-center true
