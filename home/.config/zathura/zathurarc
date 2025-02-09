@@ -15,6 +15,7 @@ set page-padding 10
 set pages-per-row 2
 set recolor true
 set recolor-keephue true
+set recolor-lightcolor '#111111'
 set render-loading false
 set scroll-page-aware true
 set scroll-step 100
