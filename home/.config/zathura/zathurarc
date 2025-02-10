@@ -1,8 +1,6 @@
 map <C-f> focus_inputbar '/'
 map m toggle_page_mode
 map r reload
-map <A-left> previous_result
-map <A-right> next_result
 set adjust-open 'best-fit'
 set default-bg '#333333'
 set font 'Cascadia Code 10'
