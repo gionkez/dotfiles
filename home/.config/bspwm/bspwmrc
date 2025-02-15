@@ -11,6 +11,27 @@ numlockx
 
 bspc monitor -d I II III IV
 
+# # xrandr -q | grep -w connected
+# MONITOR_1="HDMI-1"
+# MONITOR_2="HDMI-2"
+# STATUS_EXTERNAL_MONITOR=$(xrandr --query | grep $MONITOR_2)
+# if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
+#     xrandr --output $MONITOR_2 --off
+# else
+#     xrandr --output $MONITOR_1 --primary --mode 1920x1080 --output $MONITOR_2 --mode 1920x1080 --rotate normal --right-of $MONITOR_1
+# fi
+# if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
+# 	bspc monitor -d I II III IV
+# else
+# 	bspc monitor $MONITOR_1 -d I II III IV
+# 	bspc monitor $MONITOR_2 -d V VI VII VIII
+# fi
+# if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
+# 	$HOME/.config/polybar/launch1.sh
+# else
+# 	$HOME/.config/polybar/launch2.sh
+# fi
+
 bspc config normal_border_color "#aa88aa"
 bspc config focused_border_color "#ffeeff"
 bspc config remove_unplugged_monitors true
