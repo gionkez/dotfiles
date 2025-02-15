@@ -22,7 +22,7 @@ bspc config split_ratio 0.55
 bspc config focus_follows_pointer false
 bspc config automatic_scheme alternate
 
-bspc rule -a kitty state=floating
+bspc rule -a kitty state=floating rectangle=400x250+1490+800 #edit by monitor
 bspc rule -a Zathura state=tiled
 
 feh --bg-fill void.png &
