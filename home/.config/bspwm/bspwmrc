@@ -11,7 +11,7 @@ numlockx
 
 bspc monitor -d I II III IV
 
-# # xrandr -q | grep -w connected
+# # xrandr -q | grep -w connected # add to readme
 # MONITOR_1="HDMI-1"
 # MONITOR_2="HDMI-2"
 # STATUS_EXTERNAL_MONITOR=$(xrandr --query | grep $MONITOR_2)
