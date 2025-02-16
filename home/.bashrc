@@ -1,22 +1,3 @@
-alias cls='clear'
-alias ls='ls -C'
-alias in='sudo apt install -y'
-alias un='sudo apt purge -y'
-alias upd='sudo apt update -y; sudo apt full-upgrade -y; sudo apt autoremove -y'
-alias gi='git init'
-alias gs='git status --short'
-alias ga='git add --all'
-alias gb='git branch -M main'
-alias gc='git commit -m "c"'
-alias gpush='git push origin'
-alias gpull='git pull origin'
-alias gacp='git add --all && git commit -m "c" && git push origin'
-alias bnp='sudo brightnessctl -e -d intel_backlight set +5%'
-alias bnm='sudo brightnessctl -e -d intel_backlight set 5%-'
-alias meteo='weather() { curl wttr.in/"$1"?format="%l:+%t+%c\n" ;}; weather'
-alias openimg='kitty +kitten icat'
-alias py='python3 -B'
-
 case $- in
     *i*) ;;
       *) return;;
