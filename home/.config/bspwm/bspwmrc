@@ -47,5 +47,3 @@ bspc rule -a kitty state=floating rectangle=400x250+1490+800 #edit by monitor
 bspc rule -a Zathura state=tiled
 
 feh --bg-fill void.png &
-
-# chmod +x .bspwmrc
