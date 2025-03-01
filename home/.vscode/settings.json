@@ -10,13 +10,40 @@
       		"italic": false
     	},
 		{
-    		"tag": "?",
-    		"color": "#4444EE",
-    		"strikethrough": false,
-    		"underline": false,
-    		"backgroundColor": "transparent",
-    		"bold": false,
-    		"italic": true
+    		"tag": "¡",
+      		"color": "#BB1111",
+      		"strikethrough": false,
+      		"underline": true,
+      		"backgroundColor": "transparent",
+      		"bold": true,
+      		"italic": false
+    	},
+        {
+            "tag": "?",
+            "color": "#4444EE",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        },
+        {
+            "tag": "¿",
+            "color": "#4444EE",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        },
+        {
+    		"tag": "ok",
+      		"color": "#7C8487",
+      		"strikethrough": false,
+      		"underline": false,
+      		"backgroundColor": "transparent",
+      		"bold": true,
+      		"italic": false
     	},
     	{
     		"tag": "todo",
@@ -44,6 +71,15 @@
     		"backgroundColor": "transparent",
     		"bold": false,
     		"italic": true
+    	},
+		{
+    		"tag": "llm",
+    		"color": "#0080BF",
+    		"strikethrough": false,
+    		"underline": false,
+    		"backgroundColor": "transparent",
+    		"bold": false,
+    		"italic": false
     	}
   	],
     "breadcrumbs.enabled": false,
@@ -59,7 +95,7 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.codeLens": true,
-    "editor.codeLensFontFamily": "Cascadia Code",
+    "editor.codeLensFontFamily": "Cascadia Code NF",
     "editor.codeLensFontSize": 0,
     "editor.colorDecorators": true,
     "editor.colorDecoratorsActivatedOn": "clickAndHover",
@@ -67,7 +103,7 @@
     "editor.columnSelection": false,
     "editor.comments.ignoreEmptyLines": true,
     "editor.comments.insertSpace": true,
-    "editor.copyWithSyntaxFHighlighting": false,
+    "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "explicit",
     "editor.cursorStyle": "underline",
@@ -84,7 +120,7 @@
     "editor.foldingImportsByDefault": false,
     "editor.foldingMaximumRegions": 2000,
     "editor.foldingStrategy": "auto",
-    "editor.fontFamily": "Cascadia Code",
+    "editor.fontFamily": "Cascadia Code NF",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.fontVariations": true,
@@ -116,7 +152,7 @@
     "editor.hover.sticky": true,
     "editor.indentSize": "tabSize",
     "editor.inlayHints.enabled": "on",
-    "editor.inlayHints.fontFamily": "Cascadia Code",
+    "editor.inlayHints.fontFamily": "Cascadia Code NF",
     "editor.inlayHints.fontSize": 0,
     "editor.inlayHints.padding": false,
     "editor.inlineCompletionsAccessibilityVerbose": false,
@@ -182,7 +218,7 @@
     "editor.suggestFontSize": 0,
     "editor.suggestLineHeight": 0,
     "editor.suggestOnTriggerCharacters": true,
-    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggestSelection": "first",
     "editor.tabCompletion": "off",
     "editor.tabFocusMode": false,
     "editor.tabSize": 4,
@@ -232,22 +268,29 @@
     "latex-workshop.view.pdf.zoom": "page-width",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    "markdown.preview.fontFamily": "Cascadia Code",
+    "markdown.preview.fontFamily": "Cascadia Code NF",
     "markdown.preview.fontSize": 12,
     "markdown.preview.linkify": true,
-    "markdown.preview.scrollPreviewWithEditor": true,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.validate.enabled": false,
+    "markdown.marp.browser": "firefox",
+    "markdown.marp.themes": [
+        "https://rnd195.github.io/my-marp-themes/graph_paper.css",
+        "https://raw.githubusercontent.com/rainbowflesh/Rose-Pine-For-Marp/refs/heads/master/css/rose-pine.css"
+    ],
     "security.workspace.trust.emptyWindow": true,
     "security.workspace.trust.enabled": true,
     "settingsSync.ignoredSettings": [],
     "settingsSync.keybindingsPerPlatform": true,
+    "svelte.enable-ts-plugin": true,
     "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "integrated",
     "terminal.integrated.confirmOnExit": "never",
     "terminal.integrated.confirmOnKill": "never",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.fontFamily": "Cascadia Code",
+    "terminal.integrated.fontFamily": "Cascadia Code NF",
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.smoothScrolling": true,
@@ -263,7 +306,11 @@
     "window.restoreWindows": "all",
     "window.titleBarStyle": "native",
     "workbench.activityBar.iconClickBehavior": "toggle",
-    "workbench.colorTheme": "luxark",
+    "workbench.colorTheme": "Barlume",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook",
+        "*.gz": "default"
+    },
     "workbench.editor.autoLockGroups": {
         "default": false,
         "imagePreview.previewEditor": true,
@@ -290,6 +337,7 @@
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.untitled.labelFormat": "content",
     "workbench.editor.wrapTabs": false,
+    "workbench.externalBrowser": "firefox",
     "workbench.iconTheme": "bearded-icons",
     "workbench.layoutControl.type": "both",
     "workbench.list.defaultFindMode": "highlight",
@@ -309,8 +357,6 @@
     "workbench.tree.expandMode": "singleClick",
     "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "onHover",
-    "workbench.editorAssociations": {
-        "*.pdf": "latex-workshop-pdf-hook"
-    },
-    "workbench.externalBrowser": "firefox"
+    "git.openRepositoryInParentFolders": "always",
+    "diffEditor.maxComputationTime": 0
 }

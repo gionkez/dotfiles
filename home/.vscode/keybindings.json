@@ -117,5 +117,9 @@
         "key": "ctrl+k ctrl+p",
         "command": "workbench.action.unpinEditor",
         "when": "activeEditorIsPinned"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "workbench.files.action.compareFileWith"
     }
 ]
