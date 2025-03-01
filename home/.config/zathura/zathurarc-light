@@ -1,0 +1,27 @@
+map <C-f> focus_inputbar '/'
+map m toggle_page_mode
+map r reload
+set adjust-open 'best-fit'
+set default-bg '#ffeeff'
+set font 'Cascadia Code 10'
+set highlight-color '#aa88aa'
+set highlight-transparency 0.5
+set incremental-search true
+set inputbar-bg '#ffeeff'
+set inputbar-fg '#333333'
+set page-padding 10
+set pages-per-row 2
+set recolor true
+set recolor-keephue true
+set recolor-lightcolor '#222222'
+set render-loading false
+set scroll-page-aware true
+set scroll-step 100
+set selection-clipboard clipboard
+set show-recent 5
+set statusbar-basename false
+set statusbar-bg '#ffeeff'
+set statusbar-fg '#333333'
+set statusbar-home-tilde true
+set synctex true
+set zoom-center true

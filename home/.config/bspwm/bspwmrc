@@ -12,8 +12,8 @@ numlockx
 bspc monitor -d I II III IV
 
 # # xrandr -q | grep -w connected # add to readme
-# MONITOR_1="HDMI-1"
-# MONITOR_2="HDMI-2"
+# MONITOR_1="eDP-1" #HDMI-1
+# MONITOR_2="DP-2"
 # STATUS_EXTERNAL_MONITOR=$(xrandr --query | grep $MONITOR_2)
 # if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
 #     xrandr --output $MONITOR_2 --off

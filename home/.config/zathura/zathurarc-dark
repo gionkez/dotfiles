@@ -19,8 +19,8 @@ set scroll-page-aware true
 set scroll-step 100
 set selection-clipboard clipboard
 set show-recent 5
-set statusbar-bg '#ffcc00'
 set statusbar-basename false
+set statusbar-bg '#ffcc00'
 set statusbar-fg '#333333'
 set statusbar-home-tilde true
 set synctex true
