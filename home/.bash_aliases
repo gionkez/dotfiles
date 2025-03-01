@@ -1,6 +1,6 @@
 alias cls='clear'
-alias in='sudo pacman -S --noconfirm '
-alias un='sudo pacman -Rs --noconfirm '
+alias in='sudo pacman -S --noconfirm'
+alias un='sudo pacman -Rs --noconfirm'
 alias upd='sudo pacman -Syu --noconfirm && sudo pacman -Sc --noconfirm'
 alias gi='git init'
 alias gs='git status --short'

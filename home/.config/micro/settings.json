@@ -6,7 +6,7 @@
     "basename": false,
     "clipboard": "internal",
     "colorcolumn": 0,
-    "colorscheme": "default",
+    "colorscheme": "simple",
     "cursorline": true,
     "detectlimit": 100,
     "diffgutter": false,
