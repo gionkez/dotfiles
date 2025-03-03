@@ -7,7 +7,6 @@ xset led 3
 xset r rate 200 50
 nmcli radio wifi on
 xsetroot -cursor_name left_ptr
-numlockx
 
 bspc monitor -d I II III IV
 
