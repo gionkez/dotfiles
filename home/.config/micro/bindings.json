@@ -1,5 +1,4 @@
 {
-    "Alt-/": "lua:comment.comment",
     "AltLeft": "FindPrevious",
     "AltRight": "FindNext",
     "CtrlAltD": "DuplicateLine",
@@ -14,6 +13,9 @@
     "CtrlL": "SelectLine",
     "CtrlLeft": "WordLeft",
     "CtrlN": "SpawnMultiCursor",
+    "CtrlO": "command-edit: vsplit ",
+    "CtrlP": "command-edit: hsplit ",
+    "CtrlR": "command-edit: replace ",
     "CtrlRight": "WordRight",
     "CtrlShiftEnd": "SelectToEnd",
     "CtrlShiftHome": "SelectToStart",
@@ -21,7 +23,6 @@
     "CtrlShiftRight": "SelectWordRight",
     "CtrlT": "command:fzf",
     "CtrlU": "RemoveMultiCursor",
-    "CtrlUnderscore": "lua:comment.comment",
     "CtrlUp": "ScrollUp",
     "CtrlV": "Paste",
     "OldBackspace": "DeleteWordLeft",
