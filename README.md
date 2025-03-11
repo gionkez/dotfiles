@@ -26,14 +26,7 @@ these others are part of my classic setup:
 + visual-studio-code-bin (aur)
 + telegram-desktop
 + spotify-launcher
-+ texlive-latex
-+ texlive-bin
-+ texlive-binextra
-+ texlive-basic
-+ texlive-meta
-+ texlive-mathscience
-+ texlive-langitalian
-+ texlive-pictures
++ texlive-full (aur)
 
 > [!TIP]
 > + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
