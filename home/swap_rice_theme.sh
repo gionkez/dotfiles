@@ -19,8 +19,10 @@ fi
 cd ../gtk-3.0/
 if grep -q "Graphite-Dark" "settings.ini"; then
     sed -i "s/Graphite-Dark/Graphite-Light/g" "settings.ini"
+    sed -i "s/true/false/g" "settings.ini"
 elif grep -q "Graphite-Light" "settings.ini"; then
     sed -i "s/Graphite-Light/Graphite-Dark/g" "settings.ini"
+    sed -i "s/false/true/g" "settings.ini"
 fi
 
 cd ../zathura/
