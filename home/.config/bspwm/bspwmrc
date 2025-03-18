@@ -3,32 +3,17 @@
 sh /home/gnkz/.config/polybar/launch.sh
 sleep 0.5
 pgrep -x sxhkd > /dev/null || sxhkd &
-xset led 3
 xset r rate 200 50
 nmcli radio wifi on
 xsetroot -cursor_name left_ptr
 
-bspc monitor -d I II III IV
-
-# # xrandr -q | grep -w connected # add to readme
-# MONITOR_1="eDP-1" #HDMI-1
-# MONITOR_2="DP-2"
-# STATUS_EXTERNAL_MONITOR=$(xrandr --query | grep $MONITOR_2)
-# if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
-#     xrandr --output $MONITOR_2 --off
-# else
-#     xrandr --output $MONITOR_1 --primary --mode 1920x1080 --output $MONITOR_2 --mode 1920x1080 --rotate normal --right-of $MONITOR_1
-# fi
-# if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
-# 	bspc monitor -d I II III IV
-# else
-# 	bspc monitor $MONITOR_1 -d I II III IV
-# 	bspc monitor $MONITOR_2 -d V VI VII VIII
-# fi
-# if [[ $STATUS_EXTERNAL_MONITOR == *disconnected* ]]; then
-# 	$HOME/.config/polybar/launch1.sh
-# else
-# 	$HOME/.config/polybar/launch2.sh
+INTERNAL_MONITOR="HDMI-2" #eDP-1
+bspc monitor $INTERNAL_MONITOR -d I II III IV
+# EXTERNAL_MONITOR="HDMI-1"
+# if [[ "$1" = 0 ]]; then
+# 	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
+#     bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
+#   fi
 # fi
 
 bspc config normal_border_color "#aa88aa"
