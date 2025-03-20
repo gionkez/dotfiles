@@ -121,5 +121,10 @@
     {
         "key": "ctrl+alt+k",
         "command": "workbench.files.action.compareFileWith"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     }
 ]

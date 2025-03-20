@@ -83,6 +83,8 @@
     	}
   	],
     "breadcrumbs.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "diffEditor.maxComputationTime": 0,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "languageDefined",
@@ -243,6 +245,9 @@
     ],
     "extensions.experimental.deferredStartupFinishedActivation": true,
     "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.svx": "svelte"
+    },
     "files.autoSave": "off",
     "files.encoding": "utf8",
     "files.exclude": {
@@ -255,6 +260,7 @@
     "files.simpleDialog.enable": false,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
     "hediet.vscode-drawio.resizeImages": null,
     "html.autoClosingTags": true,
     "latex-workshop.latex.autoBuild.run": "never",
@@ -266,8 +272,6 @@
     "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#cccccc",
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.view.pdf.zoom": "page-width",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.donotVerifyTags": true,
     "markdown.preview.fontFamily": "Cascadia Code NF",
     "markdown.preview.fontSize": 12,
     "markdown.preview.linkify": true,
@@ -298,6 +302,7 @@
     "update.showReleaseNotes": true,
     "window.commandCenter": false,
     "window.confirmBeforeClose": "never",
+    "window.customTitleBarVisibility": "never",
     "window.density.editorTabHeight": "compact",
     "window.doubleClickIconToClose": false,
     "window.menuBarVisibility": "toggle",
@@ -306,7 +311,7 @@
     "window.restoreWindows": "all",
     "window.titleBarStyle": "native",
     "workbench.activityBar.iconClickBehavior": "toggle",
-    "workbench.colorTheme": "Barlume",
+    "workbench.colorTheme": "luxark",
     "workbench.editorAssociations": {
         "*.pdf": "latex-workshop-pdf-hook",
         "*.gz": "default"
@@ -356,7 +361,5 @@
     "workbench.startupEditor": "none",
     "workbench.tree.expandMode": "singleClick",
     "workbench.tree.indent": 20,
-    "workbench.tree.renderIndentGuides": "onHover",
-    "git.openRepositoryInParentFolders": "always",
-    "diffEditor.maxComputationTime": 0
+    "workbench.tree.renderIndentGuides": "onHover"
 }
