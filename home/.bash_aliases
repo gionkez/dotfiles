@@ -1,6 +1,6 @@
-alias pin='pacman -S --noconfirm'
+alias pin='sudo pacman -S --noconfirm'
 alias yin='yay -S --noconfirm'
-alias pun='pacman -Rs --noconfirm'
+alias pun='sudo pacman -Rs --noconfirm'
 alias yun='yay -Rs --noconfirm'
 alias upd='yay -Syu --noconfirm && yay -Sc --noconfirm'
 alias gi='git init'
