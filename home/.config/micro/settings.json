@@ -61,7 +61,7 @@
 	"softwrap": true,
 	"splitbottom": true,
 	"splitright": true,
-	"statusformatl": "\\$(filename)",
+	"statusformatl": "$(filename)",
 	"statusformatr": "",
 	"statusline": true,
 	"sucmd": "sudo",
