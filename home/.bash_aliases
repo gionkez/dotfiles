@@ -1,3 +1,4 @@
+alias fzf='fzf -i --prompt=">" --pointer="▬"'
 alias pin='sudo pacman -S --noconfirm'
 alias yin='yay -S --noconfirm'
 alias pun='sudo pacman -Rs --noconfirm'
