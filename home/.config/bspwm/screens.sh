@@ -21,7 +21,7 @@ monitor_remove() {
 }
 
 if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
-    xrandr --output "$INTERNAL_MONITOR" --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --primary --left-of eDP-1 --rotate normal
+    xrandr --output "$INTERNAL_MONITOR" --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --primary --above eDP-1 --rotate normal
 	if [[ $(bspc query -D -m "${EXTERNAL_MONITOR}" | wc -l) -ne 2 ]]; then
 		monitor_add
     fi

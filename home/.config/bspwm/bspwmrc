@@ -9,7 +9,7 @@ INTERNAL_MONITOR="HDMI-2" #laptop eDP-1
 EXTERNAL_MONITOR="DP-2"
 if [[ "$1" = 0 ]]; then
 	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
-		xrandr --output "$INTERNAL_MONITOR" --primary --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --rotate normal --left-of eDP-1
+		xrandr --output "$INTERNAL_MONITOR" --primary --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --rotate normal --above eDP-1
 		bspc monitor "$EXTERNAL_MONITOR" -d I II
 	    bspc monitor "$INTERNAL_MONITOR" -d III IV
 	  	bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
