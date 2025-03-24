@@ -12,5 +12,6 @@ if [[ $wallpaper == "q" || $wallpaper == "" ]]; then
     exit
 fi
 feh --bg-fill "$wallpaper" &
+notify-send "wallpaper" "set to: <i>$wallpaper</i>" -u low
 sed -i '/feh/d' "$HOME/.config/bspwm/bspwmrc"
 echo "feh --bg-fill $wallpaper &" >> "$HOME/.config/bspwm/bspwmrc"

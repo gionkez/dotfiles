@@ -45,6 +45,8 @@ fi
 cd ../Code/User/
 if grep -q "luxark" "settings.json"; then
     sed -i "s/luxark/Barlume/g" "settings.json"
+    notify-send "system theme" "set to: <i>light</i>" -u normal
 elif grep -q "Barlume" "settings.json"; then
     sed -i "s/Barlume/luxark/g" "settings.json"
+    notify-send "system theme" "set to: <i>dark</i>" -u normal
 fi
