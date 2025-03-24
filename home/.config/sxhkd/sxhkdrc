@@ -42,7 +42,7 @@ super + shift + r
 
 # basic software
 super + {t, m, q}
-    {kitty, kitty micro, kitty qalc}
+    {kitty, kitty fzf | micro, kitty qalc}
 
 # personal software
 super + alt + {c, f, s, t, z}
