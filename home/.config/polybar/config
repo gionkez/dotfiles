@@ -1,7 +1,8 @@
 [fonts]
 font-0 = Cascadia Code NF:style=Regular:size=10
 
-[bar/bar1]
+[bar/custombar]
+monitor = ${env:MONITOR:}
 background = #000000
 foreground = #ffeeff
 inherit = fonts

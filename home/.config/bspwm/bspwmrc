@@ -1,20 +1,26 @@
 #! /bin/bash
 
-sh /home/gnkz/.config/polybar/launch.sh
-sleep 0.5
 pgrep -x sxhkd > /dev/null || sxhkd &
 xset r rate 200 50
 nmcli radio wifi on
 xsetroot -cursor_name left_ptr
 
-INTERNAL_MONITOR="HDMI-2" #eDP-1
-bspc monitor $INTERNAL_MONITOR -d I II III IV
-# EXTERNAL_MONITOR="HDMI-1"
-# if [[ "$1" = 0 ]]; then
-# 	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
-#     bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
-#   fi
-# fi
+INTERNAL_MONITOR="HDMI-2" #laptop eDP-1
+EXTERNAL_MONITOR="DP-2"
+if [[ "$1" = 0 ]]; then
+	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
+		xrandr --output "$INTERNAL_MONITOR" --primary --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --rotate normal --left-of eDP-1
+		bspc monitor "$EXTERNAL_MONITOR" -d I II
+	    bspc monitor "$INTERNAL_MONITOR" -d III IV
+	  	bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
+	else
+	  	xrandr --output "$INTERNAL_MONITOR" --primary --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --off
+	  	bspc monitor "$INTERNAL_MONITOR" -d I II III IV
+	fi
+fi
+
+sh /home/gnkz/.config/bspwm/screens.sh
+sh /home/gnkz/.config/polybar/launch.sh
 
 bspc config normal_border_color "#aa88aa"
 bspc config focused_border_color "#ffeeff"
