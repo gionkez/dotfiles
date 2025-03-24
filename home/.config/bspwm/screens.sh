@@ -2,6 +2,7 @@
 
 INTERNAL_MONITOR="eDP-1"
 EXTERNAL_MONITOR="DP-2"
+INTERNAL_MONITOR_RESOLUTION="WIDTHxHEIGHT"
 
 monitor_add() {
 	for desktop in $(bspc query -D --names -m "$INTERNAL_MONITOR" | sed 2q); do
@@ -21,13 +22,13 @@ monitor_remove() {
 }
 
 if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
-    xrandr --output "$INTERNAL_MONITOR" --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --primary --above eDP-1 --rotate normal
+    xrandr --output "$INTERNAL_MONITOR" --mode "$INTERNAL_MONITOR_RESOLUTION" --rotate normal --output "$EXTERNAL_MONITOR" --primary --above "$INTERNAL_MONITOR" --rotate normal
 	if [[ $(bspc query -D -m "${EXTERNAL_MONITOR}" | wc -l) -ne 2 ]]; then
 		monitor_add
     fi
     bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
 else
-    xrandr --output "$INTERNAL_MONITOR" --primary --mode 1536x1024 --rotate normal --output "$EXTERNAL_MONITOR" --off
+    xrandr --output "$INTERNAL_MONITOR" --primary --mode "$INTERNAL_MONITOR_RESOLUTION" --rotate normal --output "$EXTERNAL_MONITOR" --off
     if [[ $(bspc query -D -m "${INTERNAL_MONITOR}" | wc -l) -ne 4 ]]; then
     	monitor_remove
     fi
