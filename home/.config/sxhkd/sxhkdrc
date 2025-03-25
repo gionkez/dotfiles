@@ -64,22 +64,22 @@ super + ctrl + t
 
 # brightness
 XF86MonBrightnessDown
-	sudo brightnessctl -e -d intel_backlight set 5%- && notify-send "brightness" "decreased: <i>5%</i>" -u low
+	sudo brightnessctl -e -d intel_backlight set 5%-
 XF86MonBrightnessUp
-	sudo brightnessctl -e -d intel_backlight set 5%- && notify-send "brightness" "increased: <i>5%</i>" -u low
+	sudo brightnessctl -e -d intel_backlight set 5%-
 
 # audio
 XF86AudioMute
-	pactl set-sink-mute 0 toggle && notify-send "volume" "toggle mute" -u normal
+	pactl set-sink-mute 0 toggle
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +5% && notify-send "volume" "increased: <i>5%</i>" -u low
+	pactl set-sink-volume 0 +5%
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -5% && notify-send "volume" "decreased: <i>5%</i>" -u low
+	pactl set-sink-volume 0 -5%
 XF86AudioNext
-	playerctl next && notify-send "player" "next" -u low
+	playerctl next
 XF86AudioPrev
-	playerctl previous && notify-send "player" "previous" -u low
+	playerctl previous
 XF86AudioPlay
-	playerctl play-pause && notify-send "player" "play-pause" -u low
+	playerctl play-pause
 XF86AudioStop
-	playerctl stop && notify-send "player" "stop" -u low
+	playerctl stop
