@@ -58,24 +58,28 @@ super + {space, w}
 alt + {F4, F5, F12}
 	{sh /home/gnkz/.config/rofi/powermenu.sh, sh /home/gnkz/.config/rofi/bt.sh, sh /home/gnkz/.config/rofi/wallpaper.sh}
 
+# system theme
+super + ctrl + t
+	sh ~/swap_rice_theme.sh
+
 # brightness
 XF86MonBrightnessDown
-	sudo brightnessctl -e -d intel_backlight set 5%-
+	sudo brightnessctl -e -d intel_backlight set 5%- && notify-send "brightness" "decreased: <i>5%</i>" -u low
 XF86MonBrightnessUp
-	sudo brightnessctl -e -d intel_backlight set +5%
+	sudo brightnessctl -e -d intel_backlight set 5%- && notify-send "brightness" "increased: <i>5%</i>" -u low
 
 # audio
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+	pactl set-sink-mute 0 toggle && notify-send "volume" "toggle mute" -u normal
 XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +5%
+	pactl set-sink-volume 0 +5% && notify-send "volume" "increased: <i>5%</i>" -u low
 XF86AudioLowerVolume
-    pactl set-sink-volume 0 -5%
+	pactl set-sink-volume 0 -5% && notify-send "volume" "decreased: <i>5%</i>" -u low
 XF86AudioNext
-    playerctl next
+	playerctl next && notify-send "player" "next" -u low
 XF86AudioPrev
-    playerctl previous
+	playerctl previous && notify-send "player" "previous" -u low
 XF86AudioPlay
-	playerctl play-pause
+	playerctl play-pause && notify-send "player" "play-pause" -u low
 XF86AudioStop
-    playerctl stop
+	playerctl stop && notify-send "player" "stop" -u low
