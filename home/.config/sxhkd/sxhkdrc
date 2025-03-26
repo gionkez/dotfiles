@@ -46,7 +46,7 @@ super + {t, m, q}
 
 # personal software
 super + alt + {c, f, s, t, z}
-	{code, firefox, spotify, telegram-desktop, zathura}
+	{code, librewolf, spotify, telegram-desktop, zathura}
 
 # screenshots
 alt + F11
