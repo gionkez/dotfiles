@@ -45,8 +45,8 @@ super + {t, m, q}
     {kitty, kitty micro, kitty qalc}
 
 # personal software
-super + alt + {c, l, s, t, z}
-	{code, librewolf, spotify, telegram-desktop, zathura}
+super + alt + {c, f, s, t, z}
+	{code, firefox, spotify, telegram-desktop, zathura}
 
 # screenshots
 alt + F11
