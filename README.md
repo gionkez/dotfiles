@@ -5,28 +5,30 @@ based on a minimal style guide
 > [!IMPORTANT]
 > the following softwares are required:
 > + bspwm
-> + sxhkd
+> + feh
+> + graphite-gtk-theme (aur)
 > + polybar
 > + rofi
-> + feh
 > + slock
+> + sxhkd
 > + ttf-cascadia-code
-> + graphite-gtk-theme (aur)
+> + xdotool
 > + xorg-xsetroot
+> + yad
 
 these others are part of my classic setup:
-+ kitty
 + firefox
-+ qalculate-gtk
++ kitty
 + micro
 + mpv
 + nomacs (aur)
++ qalculate-gtk
++ spotify-launcher
++ telegram-desktop
++ texlive-full (aur)
++ visual-studio-code-bin (aur)
 + zathura
 + zathura-pdf-mupdf
-+ visual-studio-code-bin (aur)
-+ telegram-desktop
-+ spotify-launcher
-+ texlive-full (aur)
 
 > [!TIP]
 > + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
