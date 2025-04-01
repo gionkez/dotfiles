@@ -6,7 +6,7 @@ based on a minimal style guide
 > the following softwares are required:
 > + bspwm
 > + feh
-> + graphite-gtk-theme (aur)
+> + graphite-gtk-theme[*](#aur)
 > + polybar
 > + rofi
 > + slock
@@ -21,14 +21,16 @@ these others are part of my classic setup:
 + kitty
 + micro
 + mpv
-+ nomacs (aur)
++ nomacs[*](#aur)
 + qalculate-gtk
 + spotify-launcher
 + telegram-desktop
-+ texlive-full (aur)
-+ visual-studio-code-bin (aur)
++ texlive-full[*](#aur)
++ visual-studio-code-bin[*](#aur)
 + zathura
 + zathura-pdf-mupdf
+
+<a id="aur">*</a> aur
 
 > [!TIP]
 > + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
