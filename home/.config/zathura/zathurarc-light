@@ -3,7 +3,7 @@ map m toggle_page_mode
 map r reload
 set adjust-open 'best-fit'
 set default-bg '#ffeeff'
-set font 'Cascadia Code 10'
+set font 'Cascadia Code NF 10'
 set highlight-color '#aa88aa'
 set highlight-transparency 0.5
 set incremental-search true
