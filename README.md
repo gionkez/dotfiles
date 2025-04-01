@@ -1,4 +1,4 @@
-# dotfiles
+# main.dots
 
 based on a minimal style guide
 
