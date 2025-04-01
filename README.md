@@ -30,7 +30,7 @@ these others are part of my classic setup:
 + zathura
 + zathura-pdf-mupdf
 
-<a id="aur">*</a> aur
+<aside id="aur">* aur</aside>
 
 > [!TIP]
 > + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
