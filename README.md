@@ -5,6 +5,7 @@ based on a minimal style guide
 > [!IMPORTANT]
 > the following softwares are required:
 > + bspwm
+> + dunst
 > + feh
 > + graphite-gtk-theme[*](#aur)
 > + polybar
