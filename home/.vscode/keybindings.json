@@ -4,18 +4,18 @@
         "command": "workbench.action.openSettings"
     },
     {
-        "key":"cmd+escape",
+        "key": "cmd+escape",
         "command": "workbench.action.closeWindow"
     },
     {
-       "key": "ctrl+l ctrl+u",
-       "command": "editor.action.transformToUppercase",
-       "when": "editorTextFocus"
+        "key": "ctrl+l ctrl+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
     },
     {
-       "key": "ctrl+l ctrl+l",
-       "command": "editor.action.transformToLowercase",
-       "when": "editorTextFocus"
+        "key": "ctrl+l ctrl+l",
+        "command": "editor.action.transformToLowercase",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+l",

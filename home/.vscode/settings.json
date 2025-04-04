@@ -285,7 +285,9 @@
     ],
     "security.workspace.trust.emptyWindow": true,
     "security.workspace.trust.enabled": true,
-    "settingsSync.ignoredSettings": [],
+    "settingsSync.ignoredSettings": [
+        "workbench.colorTheme"
+    ],
     "settingsSync.keybindingsPerPlatform": true,
     "svelte.enable-ts-plugin": true,
     "telemetry.telemetryLevel": "off",
@@ -344,6 +346,7 @@
     "workbench.editor.wrapTabs": false,
     "workbench.externalBrowser": "firefox",
     "workbench.iconTheme": "bearded-icons",
+    "workbench.layoutControl.enabled": false,
     "workbench.layoutControl.type": "both",
     "workbench.list.defaultFindMode": "highlight",
     "workbench.list.fastScrollSensitivity": 5,
