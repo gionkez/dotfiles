@@ -30,9 +30,13 @@ super + ctrl + shift + {Left, Down, Up, Right}
 super + Escape
 	bspc node -c
 
-# view other desktop or move window between them
+# view other desktop or move window and follow
 super + {ctrl, alt} + {1, 2, 3, 4}
     bspc {desktop -f, node -d} {I, II, III, IV} --follow
+
+# move window
+super + shift + {1, 2, 3, 4}
+	bspc node -d {I, II, III, IV}
 
 # rotate
 super + shift + {Right, Left}
