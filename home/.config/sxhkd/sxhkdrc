@@ -54,13 +54,17 @@ super + alt + {c, f, m, n, s, t, z}
 
 # screenshots
 alt + F11
-    flameshot gui
+	sh ~/.config/scripts/screenshot.sh
+
+# color picker
+alt + F10
+	sh ~/.config/scripts/colorpicker.sh
 
 # rofi
 super + {space, w}
 	{rofi -show drun, rofi -show window}
 alt + {F4, F5, F12}
-	{sh /home/gnkz/.config/rofi/powermenu.sh, sh /home/gnkz/.config/rofi/bt.sh, sh /home/gnkz/.config/rofi/wallpaper.sh}
+	{sh ~/.config/rofi/powermenu.sh, sh ~/.config/rofi/bt.sh, sh ~/.config/rofi/wallpaper.sh}
 
 # system theme
 super + ctrl + t
