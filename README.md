@@ -13,6 +13,7 @@ based on a minimal style guide
 > + slock
 > + sxhkd
 > + ttf-cascadia-code
+> + xclip
 > + xdotool
 > + xorg-xsetroot
 > + yad
@@ -20,9 +21,9 @@ based on a minimal style guide
 these others are part of my classic setup:
 + firefox
 + kitty
-+ micro
 + mpv
 + nomacs[*](#aur)
++ nvim
 + qalculate-gtk
 + spotify-launcher
 + telegram-desktop
