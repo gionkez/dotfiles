@@ -7,7 +7,7 @@ based on a minimal style guide
 > + bspwm
 > + dunst
 > + feh
-> + graphite-gtk-theme[*](#aur)
+> + graphite-gtk-theme\*
 > + polybar
 > + rofi
 > + slock
@@ -22,17 +22,17 @@ these others are part of my classic setup:
 + firefox
 + kitty
 + mpv
-+ nomacs[*](#aur)
++ nomacs\*
 + nvim
 + qalculate-gtk
 + spotify-launcher
 + telegram-desktop
-+ texlive-full[*](#aur)
-+ visual-studio-code-bin[*](#aur)
++ texlive-full\*
++ visual-studio-code-bin\*
 + zathura
 + zathura-pdf-mupdf
 
-<aside id="aur">* aur</aside>
+\* aur
 
 > [!TIP]
 > + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
