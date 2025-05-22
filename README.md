@@ -27,14 +27,12 @@ these others are part of my classic setup:
 + qalculate-gtk
 + spotify-launcher
 + telegram-desktop
-+ texlive-full\* \**
++ texlive-meta
 + visual-studio-code-bin\*
 + zathura
 + zathura-pdf-mupdf
 
 \* aur
-
-\** as an aur meta-package it should be installed before the others to not break dependencies (particularly zathura and zathura-pdf-mupdf since they share libsynctex)
 
 > [!TIP]
 > + in the polybar config file it is necessary to obtain information about the network and the battery, respectively with `ip a` and `ls -1 /sys/class/power_supply/`
