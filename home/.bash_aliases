@@ -1,6 +1,7 @@
 alias x='startx'
 alias ls='ls -a --color=auto'
 alias fzf='fzf -i --preview="cat {}" --prompt=">" --pointer="▬"'
+alias cz='cd $(find . -type d -print | fzf)'
 alias pin='sudo pacman -S --noconfirm'
 alias yin='yay -S --noconfirm'
 alias pun='sudo pacman -Rs --noconfirm'
