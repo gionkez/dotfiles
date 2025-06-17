@@ -20,9 +20,9 @@ statusbar_format = "%artists - %title"
 title = "%title"
 body = "%artists"
 [track_format]
-left = "%artists"
-center = "%title - %duration"
-right = "%album"
+left = "%title - %album"
+center = "%artists"
+right = "%duration"
 [theme]
 background = "#333333"
 primary = "#e0e0e0"
