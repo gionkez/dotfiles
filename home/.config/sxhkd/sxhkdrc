@@ -50,7 +50,7 @@ super + {t, q}
 
 # personal software
 super + alt + {c, f, m, n, s, t, z}
-	{code, firefox, kitty micro, kitty nvim, spotify-launcher, telegram-desktop, zathura}
+	{code, firefox, kitty micro, kitty nvim, kitty ncspot, telegram-desktop, zathura}
 
 # screenshots
 alt + F11
