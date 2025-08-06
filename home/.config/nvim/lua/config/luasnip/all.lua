@@ -1,0 +1,83 @@
+local ls = require("luasnip")
+local s = ls.snippet
+local i = ls.insert_node
+local fmta = require("luasnip.extras.fmt").fmta
+return {
+	s("bf",
+		{
+			t("\\textbf{"),
+			i(1),
+			t("}"),
+		}
+	),
+	s("it",
+		{
+			t("\\textit{"),
+			i(1),
+			t("}"),
+		}
+	),
+	s("sl",
+		{
+			t("\\textsl{"),
+			i(1),
+			t("}"),
+		}
+	),
+	s("sc",
+		{
+			t("\\textsc{"),
+			i(1),
+			t("}"),
+		}
+	),
+	s("tt",
+		{
+			t("\\texttt{"),
+			i(1),
+			t("}"),
+		}
+	),
+	s("frac",
+		{
+			t("\\dfrac{"),
+			i(1),
+			t("}{"),
+			i(2),
+			t("}")
+		}
+	),
+	s({trig = "env", snippetType = "autosnippet"},
+		fmta(
+			[[
+				\begin{<>}
+					<>
+				\end{<>}
+			]],
+			{
+				i(1),
+				i(2),
+				rep(1)
+			}
+		)
+	),
+	s({trig = "tab", snippetType = "autosnippet"},
+		fmta(
+			[[
+				\begin{table}[h!tbp]
+					\centering
+					\caption{}
+					\begin{tabular}{}
+						\toprule
+						\textbf{\textsc{<>}}
+						\midrule
+						\bottomrule
+					\end{tabular}
+				\end{table}
+			]],
+			{
+				i(1)
+			}
+		)
+	),
+}
