@@ -4,6 +4,11 @@ local i = ls.insert_node
 local fmta = require("luasnip.extras.fmt").fmta
 return {
 	-- text
+	s("ch", {t("\\chapter{"), i(1), t("}")}),
+	s("s", {t("\\section{"), i(1), t("}")}),
+	s("ss", {t("\\subsection{"), i(1), t("}")}),
+	s("sss", {t("\\subsubsection{"), i(1), t("}")}),
+	s("ssss", {t("\\subsubsubsection{"), i(1), t("}")}),
 	s("bf", {t("\\textbf{"), i(1), t("}")}),
 	s("it", {t("\\textit{"), i(1), t("}")}),
 	s("sf", {t("\\textsf{"), i(1), t("}")}),
@@ -19,7 +24,13 @@ return {
 	s("mc", {t("\\mathcal{"), i(1), t("}")}),
 	s("mt", {t("\\mathtt{"), i(1), t("}")}),
 	s("ms", {t("\\mathsf{"), i(1), t("}")}),
-	s("frac", {t("\\dfrac{"), i(1), t("}{"), i(2), t("}")}),
+	s("frac", fmta("\\dfrac{<>}{<>}", {i(1), i(2)})),
+	s("_", {t("_{"), i(1), t("}")}),
+	s("^", {t("^{"), i(1), t("}")}),
+	s("()", {t("\\left("), i(1), t("\\right)")}),
+	s("[]", {t("\\left["), i(1), t("\\right]")}),
+	s("{}", {t("\\left{"), i(1), t("\\right}")}),
+	s("||", {t("\\left|"), i(1), t("\\right|")}),
 	s("@al", {t("\\alpha")}),
 	s("@be", {t("\\beta")}),
 	s("@ga", {t("\\gamma")}),
@@ -38,7 +49,7 @@ return {
 	s("@ps", {t("\\psi")}),
 	s("@om", {t("\\omega")}),
 	-- environments
-	s("env",
+	s("beg",
 		fmta(
 			[[
 				\begin{<>}
@@ -52,10 +63,10 @@ return {
 			[[
 				\begin{figure}[h!tbp]
 					\centering
-					\includegraphics[width=\textwidth]{<>}
-					\caption{}
+					\includegraphics[width=<>\textwidth]{<>}
+					\caption{<>}
 				\end{figure}
-			]], {i(1)}
+			]], {i(2), i(1), i(3)}
 		)
 	),
 	s("tab",
@@ -72,6 +83,17 @@ return {
 					\end{tabular}
 				\end{table}
 			]], {i(1)}
+		)
+	),
+	s("min",
+		fmta(
+			[[
+				\\[3mm]
+				\begin{minipage}[h!tbp]{.<>\textwidth}
+					\centering
+					<>
+				\end{minipage}\\[3mm]
+			]], {i(1), i(2)}
 		)
 	)
 }
