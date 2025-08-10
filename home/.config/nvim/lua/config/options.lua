@@ -1,13 +1,15 @@
-vim.cmd("filetype plugin indent on")
-vim.cmd("syntax enable")
-vim.cmd("set number")
-vim.cmd("set ruler")
-vim.cmd("set relativenumber")
-vim.cmd("set tabstop=4")
-vim.cmd("set shiftwidth=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set clipboard=unnamedplus")
-vim.cmd[[
+local c = vim.cmd
+
+c("filetype plugin indent on")
+c("syntax enable")
+c("set number")
+c("set ruler")
+c("set relativenumber")
+c("set tabstop=4")
+c("set shiftwidth=4")
+c("set softtabstop=4")
+c("set clipboard=unnamedplus")
+c[[
 	imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
 	smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
 	imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
