@@ -10,8 +10,7 @@ return {
 					'┘└┘ └─┘ └─┘  └┘  ┴ ┴ ┴'
 				},
 				options = {
-					number = true,
-					relativenumber = true,
+					number = false,
 					wrap = true
 				}
 			})
