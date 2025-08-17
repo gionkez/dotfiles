@@ -6,6 +6,8 @@ k("v", "J", ":m '>+1<CR>gv=gv", {desc = 'Switch current line with the one below'
 k("v", "K", ":m '<-2<CR>gv=gv", {desc = 'Switch current  line with the one above'})
 k({"n", "v"}, "x", '"_x')
 k("n", "ycc", "yygccp", {remap = true, desc = 'Duplicate line and comment the first one'})
+k("n", "j", "gj", {remap = true, desc = 'Move to line below'})
+k("n", "k", "gk", {remap = true, desc = 'Move to line above'})
 k("n", "<Leader>wv", "<C-W>v", {desc = 'Split window horizontally'})
 k("n", "<Leader>w", "<C-W>s", {desc = 'Split window vertically'})
 k("n", "<Leader>wh", "<C-W>h", {desc = 'Move to the window on the left'})
