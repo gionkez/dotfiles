@@ -1,6 +1,7 @@
-map <C-f> focus_inputbar '/'
 map m toggle_page_mode
 map r reload
+map R rotate
+
 set adjust-open 'best-fit'
 set default-bg '#ffeeff'
 set font 'Cascadia Code NF 10'
