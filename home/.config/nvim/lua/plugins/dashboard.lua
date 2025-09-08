@@ -10,6 +10,7 @@ return {
 					'┘└┘ └─┘ └─┘  └┘  ┴ ┴ ┴'
 				},
 				options = {
+					modifiable = true,
 					number = false,
 					wrap = true
 				}
