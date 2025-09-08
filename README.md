@@ -22,7 +22,6 @@ these others are part of my classic setup:
 + firefox
 + kitty
 + mpv
-+ ncspot
 + nomacs\*
 + nvim
 + qalculate-gtk
