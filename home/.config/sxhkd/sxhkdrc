@@ -49,8 +49,8 @@ super + {t, q}
     {kitty, kitty qalc}
 
 # personal software
-super + alt + {c, f, m, n, s, t, z}
-	{code, firefox, kitty micro, kitty nvim, kitty ncspot, telegram-desktop, zathura}
+super + alt + {c, f, n, t, z}
+	{code, firefox, kitty nvim, telegram-desktop, zathura}
 
 # screenshots
 alt + F11
@@ -65,10 +65,6 @@ super + {space, w}
 	{rofi -show drun, rofi -show window}
 alt + {F4, F5, F12}
 	{sh ~/.config/rofi/powermenu.sh, sh ~/.config/rofi/bt.sh, sh ~/.config/rofi/wallpaper.sh}
-
-# system theme
-super + ctrl + t
-	sh ~/swap_rice_theme.sh
 
 # brightness
 XF86MonBrightnessDown
