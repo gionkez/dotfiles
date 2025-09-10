@@ -2,9 +2,13 @@ local ls = require("luasnip")
 local s = ls.snippet
 local i = ls.insert_node
 local fmta = require("luasnip.extras.fmt").fmta
-
 return {
 	-- text
+	s("(", {t("("), i(1), t(")")}),
+	s("[", {t("["), i(1), t("]")}),
+	s("{", {t("{"), i(1), t("}")}),
+	s("'", {t("'"), i(1), t("'")}),
+	s("\"", {t("\""), i(1), t("\"")}),
 	s("ch", {t("\\chapter{"), i(1), t("}")}),
 	s("s", {t("\\section{"), i(1), t("}")}),
 	s("ss", {t("\\subsection{"), i(1), t("}")}),
