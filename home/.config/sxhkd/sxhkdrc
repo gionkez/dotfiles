@@ -49,8 +49,8 @@ super + {t, q}
     {kitty, kitty qalc}
 
 # personal software
-super + alt + {c, f, n, t, z}
-	{code, firefox, kitty nvim, telegram-desktop, zathura}
+super + alt + {f, n, t, z}
+	{firefox, kitty nvim, telegram-desktop, zathura}
 
 # screenshots
 alt + F11
