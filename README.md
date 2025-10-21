@@ -4,6 +4,7 @@ based on a minimal style guide
 
 > [!IMPORTANT]
 > the following softwares are required:
+> + autorandr
 > + bspwm
 > + dunst
 > + feh
@@ -28,7 +29,6 @@ these others are part of my classic setup:
 + spotify-launcher
 + telegram-desktop
 + texlive-meta
-+ visual-studio-code-bin\*
 + zathura
 + zathura-pdf-mupdf
 
