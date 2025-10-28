@@ -132,10 +132,10 @@ return {
 					\centering
 					\begin{axis}[
 						scale only axis,
-						font=\footnotesize,
-						width=5cm, height=4cm,
+						width=5cm, height=3cm,
+						axis lines=left,
 						xlabel=<>, ylabel=<>,
-						xlabel near ticks, ylabel near ticks,
+						xtick=\empty, ytick=\empty,
 						legend entries={<>}
 					]
 						\addplot[blue] {<>};
