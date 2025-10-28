@@ -20,7 +20,8 @@ return {
 	s("sc", {t("\\textsc{"), i(1), t("}")}),
 	s("sl", {t("\\textsl{"), i(1), t("}")}),
 	s("tt", {t("\\texttt{"), i(1), t("}")}),
-	s("item", fmta("\\item[<>] <>", {i(1), i(2)})),
+	s("acs", {t("\\acs{"), i(1), t("}")}),
+	s("no", {t("\\noindent")}),
 	-- math
 	s("mb", {t("\\mathbb{"), i(1), t("}")}),
 	s("mf", {t("\\mathbf{"), i(1), t("}")}),
@@ -79,15 +80,16 @@ return {
 			[[
 				\begin{table}[h!tbp]
 					\centering
-					\caption{}
-					\begin{tabular}{}
+					\caption{<>}
+					\begin{tabular}{<>}
 						\toprule
-						\textbf{\textsc{<>}}
+						\textbf{\textsc{<>}} & \textbf{\textsc{<>}}\\
 						\midrule
+						<> & \\
 						\bottomrule
 					\end{tabular}
 				\end{table}
-			]], {i(1)}
+			]], {i(3), i(4), i(2), i(1), i(5)}
 		)
 	),
 	s("min",
@@ -97,8 +99,49 @@ return {
 				\begin{minipage}[h!tbp]{.<>\textwidth}
 					\centering
 					<>
+				\end{minipage}\hfil
+				\begin{minipage}[h!tbp]{.<>\textwidth}
+					\centering
+					<>
 				\end{minipage}\\[3mm]
-			]], {i(1), i(2)}
+			]], {i(1), i(3), i(2), i(4)}
+		)
+	),
+	s("eq",
+		fmta(
+			[[
+				\begin{equation*}
+					\boxed{<>}
+				\end{equation*}
+			]], {i(1)}
+		)
+	),
+	s("itm",
+		fmta(
+			[[
+				\begin{itemize}
+					\item[--] <> 
+				\end{itemize}
+			]], {i(1)}
+		)
+	),
+	s("plt",
+		fmta(
+			[[
+				\begin{tikzpicture}
+					\centering
+					\begin{axis}[
+						scale only axis,
+						font=\footnotesize,
+						width=5cm, height=4cm,
+						xlabel=<>, ylabel=<>,
+						xlabel near ticks, ylabel near ticks,
+						legend entries={<>}
+					]
+						\addplot[blue] {<>};
+					\end{axis}
+				\end{tikzpicture}
+			]], {i(1), i(2), i(3), i(4)}
 		)
 	)
 }
