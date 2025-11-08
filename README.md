@@ -21,6 +21,7 @@ based on a minimal style guide
 
 these others are part of my classic setup:
 + firefox
++ gnuplot
 + kitty
 + mpv
 + nomacs\*
