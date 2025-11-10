@@ -10,8 +10,8 @@ k({"n", "v"}, "x", '"_x')
 
 k("n", "ycc", "yygccp", {remap = true, desc = 'Duplicate line and comment the first one'})
 
-k("n", "j", "gj", {remap = true, desc = 'Move to line below'})
-k("n", "k", "gk", {remap = true, desc = 'Move to line above'})
+k("n", "<Down>", "g<Down>", {remap = true, desc = 'Move to row below'})
+k("n", "<Up>", "g<Up>", {remap = true, desc = 'Move to row above'})
 
 k("n", "<Leader>wb", "<C-W>v", {desc = 'Split window horizontally'})
 k("n", "<Leader>wv", "<C-W>s", {desc = 'Split window vertically'})
@@ -39,4 +39,3 @@ k("n", "<C-u>", "<C-u>zz", {desc = 'Scroll up and center line'})
 k("n", "<C-d>", "<C-d>zz", {desc = 'Scroll down and center line'})
 
 k("n", "<Leader>cc", ":cclose<CR>", {desc = 'Close errors and warnings panel'})
-
