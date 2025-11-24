@@ -9,6 +9,7 @@ based on a minimal style guide
 > + dunst
 > + feh
 > + graphite-gtk-theme\*
+> + libnotify
 > + polybar
 > + rofi
 > + slock
