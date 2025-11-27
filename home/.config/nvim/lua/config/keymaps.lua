@@ -39,3 +39,8 @@ k("n", "<C-u>", "<C-u>zz", {desc = 'Scroll up and center line'})
 k("n", "<C-d>", "<C-d>zz", {desc = 'Scroll down and center line'})
 
 k("n", "<Leader>cc", ":cclose<CR>", {desc = 'Close errors and warnings panel'})
+
+
+k("n", "<Leader>mw", ":MarpWatch<CR>", {desc = 'Start watching current file and open in browser'})
+k("n", "<Leader>ms", ":MarpStop<CR>", {desc = 'Stop watching current buffer'})
+k("n", "<Leader>me", ":MarpExport pdf<CR>", {desc = 'Export to PDF'})
