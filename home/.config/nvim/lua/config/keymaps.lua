@@ -43,4 +43,4 @@ k("n", "<Leader>cc", ":cclose<CR>", {desc = 'Close errors and warnings panel'})
 
 k("n", "<Leader>mw", ":MarpWatch<CR>", {desc = 'Start watching current file and open in browser'})
 k("n", "<Leader>ms", ":MarpStop<CR>", {desc = 'Stop watching current buffer'})
-k("n", "<Leader>me", ":MarpExport pdf<CR>", {desc = 'Export to PDF'})
+k("n", "<Leader>me", ":!npx @marp-team/marp-cli@latest % --pdf<CR>", {desc = 'Export to PDF'})
