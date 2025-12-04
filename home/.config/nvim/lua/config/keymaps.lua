@@ -8,7 +8,7 @@ k("n", "<S-J>", "yyddjP", {desc = 'Switch current line with the one below'})
 
 k({"n", "v"}, "x", '"_x')
 
-k("n", "ycc", "yygccp", {remap = true, desc = 'Duplicate line and comment the first one'})
+k("n", "<Leader>yc", "yygccp", {remap = true, desc = 'Duplicate line and comment the first one'})
 
 k("n", "<Down>", "g<Down>", {remap = true, desc = 'Move to row below'})
 k("n", "<Up>", "g<Up>", {remap = true, desc = 'Move to row above'})
@@ -40,6 +40,8 @@ k("n", "<C-d>", "<C-d>zz", {desc = 'Scroll down and center line'})
 
 k("n", "<Leader>cc", ":cclose<CR>", {desc = 'Close errors and warnings panel'})
 
+k("n", "<Leader>lc", ":VimtexCompile<CR>", {desc = 'LaTeX compile'})
+k("n", "<Leader>ls", ":VimtexStop<CR>", {desc = 'LaTeX stop'})
 
 k("n", "<Leader>mw", ":MarpWatch<CR>", {desc = 'Start watching current file and open in browser'})
 k("n", "<Leader>ms", ":MarpStop<CR>", {desc = 'Stop watching current buffer'})
