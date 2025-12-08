@@ -27,7 +27,7 @@ these others are part of my classic setup:
 + mpv
 + nomacs\*
 + nvim
-+ qalculate-gtk
++ calc
 + spotify-launcher
 + telegram-desktop
 + texlive-meta
