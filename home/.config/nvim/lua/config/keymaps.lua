@@ -41,6 +41,7 @@ k("n", "<C-d>", "<C-d>zz", {desc = 'Scroll down and center line'})
 k("n", "<Leader>cc", ":cclose<CR>", {desc = 'Close errors and warnings panel'})
 
 k("n", "<Leader>lc", ":VimtexCompile<CR>", {desc = 'LaTeX compile'})
+k("n", "<Leader>le", ":!pdflatex --shell-escape %<CR>", {desc = 'LaTeX compile with shell escape'})
 k("n", "<Leader>ls", ":VimtexStop<CR>", {desc = 'LaTeX stop'})
 
 k("n", "<Leader>mw", ":MarpWatch<CR>", {desc = 'Start watching current file and open in browser'})
