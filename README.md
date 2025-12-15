@@ -21,13 +21,13 @@ based on a minimal style guide
 > + yad
 
 these others are part of my classic setup:
++ calc
 + firefox
 + gnuplot
 + kitty
 + mpv
 + nomacs\*
 + nvim
-+ calc
 + spotify-launcher
 + telegram-desktop
 + texlive-meta
