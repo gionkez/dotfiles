@@ -10,6 +10,7 @@ based on a minimal style guide
 > + feh
 > + graphite-gtk-theme\*
 > + libnotify
+> + paru
 > + polybar
 > + rofi
 > + slock
@@ -31,6 +32,7 @@ these others are part of my classic setup:
 + spotify-launcher
 + telegram-desktop
 + texlive-meta
++ trash-cli
 + zathura
 + zathura-pdf-mupdf
 
