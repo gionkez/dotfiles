@@ -48,13 +48,9 @@ super + shift + r
 super + {t, c, f, n, z}
     {kitty, kitty calc, firefox, kitty nvim, zathura}
 
-# screenshots
-alt + F11
-	sh ~/.config/scripts/screenshot.sh
-
-# color picker
-alt + F10
-	sh ~/.config/scripts/colorpicker.sh
+# color picker & screenshots
+alt + {F10, F11}
+	sh ~/.config/scripts/{colorpicker.sh,screenshot.sh}
 
 # rofi
 super + {space, w}
