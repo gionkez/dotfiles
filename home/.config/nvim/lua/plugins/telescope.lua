@@ -12,10 +12,13 @@ return {
 					mappings = {
 						i = {
 							["<C-u>"] = false,
-							["<C-d>"] = false,
-						},
+							["<C-d>"] = false
+						}
 					},
-				},
+					file_ignore_patterns = {
+						".pdf"
+					}
+				}
 			})
 			pcall(require("telescope").load_extension, "fzf")
 		end,
