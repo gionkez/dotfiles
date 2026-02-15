@@ -9,6 +9,7 @@ based on a minimal style guide
 > + dunst
 > + feh
 > + graphite-gtk-theme\*
++ kitty
 > + libnotify
 > + paru
 > + polybar
@@ -27,7 +28,6 @@ based on a minimal style guide
 these others are part of my classic setup:
 + calc
 + firefox
-+ kitty
 + mpv
 + nomacs\*
 + nvim
