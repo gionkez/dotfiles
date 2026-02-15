@@ -13,6 +13,9 @@ based on a minimal style guide
 > + paru
 > + polybar
 > + rofi
+    > ```sh
+    > cd /usr/share/applications #NoDisplay=true
+    > ```
 > + slock
 > + sxhkd
 > + ttf-cascadia-code
