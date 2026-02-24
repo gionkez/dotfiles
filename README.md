@@ -9,7 +9,7 @@ based on a minimal style guide
 > + dunst
 > + feh
 > + graphite-gtk-theme\*
-+ kitty
+> + kitty
 > + libnotify
 > + paru
 > + polybar
