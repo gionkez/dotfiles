@@ -44,6 +44,7 @@ return {
 	s("[]", {t("\\left["), i(1), t("\\right]")}),
 	s("{}", {t("\\left\\{"), i(1), t("\\right\\}")}),
 	s("||", {t("\\left|"), i(1), t("\\right|")}),
+	s("<>", {t("\\langle"), i(1), t("\\rangle")}),
 	s(";al", {t("\\alpha")}),
 	s(";be", {t("\\beta")}),
 	s(";ga", {t("\\gamma")}),

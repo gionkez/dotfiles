@@ -2,6 +2,7 @@ local c = vim.cmd
 local r = require
 
 c("colorscheme habamax") --delek
+c("set guicursor=n-v-c-r:hor100,i:ver25")
 c("set noswf")
 c("set spell")
 c("filetype plugin indent on")
