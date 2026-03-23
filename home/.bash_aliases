@@ -1,5 +1,8 @@
 alias x='startx'
 alias ls='ls -a --color=auto'
+alias cp='cp -i'
+alias mv='mv -i'
+alias mkdir='mkdir -p'
 alias fzf='fzf -i --preview="cat {}" --prompt=">" --pointer="▬"'
 alias cz='cd "./$(find -type d | fzf)"'
 alias pin='sudo pacman -S --noconfirm'
