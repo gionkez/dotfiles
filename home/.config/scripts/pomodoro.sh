@@ -9,7 +9,7 @@ RST='\e[0m'
 trap "stty echo icanon; exit" SIGINT SIGTERM
 
 run_timer() {
-    local secs=$(($1 * 2)) paused=0 key
+    local secs=$(($1 * 60)) paused=0 key
     while [ $secs -ge 0 ]; do
         read -t 1 -n 1 key && [[ "$key" == "p" ]] && ((paused = !paused))
         if ((paused)); then
