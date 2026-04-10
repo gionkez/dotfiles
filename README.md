@@ -3,16 +3,15 @@
 based on a minimal style guide
 
 > [!IMPORTANT]
-> the following softwares are required:
+> the following software are required:
 > + autorandr
 > + bspwm
 > + dunst
 > + feh
-> + graphite-gtk-theme\*
 > + kitty
 > + libnotify
 > + paru
-> + polybar
+> + polyba
 > + rofi
 >   ```sh
 >   cd /usr/share/applications #NoDisplay=true

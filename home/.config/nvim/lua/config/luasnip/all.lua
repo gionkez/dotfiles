@@ -22,6 +22,7 @@ return {
 	s("tt", {t("\\texttt{"), i(1), t("}")}),
 	s("acs", {t("\\acs{"), i(1), t("}")}),
 	s("acf", {t("\\acf{"), i(1), t("}")}),
+	s("acl", {t("\\acl{"), i(1), t("}")}),
 	s("noi", {t("\\noindent")}),
 	s("sep", {t("\\separator")}),
 	s("img", {t("\\img{"), i(2), t("}{"), i(1), t("}{"), i(3), t("}")}),
@@ -106,28 +107,42 @@ return {
 					\caption{}
 					\begin{tabular}{}
 						\toprule
-						\textbf{\textsc{<>}} & \textbf{\textsc{}}\\
+						\textbf{\textsc{<>}} & \textbf{\textsc{<>}}\\
 						\midrule
 						 & \\
 						\bottomrule
 					\end{tabular}
 				\end{table}
-			]], {i(1)}
+			]], {i(1), i(2)}
 		)
 	),
 	s("min",
 		fmta(
 			[[
 				\\[3mm]
-				\begin{minipage}[h!tbp]{.<>\textwidth}
-					\centering
+				\begin{minipage}[t]{.<>\textwidth}
+					\vspace{0mm}%
 					<>
 				\end{minipage}\hfil
-				\begin{minipage}[h!tbp]{.<>\textwidth}
-					\centering
+				\begin{minipage}[t]{.<>\textwidth}
+					\vspace{0mm}%
 					<>
 				\end{minipage}\\[3mm]
 			]], {i(1), i(3), i(2), i(4)}
+		)
+	),
+	s("tkz",
+		fmta(
+			[[
+				\begin{figure}[h!tbp]
+					\centering
+					\sffamily
+					\begin{tikzpicture}
+						<>
+					\end{tikzpicture}
+					\caption{}
+				\end{figure}
+			]], {i(1)}
 		)
 	),
 	s("eq",
@@ -169,21 +184,27 @@ return {
 	s("plt",
 		fmta(
 			[[
-				\begin{tikzpicture}
+				\begin{figure}[h!tbp]
 					\centering
-					\begin{axis}[
-						scale only axis,
-						axis lines=left,
-						width=5cm, height=4cm,
-						xmin=0, xmax=<>, ymin=0, ymax=<>,
-						xlabel={<>}, ylabel={<>},
-						xlabel near ticks, ylabel near ticks,
-						xtick=\empty, ytick=\empty,
-						legend entries={<>}
-					]
-						\addplot[NavyBlue, smooth, thick, domain=0:<>] {};
-					\end{axis}
-				\end{tikzpicture}
+					\sffamily
+					\tikzclear{
+						\begin{tikzpicture}
+							\begin{axis}[
+								scale only axis,
+								axis lines=left,
+								width=5cm, height=4cm,
+								xmin=0, xmax=<>, ymin=0, ymax=<>,
+								xlabel={<>}, ylabel={<>},
+								xlabel near ticks, ylabel near ticks,
+								xtick=\empty, ytick=\empty,
+								legend entries={<>}
+							]
+								\addplot[every path/.style={}, -, draw=Orchid, smooth, thick, domain=0:<>] {};
+							\end{axis}
+						\end{tikzpicture}
+					\caption{}
+				}
+				\end{figure}
 			]], {i(1), i(2), i(3), i(4), i(5), rep(1)}
 		)
 	)
