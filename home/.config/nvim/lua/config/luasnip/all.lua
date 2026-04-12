@@ -105,13 +105,13 @@ return {
 				\begin{table}[h!tbp]
 					\centering
 					\caption{}
-					\begin{tabular}{}
+					\begin{tblr}{Q[l,m]Q[l,m]}
 						\toprule
 						\textbf{\textsc{<>}} & \textbf{\textsc{<>}}\\
 						\midrule
 						 & \\
 						\bottomrule
-					\end{tabular}
+					\end{tblr}
 				\end{table}
 			]], {i(1), i(2)}
 		)
@@ -206,6 +206,62 @@ return {
 				}
 				\end{figure}
 			]], {i(1), i(2), i(3), i(4), i(5), rep(1)}
+		)
+	),
+	s("article",
+		fmta(
+			[[
+				@article{<>,
+					author={},
+					title={},
+					subtitle={},
+					journaltitle={},
+					editor={},
+					year={}
+				}
+			]], {i(1)}
+		)
+	),
+	s("book",
+		fmta(
+			[[
+				@book{<>,
+					author={},
+					title={},
+					subtitle={},
+					editor={},
+					isbn={},
+					year={}
+				}
+			]], {i(1)}
+		)
+	),
+	s("online",
+		fmta(
+			[[
+				@online{<>,
+					author={},
+					title={},
+					subtitle={},
+					year={},
+					url={},
+					urldate={}
+				}
+			]], {i(1)}
+		)
+	),
+	s("report",
+		fmta(
+			[[
+				@report{<>,
+					author={},
+					title={},
+					subtitle={},
+					type={},
+					institution={},
+					year={}
+				}
+			]], {i(1)}
 		)
 	)
 }
