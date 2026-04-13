@@ -27,6 +27,7 @@ based on a minimal style guide
 these others are part of my classic setup:
 + calc
 + firefox
++ lobster-git\*
 + mpv
 + nomacs\*
 + nvim

@@ -45,8 +45,8 @@ super + shift + r
 	bspc node @/ --rotate {90, -90}
 
 # applications
-super + {c, f, n, p, t, z}
-    {kitty calc, firefox, kitty nvim, kitty ~/.config/scripts/pomodoro.sh, kitty, zathura}
+super + {c, f, l, n, p, t, z}
+    {kitty calc, firefox, kitty lobster, kitty nvim, kitty ~/.config/scripts/pomodoro.sh, kitty, zathura}
 
 # color picker & screenshots
 alt + {F10, F11}
