@@ -11,7 +11,7 @@ based on a minimal style guide
 > + kitty
 > + libnotify
 > + paru
-> + polyba
+> + polybar
 > + rofi
 >   ```sh
 >   cd /usr/share/applications #NoDisplay=true
