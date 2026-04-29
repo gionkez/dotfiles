@@ -10,6 +10,7 @@ k({"n", "v"}, "x", '"_x')
 
 k("n", "<Leader>yc", "yygccp", {remap = true, desc = 'Duplicate line and comment the first one'})
 
+k("n", "G", "Gzz", {desc = 'Go to bottom and center line'})
 k("n", "<Down>", "g<Down>", {remap = true, desc = 'Move to row below'})
 k("n", "<Up>", "g<Up>", {remap = true, desc = 'Move to row above'})
 
