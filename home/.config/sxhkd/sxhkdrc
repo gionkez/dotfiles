@@ -51,8 +51,8 @@ super + {c, f, p, t, z}
 # scripts
 alt + {F4, F5, F12}
 	sh ~/.config/rofi/{powermenu.sh,bt.sh,wallpaper.sh}
-alt + {F7, F10, F11}
-	sh ~/.config/scripts/{toggle_grayscale.sh,colorpicker.sh,screenshot.sh}
+alt + {F1, F10, F11}
+	sh ~/.config/scripts/{grayscale.sh,colorpicker.sh,screenshot.sh}
 
 # rofi
 super + {space, w}
