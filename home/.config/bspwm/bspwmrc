@@ -3,6 +3,9 @@
 pkill sxhkd
 sxhkd &
 
+pkill picom
+picom &
+
 xset r rate 200 50
 nmcli radio wifi on
 xsetroot -cursor_name left_ptr

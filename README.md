@@ -11,6 +11,7 @@ based on a minimal style guide
 > + kitty
 > + libnotify
 > + paru
+> + picom
 > + polybar
 > + rofi
 >   ```sh
