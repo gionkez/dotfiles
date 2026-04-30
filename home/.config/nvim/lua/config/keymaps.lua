@@ -10,7 +10,6 @@ k({"n", "v"}, "x", '"_x')
 
 k("n", "<Leader>yc", "yygccp", {remap = true, desc = 'Duplicate line and comment the first one'})
 
-k("n", "G", "Gzz", {desc = 'Go to bottom and center line'})
 k("n", "<Down>", "g<Down>", {remap = true, desc = 'Move to row below'})
 k("n", "<Up>", "g<Up>", {remap = true, desc = 'Move to row above'})
 
@@ -36,6 +35,7 @@ m("n", "<Leader>tr", r("telescope.builtin").oldfiles, 'Recently opened')
 m("n", "<Leader>td", r("telescope.builtin").diagnostics, 'Diagnostics')
 k("n", "<Leader>tc", ":Telescope colorscheme<CR>", {desc = 'Open colorscheme selection panel'})
 
+k("n", "G", "Gzz", {desc = 'Go to bottom and center line'})
 k("n", "<C-u>", "<C-u>zz", {desc = 'Scroll up and center line'})
 k("n", "<C-d>", "<C-d>zz", {desc = 'Scroll down and center line'})
 
