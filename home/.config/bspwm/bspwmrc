@@ -1,0 +1,54 @@
+#! /bin/bash
+
+dbus-update-activation-environment --systemd DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP=bspwm
+systemctl --user import-environment DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+
+pkill sxhkd
+sxhkd &
+
+pkill picom
+picom &
+
+xset r rate 200 50
+nmcli radio wifi on
+xsetroot -cursor_name left_ptr
+
+xset -dpms &
+xset s off &
+
+INTERNAL_MONITOR="HDMI-2" #laptop eDP-1
+EXTERNAL_MONITOR="DP-2"
+INTERNAL_MONITOR_RESOLUTION="WIDTHxHEIGHT"
+if [[ "$1" = 0 ]]; then
+	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
+		xrandr --output "$INTERNAL_MONITOR" --primary --mode "$INTERNAL_MONITOR_RESOLUTION" --rotate normal --output "$EXTERNAL_MONITOR" --rotate normal --above "$INTERNAL_MONITOR"
+		bspc monitor "$EXTERNAL_MONITOR" -d I II
+	    bspc monitor "$INTERNAL_MONITOR" -d III IV
+	  	bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
+	else
+	  	xrandr --output "$INTERNAL_MONITOR" --primary --mode "$INTERNAL_MONITOR_RESOLUTION" --rotate normal --output "$EXTERNAL_MONITOR" --off
+	  	bspc monitor "$INTERNAL_MONITOR" -d I II III IV
+	fi
+fi
+
+sh /home/gnkz/.config/bspwm/screens.sh
+sh /home/gnkz/.config/polybar/launch.sh
+
+bspc config normal_border_color "#c0c0c0"
+bspc config focused_border_color "#f9f9f9"
+bspc config remove_unplugged_monitors true
+bspc config remove_disabled_monitors true
+bspc config border_width 3
+bspc config window_gap 7
+bspc config padding 0
+bspc config split_ratio 0.55
+bspc config focus_follows_pointer false
+bspc config automatic_scheme alternate
+
+bspc rule -a kitty state=floating rectangle=400x250+1490+800 #edit by monitor (laptop 1104+740)
+bspc rule -a Zathura state=tiled
+
+pkill dunst
+dunst &
+
+feh --bg-fill void.png &

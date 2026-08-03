@@ -1,0 +1,85 @@
+# restart bspwm and reload sxhkd config
+alt + shift + r
+	bspc wm -r && pkill -USR1 -x sxhkd
+
+# alternate between monocle and tiled
+super + shift + z
+	bspc desktop -l next
+
+# focus the node in the given direction
+super + {Left, Down, Up, Right}
+    bspc node --focus {west, south, north, east}
+
+# change the window state
+ctrl + alt + shift + {t, p, f, m}
+	bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
+
+# move a floating window
+super + alt + {Left, Down, Up, Right}
+	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+
+# expand a window
+super + ctrl + {Left, Down, Up, Right}
+	bspc node -z {left -20 0, bottom 0 20, top 0 -20, right 20 0}
+
+# contract a window
+super + ctrl + shift + {Left, Down, Up, Right}
+	bspc node -z {right -20 0, top 0 20, bottom 0 -20, left 20 0}
+
+# close a window
+super + Escape
+	bspc node -c
+
+# view other desktop or move window and follow
+super + {ctrl, alt} + {1, 2, 3, 4}
+    bspc {desktop -f, node -d} {1, 2, 3, 4} --follow
+
+# move window
+super + shift + {1, 2, 3, 4}
+	bspc node -d {1, 2, 3, 4}
+
+# rotate
+super + shift + {Right, Left}
+    bspc node @/ -C {backward, forward}
+super + shift + r
+	bspc node @/ --rotate {90, -90}
+
+# applications
+super + {c, f, p, t, z}
+    {kitty calc, firefox, kitty ~/.config/scripts/pomodoro.sh, kitty, zathura}
+
+# scripts
+alt + {F4, F5, F12}
+	sh ~/.config/rofi/{powermenu.sh,bt.sh,wallpaper.sh}
+alt + {F1, F10, F11}
+	sh ~/.config/scripts/{grayscale.sh,colorpicker.sh,screenshot.sh}
+alt + F3
+	kitty ~/.config/scripts/shortfetch.sh
+alt + {F6, F7}
+	brightnessctl -e -d intel_backlight set {5%-,+5%}
+
+# rofi
+super + {space, w}
+	{rofi -show drun, rofi -show window}
+
+# brightness
+XF86MonBrightnessDown
+	sudo brightnessctl -e -d intel_backlight set 5%-
+XF86MonBrightnessUp
+	sudo brightnessctl -e -d intel_backlight set 5%-
+
+# audio
+XF86AudioMute
+	pactl set-sink-mute 0 toggle
+XF86AudioRaiseVolume
+	pactl set-sink-volume 0 +5%
+XF86AudioLowerVolume
+	pactl set-sink-volume 0 -5%
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioStop
+	playerctl stop

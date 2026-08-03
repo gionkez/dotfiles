@@ -1,0 +1,24 @@
+[options]
+background = #fffcff
+background = #191719
+overlay_font = Iosevka NFM:12
+suppress_default_binds = true
+
+[binds]
+<Escape> = quit
+q = quit
+<Left> = prev
+<Right> = next
+gg = goto 1
+<Shift+G> = goto -1
+h = pan 50 0
+j = pan 0 -50
+k = pan 0 50
+l = pan -50 0
+<plus> = zoom 1
+<minus> = zoom -1
+r = rotate by 90
+f = fullscreen
+p = exec echo $imv_current_file
+a = zoom actual
+c = exec bash -c 'TARGET="$HOME/Pictures/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png"; grim -g "$(slurp)" "$TARGET" && imv "$TARGET"'

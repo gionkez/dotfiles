@@ -1,0 +1,38 @@
+* {
+    background-color: #333333;
+    text-color: #000000;
+    highlight: underline bold #000000;
+    margin: 2;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+	border: 2px;
+    border-color: #000000;
+    width: 20%;
+}
+
+message {
+    border: 2px;
+    border-color: #000000;
+}
+
+listview {
+    scrollbar: false;
+    lines: 5;
+    columns: 1;
+}
+
+element {
+    padding: 1px;
+}
+
+element selected {
+    background-color: #aa88aa;
+    border: 1px;
+}
+
+element-text {
+    background-color: inherit;
+}

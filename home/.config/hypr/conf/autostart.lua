@@ -1,0 +1,8 @@
+hl.on('hyprland.start', function()
+	hl.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ 1')
+	hl.exec_cmd('brightnessctl set 10%')
+	hl.exec_cmd('waybar &')
+	hl.exec_cmd('awww-daemon &')
+	hl.exec_cmd('sh ~/.config/scripts/wallpaper_loop.sh')
+	hl.exec_cmd('sh ~/.config/scripts/battery_level.sh')
+end)

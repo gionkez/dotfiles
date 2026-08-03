@@ -1,0 +1,12 @@
+calc
+bluetui
+firefox
+imv
+mpv
+nvim
+spotify-launcher
+telegram-desktop
+texlive-meta
+trash-cli
+zathura
+zathura-mu-mupdf

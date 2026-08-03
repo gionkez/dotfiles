@@ -1,0 +1,14 @@
+configuration {
+    font: "Cascadia Code NF 11";
+    display-drun: ">_ ";
+    display-window: "? ";
+    show-icons: false;
+    cycle: false;
+    sort: false;
+    case-sensitive: false;
+    window-format: "{c}";
+    disable-history: true;
+    modi: [window, drun];
+}
+
+@theme "themes/dark.rasi"

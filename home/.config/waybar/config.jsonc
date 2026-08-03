@@ -1,0 +1,91 @@
+[
+	{
+		"layer": "bottom",
+		"position": "bottom",
+		"reload_style_on_change": true,
+		"spacing": 8,
+		"exclusive": false,
+		"margin-bottom": 15,
+		"margin-right": 15,
+		"modules-right": ["clock#date", "clock#time"],
+		"clock#date": {
+			"locale": "en_US.UTF-8",
+			"format": "<span text-transform='uppercase'>{:%A %d %B %Y}</span>",
+			"format-alt": "{:%d/%m/%Y}",
+			"tooltip-format": "{calendar}",
+			"calendar": {
+				"iso8601": true,
+                    		"mode": "month",
+                    		"mode-mon-col": 2,
+                   		"format": {
+                              		"months": "<span color='#191719'>{}></span>",
+                              		"days": "<span color='#191719'>{}</span>",
+                              		"weekdays": "<span color='#00918B'>{}</span>",
+                              		"today": "<span color='#CF68D9'><b><u>{}</u></b></span>"
+                		}
+				}
+		},
+		"clock#time": {
+			"format": "{:%I:%M %p}",
+			"format-alt": "{:%H:%M}",
+			"tooltip": false
+		}
+	},
+	{
+		"layer": "bottom",
+		"position": "bottom",
+		"reload_style_on_change": true,
+		"spacing": 8,
+		"exclusive": false,
+		"margin-bottom": 60,
+		"margin-right": 15,
+		"modules-right": ["wireplumber", "backlight", "battery"],
+		"network": {
+			"interface": "wlan0",
+			"format-connected": "ONLINE",
+			"format-alt": "{ifname}: {ipaddr}, {essid}",
+			"format-disconnected": "OFFLINE",
+			"tooltip": false
+		},
+		"wireplumber": {
+  			"format": "VOL {volume}%",
+  			"format-muted": "MUTED",
+			"scroll-step": 5,
+			"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+			"tooltip": false
+		},
+		"backlight": {
+			"format": "LUM {percent}%",
+			"on-scroll-up": "brightnessctl -e4 -n2 set 5%+",
+			"on-scroll-down": "brightnessctl -e4 -n2 set 5%-",
+			"scroll-step": 5,
+			"tooltip": false
+		},
+		"battery": {
+    			"states": {
+     	 			"warning": 35,
+      				"critical": 20
+    			},
+    			"format": "BAT {capacity}%",
+			"tooltip": false
+		},
+		"battery#bat1": {
+			"bat": "BAT1"
+		}
+	},
+	{
+		"layer": "bottom",
+		"position": "bottom",
+		"reload_style_on_change": true,
+		"exclusive": false,
+		"margin-bottom": 105,
+		"margin-right": 15,
+		"modules-right": ["network"],
+		"network": {
+			"format-wifi": "ONLINE",
+			"format-ethernet": "ONLINE",
+			"format-disconnected": "OFFLINE",
+			"tooltip-format": "{ifname}: {ipaddr}, {essid}"
+		}
+	}
+]
