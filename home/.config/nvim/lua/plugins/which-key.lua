@@ -1,14 +1,14 @@
 return {
 	{
-		"folke/which-key.nvim",
-		event = "VeryLazy",
+		'folke/which-key.nvim',
+		event = 'VeryLazy',
 		keys = {
 			{
-				"<Leader>?",
+				'<Leader>?',
 				function()
-					require("which-key").show({ global = false })
+					require('which-key').show({ global = false })
 				end,
-				desc = "Show current available keymaps",
+				desc = 'Show current available keymaps',
 			},
 		},
 	}

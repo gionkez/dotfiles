@@ -1,21 +1,21 @@
 return {
 	{
-		"folke/todo-comments.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
+		'folke/todo-comments.nvim',
+		dependencies = { 'nvim-lua/plenary.nvim' },
 		opts = {
 			signs = true,
 			sign_priority = 8,
 			keywords = {
-				TODO = { icon = " ", color = "todo" },
-				FIX = { icon = " ", color = "fix" },
-				WIP = { icon = " ", color = "wip" },
-			    LLM = { icon = "󱚝 ", color = "llm" }
+				TODO = { icon = '', color = 'todo' },
+				FIX = { icon = '', color = 'fix' },
+				WIP = { icon = '', color = 'wip' },
+			    LLM = { icon = '󱚝', color = 'llm' }
 			},
 			colors = {
-			    todo = { "#386d2e" },
-			    fix = { "#7f285c" },
-			    wip = { "#494c09" },
-			    llm = { "#0122b2" }
+			    todo = { '#00EE00' },
+			    fix = { '#BB00BB' },
+			    wip = { '#FFFF00' },
+			    llm = { '#0000DD' }
 			}
 		}
 	}

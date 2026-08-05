@@ -1,9 +1,9 @@
 return {
 	{
-		"catgoose/nvim-colorizer.lua",
-		event = "BufReadPre",
+		'catgoose/nvim-colorizer.lua',
+		event = 'BufReadPre',
 		opts = {
-			filetypes = { "*" },
+			filetypes = { '*' },
 			lazy_load = false,
 			user_default_options = {
 				names = true,
@@ -25,10 +25,10 @@ return {
 				css = false,
 				css_fn = false,
 				tailwind = false,
-				mode = "background",
-				virtualtext = "■",
+				mode = 'background',
+				virtualtext = '■',
 				virtualtext_inline = false,
-				virtualtext_mode = "foreground",
+				virtualtext_mode = 'foreground',
 				always_update = true,
 				hooks = {
 					disable_line_highlight = false,

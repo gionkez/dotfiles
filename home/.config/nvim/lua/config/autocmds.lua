@@ -6,7 +6,7 @@ autocmd('VimResized',{
         group=sussmanGroup,
         callback = function()
             local currentTab=vim.fn.tabpagenr()
-            vim.cmd("tabdo wincmd =")
-            vim.cmd("tabnext " .. currentTab)
+            vim.cmd('tabdo wincmd =')
+            vim.cmd('tabnext ' .. currentTab)
         end
 })

@@ -1,26 +1,26 @@
 return {
 	{
-		"nvim-telescope/telescope.nvim",
-		branch = "0.1.x",
+		'nvim-telescope/telescope.nvim',
 		dependencies = {
-			"nvim-lua/plenary.nvim",
-			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make", cond = vim.fn.executable("make") == 1 },
+			'nvim-lua/plenary.nvim',
+			'nvim-treesitter/nvim-treesitter',
+			{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make', cond = vim.fn.executable('make') == 1 },
 		},
 		config = function()
-			require("telescope").setup({
+			require('telescope').setup({
 				defaults = {
 					mappings = {
 						i = {
-							["<C-u>"] = false,
-							["<C-d>"] = false
+							['<C-u>'] = false,
+							['<C-d>'] = false
 						}
 					},
 					file_ignore_patterns = {
-						".pdf"
+						'%.pdf$'
 					}
 				}
 			})
-			pcall(require("telescope").load_extension, "fzf")
+			pcall(require('telescope').load_extension, 'fzf')
 		end,
 	},
 }
