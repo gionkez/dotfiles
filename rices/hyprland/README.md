@@ -11,6 +11,7 @@ required packages:
 + hyprlock
 + hyprpicker
 + mako
++ nwg-displays
 + slurp
 + ttf-iosevka-nerd
 + waybar
