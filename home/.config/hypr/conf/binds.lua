@@ -7,12 +7,23 @@ hl.bind('ALT + F4', hl.dsp.exec_cmd('~/.config/fuzzel/fuzzel-power.sh'))
 hl.bind('SUPER + C', hl.dsp.exec_cmd('foot calc', { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
 hl.bind('SUPER + T', hl.dsp.exec_cmd('foot', { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
 hl.bind('SUPER + Y', hl.dsp.exec_cmd('foot --override=colors-dark.background=171917 --override=colors-dark.foreground=FFFCFF', { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
+hl.bind('CTRL + N', hl.dsp.exec_cmd([[sh -c 'foot --working-directory="$(readlink -f /proc/$(pgrep -P $(hyprctl activewindow -j | jq -r .pid) | tail -n1)/cwd 2>/dev/null || echo $HOME)"']], { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
 
 hl.bind('SUPER + F', hl.dsp.exec_cmd('firefox'))
 hl.bind('SUPER + Z', hl.dsp.exec_cmd('zathura'))
 
 -- windows
 hl.bind('SUPER + SHIFT + C', hl.dsp.window.center({ action = 'toggle' }))
+
+hl.bind('SUPER + SHIFT + left', hl.dsp.window.move({ direction = 'left' }))
+hl.bind('SUPER + SHIFT + down', hl.dsp.window.move({ direction = 'down' }))
+hl.bind('SUPER + SHIFT + up', hl.dsp.window.move({ direction = 'up' }))
+hl.bind('SUPER + SHIFT + right', hl.dsp.window.move({ direction = 'right' }))
+
+hl.bind('SUPER + ALT + left', hl.dsp.window.swap({ direction = 'left' }))
+hl.bind('SUPER + ALT + down', hl.dsp.window.swap({ direction = 'down' }))
+hl.bind('SUPER + ALT + up', hl.dsp.window.swap({ direction = 'up' }))
+hl.bind('SUPER + ALT + right', hl.dsp.window.swap({ direction = 'right' }))
 
 hl.bind('ALT + CTRL + SHIFT + F', hl.dsp.window.float({ action = 'toggle' }))
 hl.bind('ALT + CTRL + SHIFT + M', hl.dsp.window.fullscreen({ action = 'toggle' }))
@@ -25,18 +36,6 @@ hl.bind('SUPER + right', hl.dsp.focus({ direction = 'right' }), { repeating = tr
 
 hl.bind('SUPER + CTRL + F', hl.dsp.focus({ window = 'floating' }))
 hl.bind('SUPER + CTRL + T', hl.dsp.focus({ window = 'tiled' }))
-
--- hl.bind('SUPER + SHIFT + S', hl.dsp.layout('togglesplit'))
-
-hl.bind('SUPER + SHIFT + left', hl.dsp.window.move({ direction = 'left' }))
-hl.bind('SUPER + SHIFT + down', hl.dsp.window.move({ direction = 'down' }))
-hl.bind('SUPER + SHIFT + up', hl.dsp.window.move({ direction = 'up' }))
-hl.bind('SUPER + SHIFT + right', hl.dsp.window.move({ direction = 'right' }))
-
-hl.bind('SUPER + ALT + left', hl.dsp.window.swap({ direction = 'left' }))
-hl.bind('SUPER + ALT + down', hl.dsp.window.swap({ direction = 'down' }))
-hl.bind('SUPER + ALT + up', hl.dsp.window.swap({ direction = 'up' }))
-hl.bind('SUPER + ALT + right', hl.dsp.window.swap({ direction = 'right' }))
 
 hl.bind('SUPER + CTRL + left', hl.dsp.window.resize({ x = -30, y = 0, relative = true }), {repeating = true} )
 hl.bind('SUPER + CTRL + down', hl.dsp.window.resize({ x = 0, y = 30, relative = true }), {repeating = true} )
