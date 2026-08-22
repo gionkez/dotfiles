@@ -5,15 +5,15 @@ map R rotate
 set adjust-open 'best-fit'
 set default-bg '#FFFCFF'
 set font 'Iosevka NFM 12'
-set highlight-color '#19171917'
+set highlight-color '#17191719'
 set incremental-search true
 set inputbar-bg '#FFFCFF'
-set inputbar-fg '#191719'
+set inputbar-fg '#171917'
 set page-padding 10
 set pages-per-row 2
 set recolor true
 set recolor-keephue true
-set recolor-lightcolor '#191719'
+set recolor-lightcolor '#171917'
 set render-loading false
 set scroll-page-aware true
 set scroll-step 100
@@ -21,7 +21,7 @@ set selection-clipboard clipboard
 set show-recent 5
 set statusbar-basename false
 set statusbar-bg '#FFFCFF'
-set statusbar-fg '#191719'
+set statusbar-fg '#171917'
 set statusbar-home-tilde true
 set synctex true
 set zoom-center true

@@ -1,6 +1,5 @@
 [options]
 background = #fffcff
-background = #191719
 overlay_font = Iosevka NFM:12
 suppress_default_binds = true
 

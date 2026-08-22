@@ -1,9 +1,8 @@
 local colors = {
 	foreground = 'rgba(171917FF)',
 	background = 'rgba(FFFCFFFF)',
-	details001 = 'rgba(00918BFF)',
-	details002 = 'rgba(7FD1AEFF)',
-	details003 = 'rgba(CF68D9FF)'
+	details001 = 'rgba(FF6D6DFF)',
+	details003 = 'rgba(EEB00BFF)'
 }
 
 local config = {

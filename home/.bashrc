@@ -90,7 +90,7 @@ bash_prompt () {
 	*)
 		local TITLEBAR="";;
 	esac
-	PS1="$TITLEBAR\n${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}${SEPARATOR_3}${PROMT_INPUT}"
+	PS1="$TITLEBAR${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}${SEPARATOR_3}${PROMT_INPUT}"
 	none="$(tput sgr0)"
 	trap 'echo -ne "${none}"' DEBUG
 }

@@ -62,11 +62,11 @@
 			"tooltip": false
 		},
 		"battery": {
-    			"states": {
-     	 			"warning": 35,
-      				"critical": 20
-    			},
-    			"format": "BAT {capacity}%",
+    		"states": {
+     			"warning": 35,
+    			"critical": 20
+			},
+    		"format": "BAT {capacity}%",
 			"tooltip": false
 		},
 		"battery#bat1": {

@@ -40,8 +40,7 @@ end
 
 function log(str)
     local logpath = utils.join_path(
-        o.target_dir:gsub("~/Videos/", get_homedir()),
-        "mpv_slicing.log")
+        o.target_dir:gsub("~/Videos/", "mpv_slicing.log")
     f = io.open(logpath, "a")
     f:write(string.format("# %s\n%s\n",
         os.date("%Y-%m-%d %H:%M:%S"),
@@ -85,7 +84,7 @@ function cut(shift, endpos)
         utils.getcwd(),
         mp.get_property("stream-path")))
     local outpath = escape(utils.join_path(
-        o.target_dir:gsub("~", get_homedir()),
+        o.target_dir:gsub("~/Videos/", ""),
         get_outname(shift, endpos)))
 
     cmd = cmd:gsub("$shift", shift)

@@ -6,8 +6,8 @@ hl.config({
 		float_gaps = 3,
 		gaps_workspaces = 0,
 		col = {
-			active_border = '#00918b',
-			inactive_border = '#7fd1ae',
+			active_border = '#FF6D6D',
+			inactive_border = '#008B8B'
 		},
 		layout = 'dwindle',
 		no_focus_fallback = true,
@@ -82,6 +82,7 @@ hl.config({
 			height = 14,
 			indicator_gap = 0,
 			indicator_height = 3
+			--
 		}
 	},
 	misc = {
@@ -106,7 +107,9 @@ hl.config({
 		session_lock_blur = false,
 		close_special_on_empty = true,
 		exit_window_retains_fullscreen = false,
+		--
 		middle_click_paste = true
+		--
 	}
 })
 

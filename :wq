@@ -16,7 +16,7 @@ required packages:
 + waybar
 + wl-clipboard
 
-color palette:
+color palette (light):
 + foreground #171917
 + background #fffcff
 + details001 #ff6d6d

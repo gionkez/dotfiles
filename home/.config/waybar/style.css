@@ -6,7 +6,7 @@
 
 window#waybar {
     background-color: transparent;
-    color: #191719;
+    color: #171917;
 }
 
 #network, #wireplumber, #backlight, #battery, #clock.date, #clock.time {
@@ -17,15 +17,6 @@ window#waybar {
     padding-right: 5px;
 }
 
-/* #battery.critical:not(.charging) { */
-/*     color: red; */
-/*     animation-name: blink; */
-/*     animation-duration: 1s; */
-/*     animation-timing-function: linear; */
-/*     animation-iteration-count: infinite; */
-/*     animation-direction: alternate; */
-/* } */
-
 tooltip {
     background-color: #FFFCFF;
     border: 0;
@@ -35,6 +26,6 @@ tooltip {
 tooltip label {
 	font-size: 18px;
 	font-weight: normal;
-	color: #191719;
+	color: #171917;
 	padding: 0px;
 }
