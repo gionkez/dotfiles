@@ -4,7 +4,7 @@ hl.bind('SUPER + Escape', hl.dsp.window.close())
 hl.bind('SUPER + Space', hl.dsp.exec_cmd('fuzzel'))
 hl.bind('ALT + F4', hl.dsp.exec_cmd('~/.config/fuzzel/fuzzel-power.sh'))
 
-hl.bind('SUPER + C', hl.dsp.exec_cmd('foot calc', { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h * .35'} }))
+hl.bind('SUPER + C', hl.dsp.exec_cmd('foot calc', { float = true, size = {'monitor_w * .2', 'monitor_h * .075'}, move = {'monitor_w - (monitor_w * .2) - 30', 'monitor_h * .4625'} }))
 hl.bind('SUPER + T', hl.dsp.exec_cmd('foot', { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
 hl.bind('SUPER + Y', hl.dsp.exec_cmd('foot --override=colors-dark.background=171917 --override=colors-dark.foreground=FFFCFF', { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
 hl.bind('CTRL + N', hl.dsp.exec_cmd([[sh -c 'foot --working-directory="$(readlink -f /proc/$(pgrep -P $(hyprctl activewindow -j | jq -r .pid) | tail -n1)/cwd 2>/dev/null || echo $HOME)" --override=colors-dark.background=171917 --override=colors-dark.foreground=FFFCFF']], { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
@@ -58,8 +58,8 @@ hl.bind('ALT + F1', hl.dsp.exec_cmd(
 		fi"
 	]]
 ))
-hl.bind('ALT + F3', hl.dsp.exec_cmd('foot --hold ~/.config/scripts/shortfetch.sh', { float = true, size = {'monitor_w * .1', 'monitor_h * .15'}, move = {'monitor_w - (monitor_w * .1) - 30', 'monitor_h - (monitor_h * .15) - 30'} }))
-hl.bind('ALT + F5', hl.dsp.exec_cmd('foot --hold ~/.config/scripts/pomodoro.sh', { float = true, size = {'monitor_w * .1', 'monitor_h * .15'}, move = {'monitor_w - (monitor_w * .1) - 30', 'monitor_h - (monitor_h * .15) - 30'} }))
+hl.bind('ALT + F3', hl.dsp.exec_cmd('foot --hold ~/.config/scripts/shortfetch.sh', { float = true, size = {'monitor_w * .1', 'monitor_h * .15'}, move = {'30', '30'} }))
+hl.bind('ALT + F5', hl.dsp.exec_cmd('foot --hold ~/.config/scripts/pomodoro.sh', { float = true, size = {'monitor_w * .1', 'monitor_h * .15'}, move = {'30', '(monitor_h - (monitor_h * .15)) / 2'} }))
 hl.bind('ALT + F10', hl.dsp.exec_cmd('hyprpicker'))
 hl.bind('ALT + F11', hl.dsp.exec_cmd(
 	[[

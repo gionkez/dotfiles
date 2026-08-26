@@ -82,7 +82,6 @@ hl.config({
 			height = 14,
 			indicator_gap = 0,
 			indicator_height = 3
-			--
 		}
 	},
 	misc = {
@@ -107,9 +106,7 @@ hl.config({
 		session_lock_blur = false,
 		close_special_on_empty = true,
 		exit_window_retains_fullscreen = false,
-		--
 		middle_click_paste = true
-		--
 	}
 })
 

@@ -1,9 +1,4 @@
-if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
-fi
-
 export XDG_CACHE_HOME='/tmp/$USER-cache'
-
 case $- in
     *i*) ;;
       *) return;;
