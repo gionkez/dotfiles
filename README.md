@@ -4,7 +4,7 @@
 
 [software configs](./home/)
 
-[additional packages](./packages.txt)
+[additional packages](./rices/packages.txt)
 
 ## license
 

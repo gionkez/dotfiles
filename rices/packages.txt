@@ -9,4 +9,4 @@ telegram-desktop
 texlive-meta
 trash-cli
 zathura
-zathura-mu-mupdf
+zathura-pdf-mupdf
