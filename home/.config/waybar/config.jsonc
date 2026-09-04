@@ -40,13 +40,6 @@
 		"margin-bottom": 60,
 		"margin-right": 15,
 		"modules-right": ["wireplumber", "backlight", "battery"],
-		"network": {
-			"interface": "wlan0",
-			"format-connected": "ONLINE",
-			"format-alt": "{ifname}: {ipaddr}, {essid}",
-			"format-disconnected": "OFFLINE",
-			"tooltip": false
-		},
 		"wireplumber": {
   			"format": "VOL {volume}%",
   			"format-muted": "MUTED",
