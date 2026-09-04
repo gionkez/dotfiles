@@ -36,5 +36,5 @@ default-timeout=5000
 
 [urgency=critical]
 background-color=#EEB00B
-text-color=#FFFCFF
+text-color=#171917
 default-timeout=0
