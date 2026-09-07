@@ -3,8 +3,8 @@ bluetui
 firefox
 imv
 mpv
+ncspot
 nvim
-spotify-launcher
 telegram-desktop
 texlive-meta
 trash-cli

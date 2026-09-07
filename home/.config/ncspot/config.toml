@@ -1,0 +1,67 @@
+initial_screen = "library"
+use_nerdfont = true
+flip_status_indicators = true
+audio_cache = false
+volnorm = true
+default_keybindings = false
+notify = true
+gapless = true
+shuffle = false
+repeat = "playlist"
+library_tabs = ["albums", "playlists"]
+hide_display_names = false
+
+[notification_format]
+title = "%title"
+body = "%artist - %album"
+
+[keybindings]
+"b" = "seek -1000"
+"f" = "seek +1000"
+"Shift+b" = "seek -10000"
+"Shift+f" = "seek +10000"
+"Space" = "playpause"
+"Enter" = "play"
+"Backspace" = "stop"
+"Shift+h" = "previous"
+"Shift+l" = "next"
+"r" = "repeat"
+"s" = "shuffle"
+"Shift+a" = "goto artist"
+"a" = "goto album"
+"z" = "queue"
+"Shift+j" = "shift down 1"
+"Shift+k" = "shift up 1"
+"x" = "clear"
+"1" = "focus queue"
+"2" = "focus library"
+"3" = "focus search"
+"Right" = "move right 1"
+"l" = "move right 1"
+"Up" = "move up 1"
+"k" = "move up 1"
+"Down" = "move down 1"
+"j" = "move down 1"
+"Left" = "move left 1"
+"h" = "move left 1"
+"Esc" = "back"
+"q" = "quit"
+
+[theme]
+background = "#fffcff"
+primary = "#171917"
+secondary = "#171917"
+title = "#171917"
+playing = "#fffcff"
+playing_bg = "#008b8b"
+playing_selected = "#fffcff"
+highlight = "#171917"
+highlight_bg = "#ff6d6d"
+error = "#171917"
+error_bg = "#eeb00b"
+statusbar_progress = "#008b8b"
+statusbar_bg = "#ff6d6d"
+statusbar = "#171917"
+cmdline = "#171917"
+cmdline_bg = "#fffcff"
+search_match = "#008b8b"

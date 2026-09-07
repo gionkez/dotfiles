@@ -10,7 +10,10 @@ hl.bind('SUPER + Y', hl.dsp.exec_cmd('foot --override=colors-dark.background=171
 hl.bind('CTRL + N', hl.dsp.exec_cmd([[sh -c 'foot --working-directory="$(readlink -f /proc/$(pgrep -P $(hyprctl activewindow -j | jq -r .pid) | tail -n1)/cwd 2>/dev/null || echo $HOME)" --override=colors-dark.background=171917 --override=colors-dark.foreground=FFFCFF']], { float = true, size = {'monitor_w * .3', 'monitor_h * .3'}, move = {'monitor_w - (monitor_w * .3) - 30', 'monitor_h - (monitor_h * .3) - 30'} }))
 
 hl.bind('SUPER + F', hl.dsp.exec_cmd('firefox'))
-hl.bind('SUPER + Z', hl.dsp.exec_cmd('zathura'))
+
+hl.bind('SUPER + ALT + S', hl.dsp.exec_cmd('foot ncspot'))
+hl.bind('SUPER + ALT + T', hl.dsp.exec_cmd('Telegram'))
+hl.bind('SUPER + ALT + Z', hl.dsp.exec_cmd('zathura'))
 
 -- windows
 hl.bind('SUPER + SHIFT + C', hl.dsp.window.center({ action = 'toggle' }))
