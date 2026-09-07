@@ -107,6 +107,51 @@ hl.config({
 		close_special_on_empty = true,
 		exit_window_retains_fullscreen = false,
 		middle_click_paste = true
+	},
+	plugin = {
+		hyprexpo = {
+			columns = 2,
+			rows = 2,
+			gaps_in = 3,
+			gaps_out = 3,
+			bg_col = '#FFFCFF',
+			workspace_method = 'first 1',
+			skip_empty = 0,
+			max_workspace = 0,
+			gesture_fingers = 0,
+			cancel_key = 'escape',
+			show_cursor = 1,
+			show_pinned_windows = 0,
+			tile_rounding = 0,
+			tile_rounding_power = 0,
+			tile_rounding_focus = -1,
+			tile_rounding_current = -1,
+			tile_rounding_hover = -1,
+			border_width = 3,
+			border_color = '#FFFCFF',
+			border_color_current = '#FFFCFF',
+			border_color_focus = '#FFFCFF',
+			border_color_hover = '#FFFCFF',
+			drag_drop_enable = 1,
+			drag_drop_proxy_color = '#FFFCFF99',
+			drag_drop_proxy_active_color = '#FFFCFF99',
+			drag_drop_proxy_border_color = '#FF6D6D',
+			drag_drop_proxy_border_width = 3,
+			drag_drop_proxy_rounding = -1,
+			drag_drop_source_border_width = -1,
+			label_enable = 1,
+			label_color = '#FF6D6D',
+			label_position = 'center',
+			label_show = 'always',
+			label_color_default = '#FFFCFF',
+			label_font_size = 24,
+			label_font_family = 'Iosevka NFM',
+			label_bg_enable = 1,
+			label_bg_shape = 'square',
+			label_padding = 10,
+			selection_label_enable = 0,
+			keynav_enable = 0
+		}
 	}
 })
 
@@ -116,5 +161,6 @@ hl.env('HYPRCURSOR_SIZE', '24')
 require('conf/autostart')
 require('conf/binds')
 require('conf/hyprlock')
+require('conf/hyprsunset')
 require('conf/monitor')
 require('conf/windows')

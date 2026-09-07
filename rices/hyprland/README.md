@@ -7,9 +7,11 @@ required packages:
 + foot
 + fuzzel
 + grim
++ hyprexpo
 + hyprland
 + hyprlock
 + hyprpicker
++ hyprsunset
 + mako
 + slurp
 + ttf-iosevka-nerd
