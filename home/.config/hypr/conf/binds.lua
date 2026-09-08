@@ -16,6 +16,10 @@ hl.bind('SUPER + ALT + T', hl.dsp.exec_cmd('Telegram'))
 hl.bind('SUPER + ALT + Z', hl.dsp.exec_cmd('zathura'))
 
 -- windows
+hl.bind('SUPER + W', function()
+    hl.plugin.hyprexpo.expo('toggle')
+end)
+
 hl.bind('SUPER + SHIFT + C', hl.dsp.window.center({ action = 'toggle' }))
 
 hl.bind('SUPER + SHIFT + left', hl.dsp.window.move({ direction = 'left' }))

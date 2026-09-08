@@ -12,6 +12,7 @@ required packages:
 + hyprlock
 + hyprpicker
 + hyprsunset
++ jq
 + mako
 + slurp
 + ttf-iosevka-nerd
