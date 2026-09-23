@@ -11,7 +11,7 @@ hl.bind('CTRL + N', hl.dsp.exec_cmd([[sh -c 'foot --working-directory="$(readlin
 
 hl.bind('SUPER + F', hl.dsp.exec_cmd('firefox'))
 
-hl.bind('SUPER + ALT + S', hl.dsp.exec_cmd('foot ncspot'))
+hl.bind('SUPER + ALT + S', hl.dsp.exec_cmd('foot ncspot --basepath ~/.config/ncspot/data'))
 hl.bind('SUPER + ALT + T', hl.dsp.exec_cmd('Telegram'))
 hl.bind('SUPER + ALT + Z', hl.dsp.exec_cmd('zathura'))
 
@@ -76,6 +76,8 @@ hl.bind('ALT + F11', hl.dsp.exec_cmd(
 		notify-send -u low "screenshot" "saved to ~/Pictures/screenshots/"
 	]]
 ))
+hl.bind('ALT + F7', hl.dsp.exec_cmd('hyprctl hyprsunset temperature -500'), { repeating = true, locked = true})
+hl.bind('ALT + F8', hl.dsp.exec_cmd('hyprctl hyprsunset temperature +500'), { repeating = true, locked = true})
 
 -- multimedia
 hl.bind('XF86AudioMute', hl.dsp.exec_cmd('wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'), { locked = true, repeating = true })

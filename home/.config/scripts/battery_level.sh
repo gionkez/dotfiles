@@ -27,6 +27,5 @@ while true; do
     elif [ "$STATUS" = "Charging" ] || [ "$CAPACITY" -gt 30 ]; then
         STATE="ok"
     fi
-
     sleep 300
 done

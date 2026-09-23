@@ -11,6 +11,7 @@ required packages:
 + hyprland
 + hyprlock
 + hyprpicker
++ hyprpm
 + hyprsunset
 + jq
 + mako

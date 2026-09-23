@@ -20,7 +20,7 @@ run_timer() {
         fi
     done
     printf "\n"
-    notify-send "pomodoro" "end of $3" -u critical
+    notify-send "pomodoro" "end of $3" -u normal
 	if [[ "$3" == "focus" ]]; then
 	    canberra-gtk-play -i service-login
 	else
